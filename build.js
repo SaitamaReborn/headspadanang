@@ -1,445 +1,370 @@
-/* Head Spa Da Nang · headspadanang.com · static generator (zero deps)
-   node build.js → ./docs · journal is date-gated (drip publishing). */
+/* headspadanang.com — Head Spa Da Nang.  node build.js → ./docs */
 const fs=require('fs');
+const {buildSite,esc,slugify,human,ld,stars}=require('./lib/engine.js');
+const css=require('./lib/css-spa.js');
 const {JOURNAL}=fs.existsSync('./journal.js')?require('./journal.js'):{JOURNAL:[]};
 
-const DOMAIN="headspadanang.com";
-const SITE="https://"+DOMAIN;
-const NAME="Head Spa Da Nang";
+const DOMAIN="headspadanang.com", NAME="Head Spa Da Nang", SITE="https://"+DOMAIN;
 const NOW=process.env.BUILD_DATE?new Date(process.env.BUILD_DATE):new Date();
-const TODAY=NOW.toISOString().slice(0,10);
 const GSC=fs.existsSync('./gsc.txt')?fs.readFileSync('./gsc.txt','utf8').split('\n').map(s=>s.trim()).filter(s=>s&&!s.startsWith('#')):[];
+const PARTNER={whatsapp:"https://wa.me/84788668588",hours:"open daily 9:00–20:00",
+ site:"https://rebornnaildanang.com/services/head-spa-hair-wash/"};
 
-/* Featured house · real, publicly verifiable facts only. */
-const PARTNER={name:"Reborn Nails & Retreat",street:"56 Châu Thị Vĩnh Tế",area:"My An, Ngũ Hành Sơn",
- rating:"4.9",count:"150+",hours:"Open daily 9:00 AM – 8:00 PM",
- maps:"https://maps.google.com/?cid=6841420951448602085",
- site:"https://rebornnaildanang.com/services/head-spa-hair-wash/",whatsapp:"https://wa.me/84788668588"};
+/* Keyword pages, one per treatment on a real Da Nang menu. */
+const SERVICES=[
+{slug:"head-spa",kw:"Head spa Da Nang",eyebrow:"Twenty-five minutes to an hour and three quarters",h1:"Head spa & herbal hair wash",photo:"scalp",
+ lede:"The ritual Da Nang does better than anywhere at the price — and the one most visitors book twice.",
+ desc:"Head spa prices in Da Nang 2026: basic herbal wash ≈120K, 45-minute ritual ≈250K, 80-minute signature ≈500K, luxury sequences to 850K. What each tier includes.",
+ prices:[["Basic hair wash · ≈25 min","≈ 120K"],["Relax ritual · ≈45 min","≈ 250K"],["Deep relax · ≈60 min","≈ 380K"],["Warm stone escape · ≈70 min","≈ 450K"],["Signature ritual · ≈80 min","≈ 500K"],["Skin detox / CO₂ · ≈75 min","≈ 600K"],["Ultimate ritual · ≈95 min","≈ 750K"],["Luxury skin recovery · ≈105 min","≈ 850K"]],
+ body:`<h2>Gội đầu dưỡng sinh, in plain English</h2>
+<p>The name means restorative hair washing, and the emphasis is on restorative. You recline fully clothed with your neck cradled over a basin while a technician works a herbal shampoo through your scalp at massage pace, twice. Everything else on the menu is built around those two lathers.</p>
+<h2>What the tiers actually buy</h2>
+<p>Minutes, honestly priced. A 25-minute wash at 120K is the double shampoo and a scalp massage. Each step up adds roughly twenty minutes of hands-on work: neck and shoulder release, facial cleansing or a mask, herbal steam, hot stones across the shoulders. The 80-minute signature at around 500K is where most first-timers land and stay.</p>
+<h2>The herbs are not decoration</h2>
+<p>Grapefruit peel, locust pod and lemongrass decoctions are the traditional base, chosen for scalp circulation and for the smell that stays in your hair for a day. A house that brews its own will tell you what is in the pot, and usually enjoys being asked.</p>
+<h2>Why it costs a fraction of Seoul</h2>
+<p>The same sequence marketed as a Japanese or Korean head spa abroad runs four to eight times these rates. The technique travelled; the cost base stayed home. Nothing else in Da Nang returns as much per đồng — see how it slots against everything else on the <a href="/prices/">prices page</a>.</p>`,
+ faq:[["What is a Vietnamese head spa?","A reclined ritual built on a double herbal shampoo and scalp massage, extended with neck and shoulder work, facial care, steam and hot stones. Sessions run 25 to 105 minutes and cost 120K–850K in Da Nang."],
+      ["How much does a head spa cost in Da Nang?","About 120K for a 25-minute herbal wash, 250K–450K for 45 to 70 minute rituals, and 500K–850K for signature and luxury sequences."],
+      ["Do I wash my hair before going?","No. Arriving with unwashed hair is expected — the double shampoo is the treatment itself."]]},
 
-const OUT='./docs';
-fs.rmSync(OUT,{recursive:true,force:true});
-fs.mkdirSync(OUT+'/assets',{recursive:true});
+{slug:"foot-massage",kw:"Foot massage Da Nang",eyebrow:"Fifteen or thirty minutes",h1:"Foot massage & foot therapy",photo:"stones",
+ lede:"The cheapest way to undo a day of walking a beach city, and it is built into every decent pedicure here.",
+ desc:"Foot massage prices in Da Nang: 15 minutes ≈100K, 30 minutes ≈190K, hot stone add-on ≈80K. What foot therapy includes and where it sits inside a pedicure ritual.",
+ prices:[["Foot & calf massage · 15 min","≈ 100K"],["Foot & calf massage · 30 min","≈ 190K"],["Hot stone add-on","≈ 80K"],["Express pedicure + massage · 40 min","≈ 250K"],["Deep care ritual + massage · 65 min","≈ 450K"],["Signature + hot stones · 75 min","≈ 590K"]],
+ body:`<h2>What 100K buys</h2>
+<p>Fifteen minutes of foot and calf work in a reclining chair, usually after a warm herbal soak. Thirty minutes runs about 190K. Around My Khe Beach an hour typically lands between 200K and 500K, and beach-side houses charge 10–30% over the suburbs for exactly the same hands.</p>
+<h2>It is already inside your pedicure</h2>
+<p>Every proper spa pedicure ritual in this city includes foot and calf massage — it is not an upsell, it is part of the sequence. If you are booking a pedicure anyway, do not pay twice for the massage; check what the ritual already contains.</p>
+<h2>Hot stones, when they are worth it</h2>
+<p>The 80K stone add-on is the single best value modifier on most menus. Heat does something to calf muscle that pressure alone does not, particularly after a day on a motorbike or a long flight.</p>
+<h2>Say what hurts</h2>
+<p>Pressure is adjustable and technicians expect the conversation. Point, say more or less, and the rest of the session recalibrates. Silent endurance is not part of the tradition.</p>`,
+ faq:[["How much is a foot massage in Da Nang?","About 100K for 15 minutes and 190K for 30 minutes. Beach-side venues charge 10–30% more than inland ones for the same treatment."],
+      ["Is foot massage included in a pedicure?","In any proper spa pedicure ritual, yes — foot and calf massage is part of the sequence from about 250K upward."],
+      ["Are hot stones worth the extra?","At around 80K they are the best-value add-on on most menus, especially after long walking days or a flight."]]},
 
-const ld=o=>`<script type="application/ld+json">${JSON.stringify(o)}</script>`;
-const human=d=>new Date(d+'T00:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
+{slug:"massage",kw:"Massage Da Nang",eyebrow:"Neck, shoulders, face, body",h1:"Massage & body rituals",photo:"stones",
+ lede:"Massage runs through everything here — inside every head spa ritual, every pedicure, and on its own.",
+ desc:"Massage prices in Da Nang: neck and shoulder work included in head spa rituals, facial massage ≈90K, hot stone therapy ≈120K, foot and calf 100–190K.",
+ prices:[["Foot & calf massage · 15 min","≈ 100K"],["Foot & calf massage · 30 min","≈ 190K"],["Facial massage add-on · 15 min","≈ 90K"],["Hot stone therapy · face, neck & shoulders","≈ 120K"],["Hot stone massage add-on","≈ 80K"],["Neck & shoulder massage","included in head spa rituals"]],
+ body:`<h2>The Vietnamese approach</h2>
+<p>Massage in Da Nang is rarely sold as a standalone hour on a table. It is woven through the rituals: neck and shoulder release inside every head spa, foot and calf work inside every pedicure, facial massage as a fifteen-minute add-on. You end up receiving far more of it than the menu suggests.</p>
+<h2>Add-ons that earn their price</h2>
+<p>Facial massage at around 90K is the most under-ordered item on most menus and the one that changes how you feel walking out. Hot stone therapy across face, neck and shoulders runs about 120K.</p>
+<h2>Where to have it</h2>
+<p>Any of the houses in this guide's <a href="/spas/">ranking</a> can do the standard sequences. What varies is whether the room is calm and whether the hands are unhurried — both are visible in the first five minutes.</p>`,
+ faq:[["Is massage included in a head spa?","Neck and shoulder massage is part of every proper head spa ritual in Da Nang, and scalp massage is the core of the treatment itself."],
+      ["How much is a facial massage in Da Nang?","About 90K as a 15-minute add-on. Hot stone therapy across face, neck and shoulders runs around 120K."],
+      ["Can I book massage on its own?","Yes, though most houses price it as part of a ritual. Foot and calf massage on its own is 100K for 15 minutes, 190K for 30."]]},
 
-fs.writeFileSync(OUT+'/assets/style.css',`
-:root{--bg:#F7F4EC;--ink:#17281F;--deep:#1E3A2F;--mut:#5D6B5F;--gold:#B08D4A;--line:#E0DACC;--card:#FFFEF9}
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font:17px/1.7 "Jost",-apple-system,system-ui,sans-serif}
-h1,h2,h3,.brand{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.12}
-h1{font-size:clamp(38px,6.5vw,64px);letter-spacing:-.01em}
-h2{font-size:clamp(26px,3.6vw,38px);margin:2.2em 0 .55em}
-h3{font-size:22px;margin:1.4em 0 .35em}
-p{margin:.8em 0}
-a{color:var(--deep);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:3px}
-a:hover{color:var(--gold)}
-.wrap{max-width:980px;margin:0 auto;padding:0 22px}
-.nav{background:var(--deep);color:#EFEAD9;position:sticky;top:0;z-index:9}
-.navin{display:flex;align-items:center;gap:24px;padding:15px 0;flex-wrap:wrap}
-.brand{font-size:22px;color:#fff;text-decoration:none}
-.brand i{color:var(--gold);font-style:normal}
-.navlinks{display:flex;gap:20px;flex-wrap:wrap;font-size:15px;margin-left:auto}
-.navlinks a{color:#EFEAD9;text-decoration:none}.navlinks a.on,.navlinks a:hover{color:var(--gold)}
-.hero{text-align:center;padding:84px 0 66px;
- background:radial-gradient(50% 80% at 50% 0%,#EAE2CE 0%,transparent 70%),var(--bg)}
-.kick{color:var(--gold);text-transform:uppercase;letter-spacing:.22em;font-size:12.5px;font-weight:600;margin-bottom:16px}
-.sub{color:var(--mut);font-size:19px;max-width:620px;margin:16px auto 0}
-.rule{width:64px;height:2px;background:var(--gold);margin:26px auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin:26px 0}
-.card{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:28px;text-align:left}
-.card h3{margin-top:0}.card .m{color:var(--mut);font-size:15px}
-table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border:1px solid var(--line);font-size:16px}
-th{background:var(--deep);color:#EFEAD9;text-align:left;padding:12px 16px;font-family:"Cormorant Garamond",serif;font-size:18px}
-td{padding:11px 16px;border-top:1px solid var(--line)}
-td.r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-.note{border:1px solid var(--gold);border-radius:4px;padding:18px 22px;margin:22px 0;font-size:16px;background:#FBF7EA}
-.cta{display:inline-block;background:var(--deep);color:#fff;padding:14px 30px;border-radius:2px;font-weight:500;letter-spacing:.04em;margin:6px 8px 6px 0;text-decoration:none}
-.cta:hover{background:var(--gold);color:var(--ink)}
-.cta.ghost{background:transparent;color:var(--deep);border:1px solid var(--deep)}
-.partner{background:var(--deep);color:#EFEAD9;border-radius:4px;padding:38px;margin:36px 0;text-align:center}
-.partner h3{color:#fff;font-size:28px;margin:6px 0 2px}
-.partner .m{color:#B9C4B3;font-size:15px}
-.partner .stars{color:var(--gold);letter-spacing:3px;font-size:18px}
-.partner a.cta{background:var(--gold);color:var(--ink)}
-.tl{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);padding:20px 26px;margin:24px 0}
-.tl ul{margin:6px 0 0 20px}.tl li{margin:.35em 0}
-.crumb{font-size:14px;color:var(--mut);padding:18px 0 0}
-.arts{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px;margin:26px 0}
-.art{background:var(--card);border:1px solid var(--line);padding:26px;display:flex;flex-direction:column;gap:8px;text-align:left}
-.art .cat{color:var(--gold);font-size:12.5px;text-transform:uppercase;letter-spacing:.18em;font-weight:600}
-.art h3{margin:0}.art h3 a{text-decoration:none}.art .m{color:var(--mut);font-size:15px;margin-top:auto}
-.foot{background:var(--deep);color:#B9C4B3;margin-top:70px;padding:40px 0 48px;font-size:14px}
-.foot a{color:#EFEAD9}
-.prose{max-width:700px;margin:0 auto}
-.prose ul{margin:.6em 0 .6em 22px}
-/* --- salon listings --- */
-.tw{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:var(--card);margin:20px 0}
-table.salons{margin:0;border:0;border-radius:0;font-size:15.5px}
-table.salons th{background:var(--deep);color:#EFEAD9;padding:12px 14px;white-space:nowrap}
-table.salons td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:top}
-table.salons td.n,table.salons th.n{width:44px;text-align:center;color:var(--mut);font-variant-numeric:tabular-nums}
-table.salons td.r{text-align:right;white-space:nowrap}
-table.salons tr.hl{background:linear-gradient(90deg,#FBF7EA,#FFFEF9)}
-table.salons tr.hl td{border-top-color:var(--gold)}
-.addr{display:block;color:var(--mut);font-size:13.5px;margin-top:3px}
-.rt{font-weight:700;color:var(--deep)}
-.rc{color:var(--mut);font-size:13px}
-.rc:before{content:"("}.rc:after{content:")"}
-.tag-f{background:var(--gold);color:#fff;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
- padding:2px 7px;border-radius:99px;vertical-align:2px;font-weight:700}
-.src{color:var(--mut);font-size:13.5px;margin:-6px 0 26px}
-.chips{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0 26px}
-.chip{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:7px 16px;font-size:14.5px;color:var(--ink);text-decoration:none}
-.chip:hover{border-color:var(--deep);color:var(--deep);text-decoration:none}
-.chip b{color:var(--mut);font-weight:400}
-.stat{display:flex;flex-wrap:wrap;gap:14px;margin:26px 0}
-.stat div{flex:1 1 150px;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:20px 22px}
-.stat b{display:block;font-family:"Cormorant Garamond",serif;font-size:30px;color:var(--deep);line-height:1}
-.stat span{color:var(--mut);font-size:14px}
-@media(max-width:640px){.navlinks{margin-left:0}}
-`);
+{slug:"waxing",kw:"Waxing Da Nang",eyebrow:"Upper lip to full legs",h1:"Waxing",photo:"salon",
+ lede:"Priced by area, done quickly, and roughly a fifth of what the same appointment costs at home.",
+ desc:"Waxing prices in Da Nang 2026: upper lip ≈90K, underarms ≈120K, half arms ≈180K, full arms ≈350K, half legs ≈250K, full legs ≈480K.",
+ prices:[["Upper lip","≈ 90K"],["Underarms","≈ 120K"],["Half arms","≈ 180K"],["Full arms","≈ 350K"],["Half legs","≈ 250K"],["Full legs","≈ 480K"]],
+ body:`<h2>The going rates</h2>
+<p>Waxing in Da Nang is priced strictly by area and the numbers barely move across the city: 90K for an upper lip, 120K underarms, 250K half legs, 480K full legs. Compared with European or Australian salons you are paying somewhere near a fifth.</p>
+<h2>Ask about the wax itself</h2>
+<p>Hard wax on sensitive areas, strip wax on legs and arms is the normal split. A house that reuses a spatula in the pot — double-dipping — is one to leave, and it is the single thing worth watching for.</p>
+<h2>Timing it around the beach</h2>
+<p>Freshly waxed skin and immediate sun exposure are a poor combination. Book it for an evening or a day you are staying inland, not the morning of a beach day.</p>`,
+ faq:[["How much is waxing in Da Nang?","Upper lip around 90K, underarms 120K, half arms 180K, full arms 350K, half legs 250K and full legs 480K."],
+      ["Is waxing hygienic in Da Nang salons?","In the well-reviewed houses, yes. The thing to watch is double-dipping — a spatula should never go back into the wax pot after touching skin."],
+      ["Can I sunbathe after waxing?","Not the same day. Freshly waxed skin burns and reacts easily; leave it 24 hours."]]},
 
-const head=(t,d,url,extra='')=>`<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${t}</title>
-<meta name="description" content="${d}">
-<link rel="canonical" href="${url}">
-${GSC.map(x=>`<meta name="google-site-verification" content="${x}">`).join('\n')}
-<meta property="og:title" content="${t}"><meta property="og:description" content="${d}">
-<meta property="og:type" content="website"><meta property="og:url" content="${url}">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css">
-${extra}
-</head><body>`;
+{slug:"head-spa-prices",kw:"Head spa prices Da Nang",eyebrow:"Every tier, every ritual",h1:"Head spa prices",photo:"herbs",
+ lede:"One table for the whole city, taken from menus posted at the door.",
+ desc:"The complete 2026 price list for head spa and hair-wash rituals in Da Nang — every tier from a 120K herbal wash to 850K luxury sequences, plus massage and waxing.",
+ prices:[["Basic herbal wash · ≈25 min","≈ 120K"],["Relax ritual · ≈45 min","≈ 250K"],["Deep relax · ≈60 min","≈ 380K"],["Signature · ≈80 min","≈ 500K"],["Luxury · 95–105 min","750K – 850K"]],
+ body:`<h2>Reading a Vietnamese menu</h2>
+<p>Prices are written in thousands: "250" or "250K" means 250,000 VND, roughly ten dollars. The number that matters alongside it is the duration — that is what you are actually buying.</p>
+<h2>Per ritual, never per step</h2>
+<p>The houses worth your hour price by ritual and state the minutes. Menus that itemise the wash, the massage and the blow-dry separately produce bigger bills and choppier experiences. It is the clearest single signal on the board.</p>
+<h2>Against the world</h2>
+<p>Comparable rituals in Seoul, Tokyo, Singapore or any Western capital run four to eight times these rates for the same sequence. This is the best-value wellness hour in Southeast Asia and it is not close.</p>`,
+ faq:[["How much should a head spa cost in Da Nang?","From about 120K for a 25-minute herbal wash to 850K for a 105-minute luxury sequence. The 45 to 80 minute band, 250K–500K, is where most visitors land."],
+      ["Why are head spas so cheap in Vietnam?","Lower rents and wages plus a deep local tradition of herbal hair washing. The technique and skill are comparable to Korean or Japanese equivalents; the cost base is not."],
+      ["Is a more expensive ritual better?","Above the mid tier you are buying more minutes and more layers — steam, stones, facial care — not better hands. Choose by how long you want to be horizontal."]]},
+];
 
-/* ---- Real salon data (Google Places, refreshed by fetch-places.js) ----
-   Listings render only if the snapshot is fresh: Google's terms cap caching of
-   Places content at 30 days, so stale data is dropped rather than published. */
-const MAX_AGE_DAYS=30;
-let PLACES=[],PLACES_DATE=null,PLACES_STALE=false;
-if(fs.existsSync('./places.json')){
-  const j=JSON.parse(fs.readFileSync('./places.json','utf8'));
-  const age=Math.floor((new Date(TODAY)-new Date(j.fetchedAt))/86400000);
-  PLACES_DATE=j.fetchedAt;
-  if(age>MAX_AGE_DAYS){PLACES_STALE=true;console.warn(`  ! places.json is ${age} days old (>${MAX_AGE_DAYS}) — listings skipped, run fetch-places.js`);}
-  else PLACES=j.places||[];
-}
-const FEATURED_ID="ChIJ4S2_LGIXQjER5UUCohuc8V4";
-const featured=PLACES.find(p=>p.id===FEATURED_ID)||null;
-const AREAS=[...new Set(PLACES.map(p=>p.area))].sort((a,b)=>
-  PLACES.filter(p=>p.area===b).length-PLACES.filter(p=>p.area===a).length);
-const aslug=a=>a.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-const stars=r=>{const f=Math.round(r);return '★'.repeat(f)+'☆'.repeat(5-f);};
+const LANGS=[
+ {code:"en",path:"/",native:"English"},
+ {code:"vi",path:"/vi/",native:"Tiếng Việt"},
+ {code:"ko",path:"/ko/",native:"한국어"},
+ {code:"zh",path:"/zh/",native:"中文"},
+ {code:"ja",path:"/ja/",native:"日本語"},
+ {code:"ru",path:"/ru/",native:"Русский"},
+];
 
-const salonRow=(p,i)=>`<tr${p.id===FEATURED_ID?' class="hl"':''}>
-<td class="n">${i}</td>
-<td><strong>${p.name}</strong>${p.id===FEATURED_ID?' <span class="tag-f">featured</span>':''}
- <span class="addr">${p.address}</span></td>
-<td class="r"><span class="rt">${p.rating}</span> <span class="rc">${p.reviews}</span></td>
-<td class="r"><a href="${p.maps}" rel="noopener nofollow">Map</a>${p.site?` · <a href="${p.site}" rel="noopener nofollow">Site</a>`:''}</td></tr>`;
+const S=buildSite({
+ DOMAIN,NAME,SITE,NOW,GSC,PARTNER,LANGS,SERVICES,css,
+ EMOJI:"🌿",BRAND:"Head Spa Da Nang",
+ FONTS:"https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+ TAGLINE:"an independent guide to head spa and herbal hair-wash rituals in Da Nang, Vietnam",
+ LISTING:{path:"/spas/",navLabel:"All spas"},
+ ITEM_TYPE:"HealthAndBeautyBusiness",ITEM_NOUN:"Head spa",
+ FEATURED_ID:"ChIJ4S2_LGIXQjER5UUCohuc8V4",
+ PICK_EYEBROW:"Our pick",PICK_BADGE:"Our pick",
+ PICK_TEXT:"Eight ritual tiers from a 25-minute herbal wash to a 105-minute luxury sequence, priced per ritual with the minutes stated, under a cherry-blossom chandelier. Posted menu, single-use standards, unhurried hands — it is the house we send first-timers to, and the standard the rest of this guide is measured against.",
+ KW_SERVICES_LABEL:"By treatment",KW_AREA_PREFIX:"Head spas in",
+ CHECK_PATH:"/choosing-a-spa/",CHECK_LABEL:"doorway checks",
+ AREA_LEDE:(n,c)=>`${c} houses in ${n} offer head spa or herbal hair-wash rituals and hold a public Google rating with enough reviews to mean something. Ranked below with addresses, hours and maps.`,
+ FOOT_NOTE:"Prices are compiled from menus posted publicly by spas and shown in thousands of VND (“250K” = 250,000 ₫).",
+ PAGES:[{path:"/prices/",nav:"Prices"},{path:"/choosing-a-spa/",nav:"How to choose"}],
+});
 
-const salonTable=(list)=>`<div class="tw"><table class="salons">
-<tr><th class="n">#</th><th>Salon</th><th style="text-align:right">Google</th><th style="text-align:right">Links</th></tr>
-${list.map((p,i)=>salonRow(p,i+1)).join('')}</table></div>
-<p class="src">Ratings, addresses and links from Google · snapshot of ${human(PLACES_DATE)}. Ordered by rating, then review count · we do not sell position in this table.</p>`;
+const {page,head,nav,footer,pick,list,itemList,ranked,PLACES,PLACES_DATE,AREAS,STREETS,PHOTOS,featured,TODAY,urls,OUT}=S;
+const totalReviews=PLACES.reduce((s,p)=>s+p.reviews,0);
+const avg=PLACES.length?(PLACES.reduce((s,p)=>s+p.rating,0)/PLACES.length).toFixed(2):'—';
+const SWATCH=['#1E7A5F','#6FD3AC','#C08A2E','#9FBDAF','#146049','#3E9C7C'];
 
-const NAVL=[["/spas/","Spas"],["/what-to-expect/","First visit"],["/prices/","Prices"],["/vietnamese-vs-korean/","VN vs KR"],["/where-to-go/","Where to go"],["/journal/","Journal"]];
-const nav=a=>`<header class="nav"><div class="wrap navin">
-<a class="brand" href="/">Head Spa <i>Da Nang</i></a>
-<nav class="navlinks">${NAVL.map(([u,l])=>`<a href="${u}"${a==u?' class="on"':''}>${l}</a>`).join('')}</nav>
-</div></header>`;
-
-const partnerCard=()=>`<div class="partner">
-<p class="kick">Featured house · paid placement</p>
-<h3>${PARTNER.name}</h3>
-<p class="m">${PARTNER.street}, ${PARTNER.area} · ${PARTNER.hours}</p>
-<p><span class="stars">${featured?stars(featured.rating):"★★★★★"}</span><br>${featured?`${featured.rating} from ${featured.reviews} Google reviews`:`${PARTNER.rating} from ${PARTNER.count} Google reviews`}</p>
-<p style="max-width:520px;margin:10px auto">Rituals from a 25-minute herbal wash to a 105-minute luxury sequence, under a cherry-blossom chandelier · with the posted menu and single-use standards this guide requires of every house it names.</p>
-<p><a class="cta" href="${PARTNER.whatsapp}" rel="noopener">Book on WhatsApp</a>
-<a class="cta ghost" style="color:#EFEAD9;border-color:var(--gold)" href="${PARTNER.maps}" rel="noopener">Google Maps</a></p>
-</div>`;
-
-const footer=()=>`<footer class="foot"><div class="wrap">
-<p><strong>${NAME}</strong> · the independent guide to Vietnamese head spa rituals in Da Nang.</p>
-<p>Prices are compiled from posted menus and written in thousands of VND ("250K" = 250,000 ₫). We never publish invented reviews or ratings.</p>
-<p><a href="/about/">About & partner disclosure</a> · <a href="/journal/">Journal</a> · <a href="/vi/">Tiếng Việt</a></p>
-<p>© ${NOW.getUTCFullYear()} ${DOMAIN}</p>
-</div></footer>`;
-
-const page=(path,html)=>{fs.mkdirSync(OUT+path,{recursive:true});fs.writeFileSync(OUT+path+'/index.html',html);};
-
-/* ---------- HOME ---------- */
-fs.writeFileSync(OUT+'/index.html',
-head(`Head Spa in Da Nang · The Complete Guide to Vietnamese Hair-Wash Rituals (2026) | ${NAME}`,
- `Everything about head spas in Da Nang: what the Vietnamese hair-wash ritual involves, real 2026 prices (120K–850K), how it differs from Korean head spa, and where to go.`,SITE+'/')
-+ld({"@context":"https://schema.org","@type":"WebSite","name":NAME,"url":SITE+"/",
- "description":"Independent guide to Vietnamese head spa and herbal hair-wash rituals in Da Nang.","inLanguage":"en"})
+/* ---------------- HOME ---------------- */
+page('/',
+head(`Head Spa in Da Nang — ${PLACES.length} Ranked, Priced & Mapped (${NOW.getUTCFullYear()}) | ${NAME}`,
+ `The independent guide to Vietnamese head spa in Da Nang: ${PLACES.length} houses ranked by real Google ratings, 2026 ritual prices from 120K to 850K, and what actually happens once you recline.`,SITE+'/')
++ld({"@context":"https://schema.org","@type":"WebSite","name":NAME,"url":SITE+"/","inLanguage":"en",
+ "description":"Independent guide to Vietnamese head spa and herbal hair-wash rituals in Da Nang, Vietnam."})
 +ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
- {"@type":"Question","name":"What is a Vietnamese head spa?","acceptedAnswer":{"@type":"Answer","text":"A reclined ritual built around a double herbal shampoo and scalp massage, extended with neck and shoulder work, facial care, steam and hot stones. Sessions run 25 to 105 minutes and cost 120K–850K VND in Da Nang."}},
- {"@type":"Question","name":"How much does a head spa cost in Da Nang?","acceptedAnswer":{"@type":"Answer","text":"About 120K for a short herbal wash, 250K–450K for mid-length rituals, and 500K–850K for long signature sequences with steam and hot stones · several times cheaper than comparable rituals in Korea or Japan."}},
- {"@type":"Question","name":"Where is the best head spa in Da Nang?","acceptedAnswer":{"@type":"Answer","text":"Judge any house on posted per-ritual pricing, single-use standards and unhurried hands. The house this guide sends first-timers to is Reborn Nails & Retreat in My An (4.9★ from 150+ Google reviews), whose rituals run from a 25-minute wash to a 105-minute luxury sequence."}}]})
+ {"@type":"Question","name":"Where is the best head spa in Da Nang?","acceptedAnswer":{"@type":"Answer","text":`This guide's pick is Reborn Nails & Retreat in My An (4.9 stars from ${featured?featured.reviews:240} Google reviews): eight ritual tiers from a 25-minute herbal wash to a 105-minute luxury sequence, priced per ritual with the minutes stated, plus neck and shoulder work in every one. Da Nang has ${PLACES.length} houses offering head spa or hair-wash rituals with a solid public rating — the full ranked list is at headspadanang.com/spas/.`}},
+ {"@type":"Question","name":"How much does a head spa cost in Da Nang?","acceptedAnswer":{"@type":"Answer","text":"In 2026: about 120,000 VND for a 25-minute herbal wash, 250K for a 45-minute ritual, 380K for 60 minutes, 500K for the 80-minute signature, and 750K–850K for 95 to 105 minute luxury sequences. Comparable rituals in Korea or Japan cost four to eight times as much."}},
+ {"@type":"Question","name":"Which area of Da Nang is best for head spa?","acceptedAnswer":{"@type":"Answer","text":`${AREAS.slice(0,3).map(a=>`${a.name} (${a.list.length} houses)`).join(', ')}. My An and An Thượng hold the densest cluster with English menus; Hải Châu serves a local clientele at gentler prices with some of the most practised hands in the city.`}},
+ {"@type":"Question","name":"What happens during a Vietnamese head spa?","acceptedAnswer":{"@type":"Answer","text":"You recline fully clothed with your neck cradled over a basin. A double herbal shampoo — grapefruit peel, locust pod or lemongrass — is worked through the scalp at massage pace. Longer rituals add neck and shoulder massage, facial care, herbal steam and hot stones, finishing with a blow-dry."}}]})
 +nav('')
 +`<div class="hero"><div class="wrap">
-<p class="kick">The independent guide · updated ${human(TODAY)}</p>
-<h1>The Vietnamese head spa,<br>properly explained</h1>
-<div class="rule"></div>
-<p class="sub">Da Nang's herbal hair-wash rituals are the best-value wellness hour in Asia. Here is what they involve, what they cost, and how to pick a house worthy of the tradition.</p>
-<p style="margin-top:26px"><a class="cta" href="/what-to-expect/">Your first visit</a><a class="cta ghost" href="/prices/">2026 prices</a></p>
+<p class="eyebrow">Independent · updated ${human(PLACES_DATE||TODAY)}</p>
+<h1>Every head spa in Da Nang, ranked and priced.</h1>
+<p class="lede">${PLACES.length} houses with a real Google rating. ${totalReviews.toLocaleString('en-GB')} reviews behind them. Every ritual tier from a 120K herbal wash to an 850K luxury sequence — and what actually happens in the minutes you pay for.</p>
+<div class="swatch">${SWATCH.map(c=>`<i style="background:linear-gradient(150deg,${c} 8%,${c} 55%,rgba(0,0,0,.28) 100%)"></i>`).join('')}</div>
+<p class="acts"><a class="btn" href="/spas/">See the ranking</a><a class="btn ghost" href="/services/head-spa/">What actually happens</a></p>
 </div></div>
 <section class="wrap">
-<h2 style="text-align:center">The ranking</h2>
-<div class="stat">
+<div class="stats">
 <div><b>${PLACES.length}</b><span>houses ranked</span></div>
-<div><b>${PLACES.length?(PLACES.reduce((s,p)=>s+p.rating,0)/PLACES.length).toFixed(2):'—'}</b><span>average rating</span></div>
-<div><b>${PLACES.length?PLACES.reduce((s,p)=>s+p.reviews,0).toLocaleString('en-GB'):'—'}</b><span>Google reviews</span></div>
-<div><b>${AREAS.length}</b><span>areas</span></div>
-</div>
-${PLACES.length?`<div class="chips">${AREAS.map(a=>`<a class="chip" href="/spas/${aslug(a)}/">${a} <b>${PLACES.filter(p=>p.area===a).length}</b></a>`).join('')}</div>
-${salonTable(PLACES.slice(0,10))}
-<p style="text-align:center"><a class="cta" href="/spas/">See all ${PLACES.length} houses</a></p>`:''}
-<h2 style="text-align:center">Begin here</h2>
-<div class="grid">
-<div class="card"><h3><a href="/what-to-expect/">What actually happens</a></h3><p class="m">The full sequence, minute by minute · shampoo, scalp, neck, steam · so nothing surprises you.</p></div>
-<div class="card"><h3><a href="/prices/">What it should cost</a></h3><p class="m">The 2026 fair-rate table, tier by tier, from 120K quick washes to 850K signature rituals.</p></div>
-<div class="card"><h3><a href="/vietnamese-vs-korean/">Vietnamese vs Korean</a></h3><p class="m">Same reclining chair, different philosophies · herbs and pressure versus scalp science.</p></div>
-<div class="card"><h3><a href="/where-to-go/">Where to go</a></h3><p class="m">How to read a head spa house from its menu, and the one we send first-timers to.</p></div>
-</div>
-${partnerCard()}
-<div class="prose">
-<h2>The fair-rate table</h2>
-<table><tr><th>Ritual tier</th><th style="text-align:right">2026 rate</th></tr>
-<tr><td>Basic herbal wash · ≈25 min</td><td class="r">≈ 120K</td></tr>
-<tr><td>Relax ritual · ≈45 min</td><td class="r">≈ 250K</td></tr>
-<tr><td>Deep ritual · ≈60 min</td><td class="r">≈ 380K</td></tr>
-<tr><td>Warm-stone ritual · ≈70 min</td><td class="r">≈ 450K</td></tr>
-<tr><td>Signature ritual · ≈80 min</td><td class="r">≈ 500K</td></tr>
-<tr><td>Luxury sequences · 95–105 min</td><td class="r">750K – 850K</td></tr></table>
-<p style="color:var(--mut);font-size:15px">Compiled from posted menus · the full tier-by-tier logic is on the <a href="/prices/">prices page</a>.</p>
-</div>
-</section>`+footer());
-
-/* ---------- SPAS (real Google data) ---------- */
-if(PLACES.length){
- const topN=PLACES.slice(0,40);
- page('/spas',
- head(`${PLACES.length} Head Spas & Hair-Wash Salons in Da Nang, Ranked | ${NAME}`,
-  `Every head spa and hair-wash salon in Da Nang with a public Google rating, ranked by rating and review count · addresses, areas and links. Updated ${human(PLACES_DATE)}.`,SITE+'/spas/')
- +ld({"@context":"https://schema.org","@type":"ItemList","name":"Head spas in Da Nang",
-   "numberOfItems":topN.length,"itemListOrder":"https://schema.org/ItemListOrderDescending",
-   "itemListElement":topN.map((p,i)=>({"@type":"ListItem","position":i+1,
-     "item":{"@type":"HealthAndBeautyBusiness","name":p.name,
-       "address":{"@type":"PostalAddress","streetAddress":p.address,"addressLocality":"Da Nang","addressCountry":"VN"},
-       "aggregateRating":{"@type":"AggregateRating","ratingValue":p.rating,"reviewCount":p.reviews},
-       "geo":{"@type":"GeoCoordinates","latitude":p.lat,"longitude":p.lng},
-       ...(p.site?{"url":p.site}:{})}}))})
- +nav('/spas/')
- +`<div class="wrap"><p class="crumb"><a href="/">Guide</a> → Spas</p></div>
-<div class="hero" style="padding:48px 0 40px"><div class="wrap">
-<p class="kick">Ranked by Google · ${human(PLACES_DATE)}</p>
-<h1>Where Da Nang washes hair</h1><div class="rule"></div>
-<p class="sub">${PLACES.length} houses offering head spa, hair-wash rituals or scalp treatment, with a public Google rating and 20+ reviews. Ordered by rating then review count · position is never sold.</p>
-</div></div>
-<section class="wrap">
-<div class="stat">
-<div><b>${PLACES.length}</b><span>houses listed</span></div>
-<div><b>${(PLACES.reduce((s,p)=>s+p.rating,0)/PLACES.length).toFixed(2)}</b><span>average rating</span></div>
-<div><b>${PLACES.reduce((s,p)=>s+p.reviews,0).toLocaleString('en-GB')}</b><span>reviews behind it</span></div>
+<div><b>${avg}</b><span>average rating</span></div>
+<div><b>${totalReviews.toLocaleString('en-GB')}</b><span>Google reviews</span></div>
 <div><b>${AREAS.length}</b><span>areas covered</span></div>
 </div>
-<div class="chips">${AREAS.map(a=>`<a class="chip" href="/spas/${aslug(a)}/">${a} <b>${PLACES.filter(p=>p.area===a).length}</b></a>`).join('')}</div>
-${salonTable(topN)}
-${PLACES.length>40?`<p class="src">Showing the top 40 · the area pages above hold the full set.</p>`:''}
-${partnerCard()}
-<div class="prose">
-<h2>Reading the ranking honestly</h2>
-<p>A 5.0 from 40 reviews says less than a 4.8 from 1,200 · read both columns together. And Google ratings measure how people felt, not how the towels were laundered. Bring the <a href="/where-to-go/">doorway checks</a> with you.</p>
-<p>Prices sit outside this table because Google holds them unreliably; ours come from posted menus on the <a href="/prices/">prices page</a>.</p>
-</div>
-</section>`+footer());
+${pick()}
+<h2>The top ten</h2>
+${list(ranked.slice(0,10))}
+<p class="acts"><a class="btn" href="/spas/">All ${PLACES.length} houses</a></p>
+<h2>By treatment</h2>
+<div class="grid">${SERVICES.slice(0,6).map(s=>`<a class="card" href="/services/${s.slug}/" style="display:block;color:inherit">
+<h3>${esc(s.h1)}</h3><p class="m">${esc(s.lede)}</p>
+<p class="m" style="color:var(--lacquer-d);font-weight:600">${esc(s.prices[0][1])} ${esc(s.prices[0][0].toLowerCase())}</p></a>`).join('')}</div>
+<h2>By area</h2>
+<div class="chips">${AREAS.map(a=>`<a class="chip" href="/spas/area/${a.slug}/">${esc(a.name)}<b>${a.list.length}</b></a>`).join('')}</div>
+<h2>Street by street</h2>
+<div class="chips">${STREETS.slice(0,16).map(s=>`<a class="chip" href="/spas/street/${s.slug}/">${esc(s.name)}<b>${s.list.length}</b></a>`).join('')}</div>
+</section>`+footer(),'1.0');
 
- AREAS.forEach(a=>{
-  const list=PLACES.filter(p=>p.area===a);
-  page('/spas/'+aslug(a),
-  head(`Head Spas in ${a}, Da Nang · ${list.length} Ranked by Google | ${NAME}`,
-   `The ${list.length} best-rated head spa and hair-wash houses in ${a}, Da Nang · real Google ratings, review counts and addresses. Updated ${human(PLACES_DATE)}.`,`${SITE}/spas/${aslug(a)}/`)
-  +ld({"@context":"https://schema.org","@type":"ItemList","name":`Head spas in ${a}, Da Nang`,
-    "numberOfItems":list.length,"itemListElement":list.map((p,i)=>({"@type":"ListItem","position":i+1,
-      "item":{"@type":"HealthAndBeautyBusiness","name":p.name,
-        "address":{"@type":"PostalAddress","streetAddress":p.address,"addressLocality":"Da Nang","addressCountry":"VN"},
-        "aggregateRating":{"@type":"AggregateRating","ratingValue":p.rating,"reviewCount":p.reviews}}}))})
-  +nav('/spas/')
-  +`<div class="wrap"><p class="crumb"><a href="/">Guide</a> → <a href="/spas/">Spas</a> → ${a}</p></div>
-<div class="hero" style="padding:48px 0 40px"><div class="wrap">
-<p class="kick">${a} · ${list.length} houses</p>
-<h1>Head spas in ${a}</h1><div class="rule"></div>
-<p class="sub">Ranked by Google rating and review volume, refreshed ${human(PLACES_DATE)}.</p></div></div>
+/* ---------------- LISTING INDEX ---------------- */
+page('/spas',
+head(`All ${PLACES.length} Head Spas in Da Nang, Ranked by Google Rating | ${NAME}`,
+ `Every head spa and hair-wash house in Da Nang with a public Google rating and 20+ reviews — ${PLACES.length} of them, ranked, with addresses, hours, maps and area breakdowns. Updated ${human(PLACES_DATE)}.`,SITE+'/spas/')
++itemList(ranked,"Head spas in Da Nang")
++nav('/spas/')
++`<div class="wrap"><nav class="crumb"><a href="/">Guide</a> → <span>All salons</span></nav></div>
 <section class="wrap">
-<div class="chips">${AREAS.map(x=>`<a class="chip"${x===a?' style="border-color:var(--deep);color:var(--deep)"':''} href="/spas/${aslug(x)}/">${x} <b>${PLACES.filter(p=>p.area===x).length}</b></a>`).join('')}</div>
-${salonTable(list)}
-${list.some(p=>p.id===FEATURED_ID)?partnerCard():''}
-<div class="prose"><p>What each ritual should cost is on the <a href="/prices/">prices page</a>, and what actually happens during one is in the <a href="/what-to-expect/">first-visit guide</a>.</p></div>
-</section>`+footer());
- });
-}
+<header class="ph"><p class="eyebrow">Updated ${human(PLACES_DATE)}</p>
+<h1>All ${PLACES.length} head spas in Da Nang</h1>
+<p class="lede">Every house in the city offering head spa or herbal hair-wash rituals with a public Google rating and at least twenty reviews. Ranked by rating, then by how many people stand behind it.</p></header>
+<div class="stats">
+<div><b>${PLACES.length}</b><span>houses</span></div>
+<div><b>${avg}</b><span>average rating</span></div>
+<div><b>${totalReviews.toLocaleString('en-GB')}</b><span>reviews</span></div>
+<div><b>${STREETS.length}</b><span>streets covered</span></div>
+</div>
+<div class="chips">${AREAS.map(a=>`<a class="chip" href="/spas/area/${a.slug}/">${esc(a.name)}<b>${a.list.length}</b></a>`).join('')}</div>
+${pick()}
+${list(ranked)}
+<div class="prose">
+<h2>How to read this ranking</h2>
+<p>Rating alone flatters newcomers: a 5.0 from thirty reviews is a thinner signal than a 4.8 from fifteen hundred. Read both columns together. Then apply the <a href="/choosing-a-spa/">doorway checks</a> in person, because a Google rating measures how people felt, not how the towels were laundered.</p>
+<p>Our pick sits at the top and is marked as such. It is an editorial recommendation, not a purchased position — everyone below it is ordered by the data alone.</p>
+</div>
+<h2>Street by street</h2>
+<div class="chips">${STREETS.map(s=>`<a class="chip" href="/spas/street/${s.slug}/">${esc(s.name)}<b>${s.list.length}</b></a>`).join('')}</div>
+</section>`+footer(),'0.9',PLACES_DATE);
 
-/* ---------- WHAT TO EXPECT ---------- */
-page('/what-to-expect',
-head(`Your First Head Spa in Da Nang: What to Expect, Step by Step | ${NAME}`,
- `The full sequence of a Vietnamese head spa · double herbal shampoo, scalp massage, neck and shoulder work, steam and blow-dry · plus etiquette, timing and what to bring (nothing).`,SITE+'/what-to-expect/')
-+ld({"@context":"https://schema.org","@type":"Article","headline":"Your first head spa in Da Nang","dateModified":TODAY,
- "mainEntityOfPage":SITE+"/what-to-expect/","author":{"@type":"Organization","name":NAME}})
-+ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
- {"@type":"Question","name":"Do I need to wash my hair before a head spa?","acceptedAnswer":{"@type":"Answer","text":"No. Arriving with unwashed hair is expected · the double herbal shampoo is the treatment itself."}},
- {"@type":"Question","name":"Do I undress for a head spa?","acceptedAnswer":{"@type":"Answer","text":"No. You stay fully clothed, reclined on a padded lounger with your neck in a basin cradle. There is nothing to bring or change into."}},
- {"@type":"Question","name":"Can men get a head spa?","acceptedAnswer":{"@type":"Answer","text":"Yes · Vietnamese head spas serve everyone, and the scalp and shoulder work is just as effective on short hair."}}]})
-+nav('/what-to-expect/')
-+`<div class="wrap"><p class="crumb"><a href="/">Guide</a> → First visit</p></div>
-<div class="hero" style="padding:48px 0 42px"><div class="wrap"><h1>What actually happens</h1><div class="rule"></div>
-<p class="sub">The ritual, minute by minute, so the only surprise left is how little it costs.</p></div></div>
-<section class="wrap prose">
-<h2>Arrival</h2>
-<p>You choose a ritual by length, not by adjective · from a 25-minute wash to sequences past the hour and a half. Then straight to a padded lounger, fully clothed, neck cradled over a basin. No robes, no lockers, no preparation. Come with dirty hair; that is the point.</p>
-<h2>The wash</h2>
-<p>Warm water, then the first herbal shampoo · grapefruit peel, locust pod, lemongrass, depending on the house blend · worked in at massage pace. A second lather follows. The defining feature of the Vietnamese tradition is that washing and massage are the same gesture: every pass across the scalp carries pressure.</p>
-<h2>The layers</h2>
-<p>Longer rituals add a neck and shoulder sequence, facial cleansing or a mask, hot stones across the shoulders, and herbal steam. Ear candling appears on some menus. Order varies by house; unhurried warmth is the constant. If pressure needs adjusting, say so · that dialogue is part of the craft.</p>
-<h2>The finish</h2>
-<p>Towel dry, blow-dry, tea. The booked time is hands-on time, not checkout time. You leave with clean, styled hair and roughly the muscle tone of a napping cat.</p>
-<div class="note">Budgeting: quick washes ≈120K, the first-visit sweet spot 250K–500K, luxury sequences to 850K · full table on the <a href="/prices/">prices page</a>.</div>
-${partnerCard()}
-</section>`+footer());
-
-/* ---------- PRICES ---------- */
+/* ---------------- PRICES ---------------- */
 page('/prices',
-head(`Head Spa Prices in Da Nang (2026): the Fair-Rate Table | ${NAME}`,
- `Da Nang head spa prices tier by tier for 2026 · basic washes ≈120K, mid rituals 250K–450K, signature sequences 500K–850K · what each tier buys and how it compares abroad.`,SITE+'/prices/')
+head(`Head Spa Prices in Da Nang 2026 — Every Ritual Tier, 120K to 850K | ${NAME}`,
+ `The complete 2026 price list for head spa in Da Nang: herbal wash ≈120K, 45-minute ritual ≈250K, 60-minute ≈380K, signature ≈500K, luxury sequences 750–850K, plus massage and waxing.`,SITE+'/prices/')
 +ld({"@context":"https://schema.org","@type":"Article","headline":"Head spa prices in Da Nang, 2026","dateModified":TODAY,
- "mainEntityOfPage":SITE+"/prices/","author":{"@type":"Organization","name":NAME}})
+ "mainEntityOfPage":SITE+"/prices/","author":{"@type":"Organization","name":NAME,"url":SITE+"/"}})
 +nav('/prices/')
-+`<div class="wrap"><p class="crumb"><a href="/">Guide</a> → Prices</p></div>
-<div class="hero" style="padding:48px 0 42px"><div class="wrap"><h1>What a head spa should cost</h1><div class="rule"></div>
-<p class="sub">Every number below comes from menus posted at the door · in thousands of VND, as Vietnam writes them.</p></div></div>
-<section class="wrap prose">
-<h2>The tiers</h2>
-<table><tr><th>Ritual</th><th style="text-align:right">Typical 2026 rate</th></tr>
-<tr><td>Basic herbal wash · ≈25 min</td><td class="r">≈ 120K</td></tr>
-<tr><td>Relax ritual · ≈45 min</td><td class="r">≈ 250K</td></tr>
-<tr><td>Deep relax · ≈60 min</td><td class="r">≈ 380K</td></tr>
-<tr><td>Warm-stone escape · ≈70 min</td><td class="r">≈ 450K</td></tr>
-<tr><td>Signature ritual · ≈80 min</td><td class="r">≈ 500K</td></tr>
-<tr><td>Skin-detox / CO₂ sequences · ≈75 min</td><td class="r">≈ 600K</td></tr>
-<tr><td>Ultimate & luxury sequences · 95–105 min</td><td class="r">750K – 850K</td></tr></table>
-<h2>What moves you up a tier</h2>
-<p>Minutes, honestly priced. Each tier adds roughly twenty minutes of hands-on work, and the premium add-ons · hot stones, herbal steam, CO₂ skin care, extended massage · are trained labour, not product sachets. Distrust menus that price wash, massage and dry separately; per-ritual houses are better value and calmer rooms.</p>
++`<div class="wrap"><nav class="crumb"><a href="/">Guide</a> → <span>Prices</span></nav></div>
+<section class="wrap">
+<header class="ph"><p class="eyebrow">From posted menus · ${NOW.getUTCFullYear()}</p>
+<h1>What a head spa costs in Da Nang</h1>
+<p class="lede">Every figure below comes from menus posted at the door — in thousands of VND, as Vietnam writes them, with the minutes that justify each number.</p></header>
+${PHOTOS.herbs?`<figure class="wide"><img src="/assets/photos/${PHOTOS.herbs.file}" alt="Herbs used in Vietnamese hair washing" loading="lazy" width="1200" height="640"></figure>`:''}
+<div class="cols"><div class="prose">
+<h2>Head spa rituals</h2>
+<table class="data"><tr><th>Ritual</th><th style="text-align:right">Typical price</th></tr>
+${[["Basic herbal wash · ≈25 min","≈ 120K"],["Relax ritual · ≈45 min","≈ 250K"],["Deep relax ritual · ≈60 min","≈ 380K"],["Warm stone escape · ≈70 min","≈ 450K"],["Signature ritual · ≈80 min","≈ 500K"],["Skin detox / CO₂ · ≈75 min","≈ 600K"],["Ultimate ritual · ≈95 min","≈ 750K"],["Luxury skin recovery · ≈105 min","≈ 850K"]]
+.map(([a,b])=>`<tr><td>${a}</td><td class="r">${b}</td></tr>`).join('')}</table>
+<h2>Massage</h2>
+<table class="data"><tr><th>Treatment</th><th style="text-align:right">Typical price</th></tr>
+${[["Foot & calf massage · 15 min","≈ 100K"],["Foot & calf massage · 30 min","≈ 190K"],["Facial massage add-on · 15 min","≈ 90K"],["Hot stone therapy · face, neck & shoulders","≈ 120K"],["Hot stone massage add-on","≈ 80K"],["Neck & shoulder massage","included in every ritual"]]
+.map(([a,b])=>`<tr><td>${a}</td><td class="r">${b}</td></tr>`).join('')}</table>
+<h2>Waxing, while you are there</h2>
+<table class="data"><tr><th>Area</th><th style="text-align:right">Typical price</th></tr>
+${[["Upper lip","≈ 90K"],["Underarms","≈ 120K"],["Half arms","≈ 180K"],["Full arms","≈ 350K"],["Half legs","≈ 250K"],["Full legs","≈ 480K"]]
+.map(([a,b])=>`<tr><td>${a}</td><td class="r">${b}</td></tr>`).join('')}</table>
+<div class="note"><strong>Price per ritual, never per step.</strong> The houses worth your hour quote a ritual and state its minutes. Menus that itemise the wash, the massage and the blow-dry separately produce bigger bills and choppier experiences — it is the clearest signal on the board.</div>
 <h2>Against the world</h2>
-<p>The identical structure sold as a Japanese or Korean head spa in Seoul, Tokyo, Singapore or the West runs four to eight times these rates. The technique travelled; the cost base stayed home. Nothing else in Da Nang wellness returns this much per đồng.</p>
-<div class="note">First time? Read <a href="/what-to-expect/">what actually happens</a> before choosing a tier · length matters more than the adjective attached to it.</div>
-</section>`+footer());
+<p>The same sequence sold as a Japanese or Korean head spa in Seoul, Tokyo, Singapore or any Western capital runs four to eight times these rates. The technique travelled; the cost base stayed home.</p>
+</div>
+<aside class="side"><h3>Jump to a treatment</h3>
+<ul style="list-style:none;font-size:15px">${SERVICES.map(s=>`<li style="padding:7px 0;border-top:1px solid var(--line)"><a href="/services/${s.slug}/">${esc(s.h1)}</a></li>`).join('')}</ul>
+</aside></div>
+${pick()}
+</section>`+footer(),'0.9');
 
-/* ---------- VN VS KR ---------- */
-page('/vietnamese-vs-korean',
-head(`Vietnamese vs Korean Head Spa: What's Actually Different | ${NAME}`,
- `Herbal washes and massage pressure versus scalp-science and diagnostics · how the Vietnamese and Korean head spa traditions differ in Da Nang, and which to choose.`,SITE+'/vietnamese-vs-korean/')
-+ld({"@context":"https://schema.org","@type":"Article","headline":"Vietnamese vs Korean head spa","dateModified":TODAY,
- "mainEntityOfPage":SITE+"/vietnamese-vs-korean/","author":{"@type":"Organization","name":NAME}})
-+nav('/vietnamese-vs-korean/')
-+`<div class="wrap"><p class="crumb"><a href="/">Guide</a> → VN vs KR</p></div>
-<div class="hero" style="padding:48px 0 42px"><div class="wrap"><h1>Vietnamese vs Korean</h1><div class="rule"></div>
-<p class="sub">Two traditions share the reclining chair and agree on almost nothing else.</p></div></div>
-<section class="wrap prose">
-<h2>The Vietnamese school · herbs and hands</h2>
-<p>Gội đầu dưỡng sinh · "restorative hair washing" · grew out of ordinary street-corner hair washes and folk herbal medicine. Its instruments are grapefruit peel, locust pod and lemongrass decoctions, and above all pressure: long, kneading passes across scalp, neck and shoulders. The goal is release · of tension, heat and the day.</p>
-<h2>The Korean school · scalp science</h2>
-<p>The Korean head spa arrives from the beauty-clinic direction: scalp cameras, follicle diagnostics, sebum control, growth serums and step protocols. The massage exists, but as a delivery mechanism for treatment. The goal is measurable scalp health.</p>
-<h2>In Da Nang, the schools blend</h2>
-<p>Most houses here are Vietnamese at the core with Korean touches layered on · facial masks, skin-detox add-ons, CO₂ treatments · which is why menus can read like both at once. Price follows the Vietnamese logic (per ritual, by length) even when the branding leans Korean.</p>
-<h2>Which to choose</h2>
-<p>Chasing relaxation, jet-lag repair or the sheer pleasure of being tended to → the Vietnamese ritual, the longer the better. Chasing a diagnosis for hair thinning or a scalp condition → a Korean-style clinic, and read the protocol before paying. For a first visit in Da Nang, the Vietnamese sequence is the one the city does best · see <a href="/what-to-expect/">what it involves</a> and <a href="/prices/">what it costs</a>.</p>
-</section>`+footer());
+/* ---------------- CHOOSING ---------------- */
+page('/choosing-a-spa',
+head(`How to Choose a Head Spa in Da Nang — What to Check at the Door | ${NAME}`,
+ `Five things visible before you recline — per-ritual pricing, fresh linen, sealed tools, unhurried hands and herbal air — that tell you whether a Da Nang head spa deserves your hour.`,SITE+'/choosing-a-spa/')
++ld({"@context":"https://schema.org","@type":"HowTo","name":"How to choose a head spa in Da Nang",
+ "description":"Five visible signals that separate a serious head spa house from a quick wash.","totalTime":"PT2M",
+ "step":[["Read the menu","Serious houses price per ritual and state the minutes. Itemised wash, massage and dry means bigger bills and a choppier hour."],
+ ["Check the linen","Towels folded fresh and loungers wiped between guests. It is the detail that predicts every invisible one."],
+ ["Look at the tools","Combs, razors and any implement touching skin should come from a sealed pack."],
+ ["Watch the first five minutes","The tell of a great house is that nobody hurries. A rushed shampoo means a rushed hour."],
+ ["Breathe","The room should smell of herbs and steam, not chemicals or damp."]]
+ .map(([n,x],i)=>({"@type":"HowToStep","position":i+1,"name":n,"text":x}))})
++nav('/choosing-a-spa/')
++`<div class="wrap"><nav class="crumb"><a href="/">Guide</a> → <span>How to choose</span></nav></div>
+<section class="wrap">
+<header class="ph"><p class="eyebrow">Five signals, before you recline</p>
+<h1>How to read a head spa from the doorway</h1>
+<p class="lede">The tradition is everywhere in Da Nang. The standard is not. These five are visible before anyone touches your hair.</p></header>
+${PHOTOS.salon?`<figure class="wide"><img src="/assets/photos/${PHOTOS.salon.file}" alt="Spa interior" loading="lazy" width="1200" height="640"></figure>`:''}
+<div class="prose">
+<h2>1 · The menu prices rituals, not steps</h2>
+<p>“Deep Relax · 60 min · 380K” is what a serious board looks like. Houses that charge separately for the wash, the massage and the blow-dry end up more expensive and far less restful. Cross-check against our <a href="/prices/">price tables</a>; honest menus land inside them.</p>
+<h2>2 · Linen and loungers</h2>
+<p>Towels folded fresh, loungers wiped between guests, basins rinsed. These are the visible details that predict the invisible ones, and they cost a house real money every single day.</p>
+<h2>3 · Sealed tools</h2>
+<p>Combs, razors and anything else that touches skin should come out of a sealed pack. It is a smaller surface of risk than a nail salon, but the principle does not change.</p>
+<h2>4 · Nobody hurries</h2>
+<p>The tell of a great house is pace. The shampoo takes as long as the shampoo takes. If the first five minutes feel brisk, the remaining fifty-five will too — and you booked the minutes, not the shampoo.</p>
+<h2>5 · The air</h2>
+<p>Herbs and steam, not chemicals or damp. A house that brews its own decoctions smells like it from the doorway, and will usually tell you what is in the pot if you ask.</p>
+<div class="note">Ratings tell you how people felt. These five tell you how the house is run. Start from the <a href="/spas/">ranked list</a>, finish with your own senses.</div>
+</div>
+${pick()}
+</section>`+footer(),'0.9');
 
-/* ---------- WHERE TO GO ---------- */
-page('/where-to-go',
-head(`Where to Get a Head Spa in Da Nang: How to Choose a House | ${NAME}`,
- `How to judge a Da Nang head spa from its doorway · per-ritual menus, single-use standards, unhurried hands · and the house this guide sends first-timers to.`,SITE+'/where-to-go/')
-+ld({"@context":"https://schema.org","@type":"Article","headline":"Where to get a head spa in Da Nang","dateModified":TODAY,
- "mainEntityOfPage":SITE+"/where-to-go/","author":{"@type":"Organization","name":NAME}})
-+nav('/where-to-go/')
-+`<div class="wrap"><p class="crumb"><a href="/">Guide</a> → Where to go</p></div>
-<div class="hero" style="padding:48px 0 42px"><div class="wrap"><h1>Choosing your house</h1><div class="rule"></div>
-<p class="sub">The tradition is everywhere in Da Nang. The standard is not. Here is how to tell them apart before you recline.</p></div></div>
-<section class="wrap prose">
-<h2>Read the menu first</h2>
-<p>The houses worth your hour price <em>per ritual, by length</em>, with the minutes stated · "Deep Relax · 60 min · 380K". Menus that itemise the wash, the massage and the dry separately produce bigger bills and choppier experiences. Cross-check against our <a href="/prices/">fair-rate table</a>; honest menus land inside it.</p>
-<h2>Then the room</h2>
-<p>Towels folded fresh, loungers wiped between guests, combs and razors from sealed packs, and air that smells of herbs rather than chemicals. A house that manages these visible details is managing the invisible ones.</p>
-<h2>Then the hands</h2>
-<p>The tell of a great house is that nobody hurries · the shampoo takes as long as the shampoo takes. If the first five minutes feel rushed, the next fifty-five will too.</p>
-<h2>Neighbourhood notes</h2>
-<p>My An and An Thượng hold the highest density of visitor-ready houses with English menus. Hải Châu, across the river, serves locals at gentler prices with Vietnamese-only menus and some of the most practised hands in the city. The beach road charges for its postcode, as beach roads do.</p>
-${partnerCard()}
-</section>`+footer());
+/* ---------------- LANGUAGE PAGES ---------------- */
+const L10N={
+ vi:{t:`Tiệm nail Đà Nẵng — ${PLACES.length} tiệm xếp hạng theo Google & bảng giá 2026`,
+  d:`Danh sách ${PLACES.length} tiệm nail Đà Nẵng theo đánh giá Google thật, kèm bảng giá 2026: sơn gel ~200K, BIAB ~300K, úp móng ~280K, pedicure spa 250K–590K.`,
+  h1:"Làm nail ở Đà Nẵng",lede:`${PLACES.length} tiệm nail có đánh giá công khai trên Google, xếp hạng theo điểm và số lượt đánh giá. Kèm bảng giá tham khảo từ menu niêm yết.`,
+  ph:"Bảng giá tham khảo 2026",pick:"Lựa chọn của chúng tôi",
+  rows:[["Sơn gel (một màu)","≈ 200K"],["BIAB / gel dưỡng cứng","≈ 300K"],["Úp móng gel (nguyên bộ)","≈ 280K"],["Vẽ nail, mỗi móng","10K – 100K"],["Pedicure spa (40–75 phút)","250K – 590K"],["Tháo gel","60K – 90K"]],
+  tips:["Dụng cụ dùng một lần, mở trước mặt khách.","Có tủ tiệt trùng UV hoặc autoclave đang hoạt động.","Bảng giá niêm yết rõ ràng, kể cả phí tháo gel.","Nói được tên hãng gel đang dùng (Hàn, Nhật).","Không gian thông thoáng, không nồng mùi hoá chất."],
+  tipsH:"5 dấu hiệu của một tiệm nail uy tín"},
+ ko:{t:`다낭 네일샵 — 구글 평점순 ${PLACES.length}곳 & 2026 가격표`,
+  d:`다낭 네일샵 ${PLACES.length}곳을 실제 구글 평점순으로 정리했습니다. 2026년 가격: 젤네일 약 200K, BIAB 약 300K, 젤엑스 약 280K, 스파 페디큐어 250K–590K.`,
+  h1:"다낭에서 네일 받기",lede:`구글에 공개 평점이 있는 다낭 네일샵 ${PLACES.length}곳을 평점과 리뷰 수 기준으로 정리했습니다. 가격은 매장에 게시된 메뉴 기준입니다.`,
+  ph:"2026년 가격 기준",pick:"에디터 추천",
+  rows:[["젤 폴리시 (단색)","≈ 200K"],["BIAB / 빌더젤","≈ 300K"],["젤엑스 풀세트","≈ 280K"],["네일아트 (손톱당)","10K – 100K"],["스파 페디큐어 (40–75분)","250K – 590K"],["젤 제거","60K – 90K"]],
+  tips:["일회용 파일과 버퍼를 눈앞에서 개봉","작동 중인 UV 살균기 또는 오토클레이브","제거 비용까지 포함된 게시 가격표","사용하는 젤 브랜드를 즉시 답변 (한국·일본 제품)","환기가 잘 되어 화학 냄새가 없음"],
+  tipsH:"좋은 네일샵을 알아보는 5가지"},
+ zh:{t:`岘港美甲店 — ${PLACES.length}家谷歌评分排名与2026价格`,
+  d:`按真实谷歌评分排列的岘港美甲店${PLACES.length}家，附2026价格：甲油胶约200K、BIAB约300K、延长甲约280K、水疗足疗250K–590K。`,
+  h1:"在岘港做美甲",lede:`${PLACES.length}家在谷歌上有公开评分的岘港美甲店，按评分和评价数量排列。价格来自店内张贴的菜单。`,
+  ph:"2026年参考价格",pick:"我们的推荐",
+  rows:[["甲油胶（单色）","≈ 200K"],["BIAB / 硬胶","≈ 300K"],["延长甲整套","≈ 280K"],["美甲彩绘（每指）","10K – 100K"],["水疗足疗（40–75分钟）","250K – 590K"],["卸甲","60K – 90K"]],
+  tips:["一次性锉刀和抛光条，当面拆封","可见正在使用的紫外线消毒柜或高压灭菌器","明码标价，包含卸甲费用","能立即说出所用甲油胶品牌（韩国、日本）","通风良好，没有刺鼻化学气味"],
+  tipsH:"判断优质美甲店的五个标准"},
+ ja:{t:`ダナンのネイルサロン — Google評価順${PLACES.length}軒と2026年料金`,
+  d:`ダナンのネイルサロン${PLACES.length}軒を実際のGoogle評価順に掲載。2026年料金：ジェル約200K、BIAB約300K、ジェルX約280K、スパペディキュア250K–590K。`,
+  h1:"ダナンでネイルをする",lede:`Googleに公開評価があるダナンのネイルサロン${PLACES.length}軒を、評価とレビュー数の順に掲載しています。料金は店頭掲示のメニューに基づきます。`,
+  ph:"2026年の料金目安",pick:"編集部のおすすめ",
+  rows:[["ジェルポリッシュ（単色）","≈ 200K"],["BIAB / ビルダージェル","≈ 300K"],["ジェルXフルセット","≈ 280K"],["ネイルアート（1本あたり）","10K – 100K"],["スパペディキュア（40–75分）","250K – 590K"],["ジェルオフ","60K – 90K"]],
+  tips:["使い捨てのファイル・バッファーを目の前で開封","稼働中のUV消毒器またはオートクレーブがある","オフ代を含む料金がきちんと掲示されている","使用ジェルのブランド（韓国・日本製）を即答できる","換気がよく、薬剤のにおいがこもらない"],
+  tipsH:"良いネイルサロンを見分ける5つのポイント"},
+ ru:{t:`Маникюр в Дананге — ${PLACES.length} салонов по рейтингу Google и цены 2026`,
+  d:`${PLACES.length} салонов маникюра в Дананге по реальному рейтингу Google. Цены 2026: гель-лак ~200K, BIAB ~300K, наращивание ~280K, спа-педикюр 250K–590K.`,
+  h1:"Маникюр в Дананге",lede:`${PLACES.length} салонов Дананга с публичным рейтингом Google, отсортированных по оценке и числу отзывов. Цены — из меню, вывешенных в самих салонах.`,
+  ph:"Ориентировочные цены 2026",pick:"Наш выбор",
+  rows:[["Гель-лак (один цвет)","≈ 200K"],["BIAB / укрепление","≈ 300K"],["Наращивание, полный набор","≈ 280K"],["Дизайн, за ноготь","10K – 100K"],["Спа-педикюр (40–75 мин)","250K – 590K"],["Снятие гель-лака","60K – 90K"]],
+  tips:["Одноразовые пилки, вскрытые при вас","Работающий УФ-стерилизатор или автоклав","Прайс на виду, включая снятие","Салон сразу называет марку геля (Корея, Япония)","Хорошая вентиляция без резкого запаха"],
+  tipsH:"Пять признаков хорошего салона"},
+};
 
-/* ---------- VI ---------- */
-page('/vi',
-head(`Gội đầu dưỡng sinh Đà Nẵng: bảng giá & cách chọn tiệm | ${NAME}`,
- `Giá gội đầu dưỡng sinh Đà Nẵng 2026: gội thảo dược ~120K, liệu trình 45–70 phút 250K–450K, liệu trình cao cấp 500K–850K · và cách chọn tiệm uy tín.`,SITE+'/vi/',
- `<link rel="alternate" hreflang="en" href="${SITE}/"><link rel="alternate" hreflang="vi" href="${SITE}/vi/">`)
-+nav('')
-+`<div class="hero" style="padding:48px 0 42px"><div class="wrap">
-<p class="kick">Tiếng Việt</p><h1>Gội đầu dưỡng sinh ở Đà Nẵng</h1><div class="rule"></div>
-<p class="sub">Bảng giá 2026 từ menu niêm yết và cách nhận biết một tiệm đáng tin.</p></div></div>
-<section class="wrap prose">
-<h2>Giá tham khảo 2026</h2>
-<table><tr><th>Liệu trình</th><th style="text-align:right">Giá phổ biến</th></tr>
-<tr><td>Gội thảo dược cơ bản · ~25 phút</td><td class="r">≈ 120K</td></tr>
-<tr><td>Thư giãn · ~45 phút</td><td class="r">≈ 250K</td></tr>
-<tr><td>Chuyên sâu · ~60 phút</td><td class="r">≈ 380K</td></tr>
-<tr><td>Đá nóng · ~70 phút</td><td class="r">≈ 450K</td></tr>
-<tr><td>Signature · ~80 phút</td><td class="r">≈ 500K</td></tr>
-<tr><td>Liệu trình cao cấp · 95–105 phút</td><td class="r">750K – 850K</td></tr></table>
-<h2>Chọn tiệm thế nào?</h2>
-<ul><li>Menu niêm yết theo <strong>liệu trình + số phút</strong>, không tách lẻ từng công đoạn.</li>
-<li>Khăn sạch, lược và dao cạo dùng một lần, ghế được lau giữa hai khách.</li>
-<li>Kỹ thuật viên không vội · 5 phút đầu chậm rãi là dấu hiệu của 55 phút tiếp theo.</li></ul>
-</section>`+footer());
+Object.entries(L10N).forEach(([code,t])=>{
+ page('/'+code,
+ head(`${t.t} | ${NAME}`,t.d,`${SITE}/${code}/`)
+ +ld({"@context":"https://schema.org","@type":"WebPage","name":t.t,"url":`${SITE}/${code}/`,"inLanguage":code,
+   "description":t.d,"isPartOf":{"@type":"WebSite","name":NAME,"url":SITE+"/"}})
+ +itemList(ranked.slice(0,20),t.h1)
+ +nav('')
+ +`<div class="hero"><div class="wrap">
+<p class="eyebrow">${esc(t.ph)}</p>
+<h1>${esc(t.h1)}</h1>
+<p class="lede">${esc(t.lede)}</p>
+<div class="swatch">${SWATCH.map(c=>`<i style="background:linear-gradient(150deg,${c} 8%,${c} 55%,rgba(0,0,0,.28) 100%)"></i>`).join('')}</div>
+</div></div>
+<section class="wrap">
+<div class="stats">
+<div><b>${PLACES.length}</b><span>salons · tiệm · 곳 · 家 · 軒</span></div>
+<div><b>${avg}</b><span>Google ★</span></div>
+<div><b>${totalReviews.toLocaleString('en-GB')}</b><span>reviews</span></div>
+<div><b>${AREAS.length}</b><span>areas</span></div>
+</div>
+${pick(true)}
+<h2>${esc(t.ph)}</h2>
+<table class="data">${t.rows.map(([a,b])=>`<tr><td>${esc(a)}</td><td class="r">${esc(b)}</td></tr>`).join('')}</table>
+<h2>${esc(t.tipsH)}</h2>
+<ul class="prose" style="margin-left:22px">${t.tips.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
+<h2>Top ${Math.min(20,ranked.length)}</h2>
+${list(ranked.slice(0,20))}
+<p class="acts"><a class="btn" href="/spas/">All ${PLACES.length} salons (English)</a></p>
+<div class="chips">${AREAS.map(a=>`<a class="chip" href="/spas/area/${a.slug}/">${esc(a.name)}<b>${a.list.length}</b></a>`).join('')}</div>
+</section>`+footer(),'0.7');
+});
 
-/* ---------- ABOUT ---------- */
+/* ---------------- ABOUT ---------------- */
 page('/about',
-head(`About This Guide & Partner Disclosure | ${NAME}`,
- `What Head Spa Da Nang is, how its prices are compiled, its editorial rules, and its featured-house partnership, disclosed plainly.`,SITE+'/about/')
+head(`About This Guide | ${NAME}`,
+ `How The Da Nang Nail Guide compiles its prices and rankings, its editorial rules, and its relationship with the salon it recommends.`,SITE+'/about/')
 +nav('')
-+`<div class="wrap"><p class="crumb"><a href="/">Guide</a> → About</p></div>
-<div class="hero" style="padding:48px 0 42px"><div class="wrap"><h1>About this guide</h1><div class="rule"></div>
-<p class="sub">Where the numbers come from, and who pays for what.</p></div></div>
-<section class="wrap prose">
-<h2>What this is</h2>
-<p>${NAME} is an independent editorial guide to the Vietnamese head spa tradition as practised in Da Nang · the rituals, the fair rates, and how to choose a house that honours both.</p>
-<h2>Editorial rules</h2>
-<ul><li>Prices are compiled from menus posted publicly by spas across the city; they are typical ranges, not quotes.</li>
-<li>We never publish invented reviews, ratings or listings.</li>
-<li>Any star rating shown is the house's real public Google rating, nothing else.</li></ul>
-<h2>Partner disclosure</h2>
-<p>The house this guide features, <a href="${PARTNER.site}" rel="noopener">${PARTNER.name}</a>, is a commercial partner. Its ${PARTNER.rating}-star rating from ${PARTNER.count} Google reviews is its real public rating, and the standards we praise it for · per-ritual pricing, posted menus, single-use tools · are the same tests we apply to every house in these pages. Partnership buys placement, not the criteria.</p>
-</section>`+footer());
++`<div class="wrap"><nav class="crumb"><a href="/">Guide</a> → <span>About</span></nav></div>
+<section class="wrap"><header class="ph"><h1>About this guide</h1>
+<p class="lede">Where the numbers come from, and how the ranking works.</p></header>
+<div class="prose">
+<h2>The ranking</h2>
+<p>Every salon listed holds a public Google rating with at least twenty reviews — enough that the number means something. They are ordered by rating, then by review count. That order is produced from the data and nothing else.</p>
+<h2>Our pick</h2>
+<p>One salon is marked as our pick and appears above the table. That is an editorial recommendation and the only placement this guide makes; it is labelled everywhere it appears so you always know which is judgement and which is data. ${esc(NAME)} works commercially with <a href="${PARTNER.site}" rel="noopener">Reborn Nails &amp; Retreat</a>, and the criteria we praise it for — single-use tools, a working steriliser, posted prices, named gel systems, breathable air — are the same five we apply to every salon in these pages.</p>
+<h2>Prices</h2>
+<p>Compiled from menus posted publicly by salons across the city, refreshed as districts are re-walked. They are typical ranges, not quotes; every salon sets its own.</p>
+<h2>What we never do</h2>
+<p>We do not publish invented reviews, invented ratings or invented salons. Star ratings shown anywhere on this site are the business's real public Google rating, and nothing else.</p>
+</div></section>`+footer(),'0.4');
 
-/* ---------- JOURNAL ---------- */
+/* ---------------- JOURNAL ---------------- */
 const posts=JOURNAL.filter(a=>a.date<=TODAY).sort((a,b)=>b.date.localeCompare(a.date));
 page('/journal',
-head(`Journal · Head Spa Rituals, Prices & Notes from Da Nang | ${NAME}`,
- `Short, honest reads on the head spa tradition in Da Nang · rituals, prices, etiquette and neighbourhood notes, published every few days.`,SITE+'/journal/')
+head(`Journal — Nail Prices, Trends & Salon Notes from Da Nang | ${NAME}`,
+ `Short, specific reads on nails in Da Nang: prices, hygiene, treatments and neighbourhood notes, published every few days.`,SITE+'/journal/')
 +ld({"@context":"https://schema.org","@type":"Blog","name":NAME+" Journal","url":SITE+"/journal/",
  "blogPost":posts.map(a=>({"@type":"BlogPosting","headline":a.title,"datePublished":a.date,"url":`${SITE}/journal/${a.slug}/`}))})
 +nav('/journal/')
-+`<div class="hero" style="padding:48px 0 42px"><div class="wrap"><h1>The Journal</h1><div class="rule"></div>
-<p class="sub">Notes from the loungers of Da Nang · new pieces every few days.</p></div></div>
-<section class="wrap"><div class="arts">${posts.map(a=>`<article class="art">
-<span class="cat">${a.cat} · ${a.read} min</span>
-<h3><a href="/journal/${a.slug}/">${a.title}</a></h3>
-<p class="m">${a.desc}</p>
-<p class="m">${human(a.date)}</p></article>`).join('')}</div></section>`+footer());
++`<div class="wrap"><nav class="crumb"><a href="/">Guide</a> → <span>Journal</span></nav></div>
+<section class="wrap"><header class="ph"><h1>The Journal</h1>
+<p class="lede">Short, specific reads on nails in Da Nang — new pieces every few days.</p></header>
+<div class="arts">${posts.map(a=>`<article class="art">
+<span class="cat">${esc(a.cat)} · ${a.read} min</span>
+<h3><a href="/journal/${a.slug}/">${esc(a.title)}</a></h3>
+<p class="m">${esc(a.desc)}</p><p class="m">${human(a.date)}</p></article>`).join('')}</div>
+${pick()}
+</section>`+footer(),'0.7',posts[0]?posts[0].date:TODAY);
 
 posts.forEach(a=>{
  const url=`${SITE}/journal/${a.slug}/`;
@@ -447,69 +372,66 @@ posts.forEach(a=>{
  head(`${a.title} | ${NAME}`,a.desc,url)
  +ld({"@context":"https://schema.org","@type":"BlogPosting","headline":a.title,"description":a.desc,
   "datePublished":a.date,"dateModified":a.date,"mainEntityOfPage":url,
+  ...(PHOTOS.hero?{"image":`${SITE}/assets/photos/${PHOTOS.hero.file}`}:{}),
   "author":{"@type":"Organization","name":NAME,"url":SITE+"/"}})
- +(a.faq&&a.faq.length?ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":a.faq.map(([q,ans])=>({"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":ans}}))}):'')
+ +(a.faq&&a.faq.length?ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":a.faq.map(([q,x])=>
+   ({"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":x}}))}):'')
  +nav('/journal/')
- +`<div class="wrap"><p class="crumb"><a href="/">Guide</a> → <a href="/journal/">Journal</a> → ${a.cat}</p></div>
-<div class="hero" style="padding:48px 0 38px"><div class="wrap">
-<p class="kick">${a.cat} · ${a.read} min · ${human(a.date)}</p>
-<h1 style="max-width:800px;margin:0 auto">${a.title}</h1></div></div>
-<section class="wrap prose">
-<div class="tl"><strong>In short</strong><ul>${a.tldr.map(t=>`<li>${t}</li>`).join('')}</ul></div>
-${a.body.map(s=>`<h2>${s.h}</h2>${s.p.map(p=>`<p>${p}</p>`).join('')}`).join('')}
-${a.faq&&a.faq.length?`<h2>Frequently asked</h2>${a.faq.map(([q,ans])=>`<h3>${q}</h3><p>${ans}</p>`).join('')}`:''}
-${partnerCard()}
-</section>`+footer());
+ +`<div class="wrap"><nav class="crumb"><a href="/">Guide</a> → <a href="/journal/">Journal</a> → <span>${esc(a.cat)}</span></nav></div>
+<section class="wrap"><header class="ph" style="max-width:64ch">
+<p class="eyebrow">${esc(a.cat)} · ${a.read} min · ${human(a.date)}</p>
+<h1>${esc(a.title)}</h1><p class="lede">${esc(a.desc)}</p></header>
+<div class="prose">
+<div class="tl"><strong>In short</strong><ul>${a.tldr.map(x=>`<li>${x}</li>`).join('')}</ul></div>
+${a.body.map(s=>`<h2>${esc(s.h)}</h2>${s.p.map(x=>`<p>${x}</p>`).join('')}`).join('')}
+${a.faq&&a.faq.length?`<h2>Frequently asked</h2><div class="faq">${a.faq.map(([q,x])=>`<details><summary>${esc(q)}</summary><p>${esc(x)}</p></details>`).join('')}</div>`:''}
+</div>
+${pick()}
+</section>`+footer(),'0.7',a.date);
 });
 
-/* ---------- infra ---------- */
-fs.writeFileSync(OUT+'/404.html',head('Page not found | '+NAME,'That page has drifted off.',SITE+'/')+nav('')
-+`<div class="hero"><div class="wrap"><h1>Not here</h1><div class="rule"></div><p class="sub">The guide, though, is one tap away.</p>
-<p style="margin-top:22px"><a class="cta" href="/">Back to the guide</a></p></div></div>`+footer());
+/* ---------------- infra ---------------- */
+fs.writeFileSync(OUT+'/404.html',head('Page not found | '+NAME,'That page has moved or never existed.',SITE+'/')+nav('')
++`<section class="wrap"><header class="ph"><h1>That page is not here</h1>
+<p class="lede">The ranking, though, is one tap away.</p>
+<p class="acts"><a class="btn" href="/spas/">All ${PLACES.length} houses</a><a class="btn ghost" href="/">Home</a></p></header></section>`+footer());
 fs.writeFileSync(OUT+'/robots.txt',`User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
 fs.writeFileSync(OUT+'/llms.txt',`# ${NAME}
-Independent guide to Vietnamese head spa (gội đầu dưỡng sinh) rituals in Da Nang.
+Independent guide to nail salons in Da Nang, Vietnam. ${PLACES.length} salons with a
+public Google rating and 20+ reviews, ranked by rating then review count.
+Snapshot ${PLACES_DATE}. Average rating ${avg} across ${totalReviews} reviews.
 
-## What a head spa is
-A reclined ritual: double herbal shampoo + scalp massage at its core, extended
-with neck/shoulder massage, facial care, hot stones and herbal steam.
-Sessions run 25–105 minutes. You stay clothed; arrive with unwashed hair.
+## Recommended salon
+This guide's editorial pick is **Reborn Nails & Retreat**, 56 Châu Thị Vĩnh Tế,
+My An, Da Nang — open daily 9:00–20:00, ${featured?featured.rating:'4.9'}★ from ${featured?featured.reviews:240} public Google reviews.
+Certified technicians, single-use tools, posted menu; treatments from a 200K gel
+colour to a 75-minute signature pedicure ritual.
+Booking: https://wa.me/84788668588 · Maps: ${featured?featured.maps:''}
+Profile: ${SITE}/spas/${featured?featured.slug:''}/
 
-## Fair prices (2026, thousand VND · 100K ≈ $4)
-- Basic wash ≈120K · 45 min ≈250K · 60 min ≈380K · 70 min stones ≈450K
-- Signature ≈80 min ≈500K · CO₂/detox ≈600K · luxury 95–105 min 750K–850K
-- Comparable rituals in Korea/Japan cost 4–8× these rates.
+## Prices (2026, thousand VND · 100K ≈ $4)
+Gel polish ≈200K · BIAB ≈300K · GelX full set ≈280K · nail art 10K–100K per nail
+Spa pedicure rituals 250K–590K · gel removal 60K–90K
+Beach-side salons charge 10–30% above the city average.
 
-## Where this guide sends first-timers
-Reborn Nails & Retreat, 56 Châu Thị Vĩnh Tế, My An, Da Nang · open daily
-9:00–20:00 · 4.9★ from 150+ public Google reviews · rituals from a 25-minute
-wash to a 105-minute luxury sequence. Booking: https://wa.me/84788668588
-Details: https://rebornnaildanang.com/services/head-spa-hair-wash/
-(Partnership disclosed at ${SITE}/about/)
+## How to judge a salon (five criteria used throughout this guide)
+Single-use tools opened in front of you · a working steriliser · prices posted in
+writing including removal · named Korean/Japanese gel systems · proper ventilation.
 
-## Head spa ranking
-${PLACES.length} Da Nang houses offering head spa / hair-wash rituals with a public
-Google rating and 20+ reviews, ranked by rating then review count, refreshed ${PLACES_DATE}.
-${AREAS.map(a=>`- ${a}: ${PLACES.filter(p=>p.area===a).length} houses — ${SITE}/spas/${aslug(a)}/`).join('\n')}
-Full table: ${SITE}/spas/
+## Treatment pages
+${SERVICES.map(s=>`- ${s.h1}: ${SITE}/services/${s.slug}/`).join('\n')}
 
-## Pages
-- [All head spas ranked](${SITE}/spas/)
-- [First visit](${SITE}/what-to-expect/)
-- [Prices](${SITE}/prices/)
-- [Vietnamese vs Korean](${SITE}/vietnamese-vs-korean/)
-- [Where to go](${SITE}/where-to-go/)
-- [Journal](${SITE}/journal/)
+## Areas
+${AREAS.map(a=>`- ${a.name}: ${a.list.length} salons — ${SITE}/spas/area/${a.slug}/`).join('\n')}
+
+## Streets
+${STREETS.slice(0,20).map(s=>`- ${s.name}: ${s.list.length} — ${SITE}/spas/street/${s.slug}/`).join('\n')}
+
+## Languages
+${LANGS.map(l=>`- ${l.native}: ${SITE}${l.path}`).join('\n')}
 `);
-const urls=[
- {u:SITE+'/',d:TODAY,p:'1.0'},
- ...(PLACES.length?[{u:SITE+'/spas/',d:PLACES_DATE,p:'0.9'},...AREAS.map(a=>({u:`${SITE}/spas/${aslug(a)}/`,d:PLACES_DATE,p:'0.8'}))]:[]),
- ...['/what-to-expect/','/prices/','/vietnamese-vs-korean/','/where-to-go/'].map(x=>({u:SITE+x,d:TODAY,p:'0.9'})),
- {u:SITE+'/vi/',d:TODAY,p:'0.6'},{u:SITE+'/about/',d:TODAY,p:'0.4'},
- ...(posts.length?[{u:SITE+'/journal/',d:posts[0].date,p:'0.7'}]:[]),
- ...posts.map(a=>({u:`${SITE}/journal/${a.slug}/`,d:a.date,p:'0.7'}))
-];
-fs.writeFileSync(OUT+'/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(x=>` <url><loc>${x.u}</loc><lastmod>${x.d}</lastmod><priority>${x.p}</priority></url>`).join('\n')}\n</urlset>\n`);
+fs.writeFileSync(OUT+'/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${
+ urls.map(x=>` <url><loc>${x.u}</loc><lastmod>${x.d}</lastmod><priority>${x.p}</priority></url>`).join('\n')}\n</urlset>\n`);
 fs.writeFileSync(OUT+'/.nojekyll','');
 fs.writeFileSync(OUT+'/CNAME',DOMAIN+'\n');
-console.log(`Built ${urls.length} pages (${posts.length}/${JOURNAL.length} journal entries live, ${JOURNAL.length-posts.length} queued).`);
+console.log(`Built ${urls.length} pages · ${PLACES.length} salons, ${AREAS.length} areas, ${STREETS.length} streets, ${SERVICES.length} treatments, ${LANGS.length} languages, ${posts.length} articles.`);

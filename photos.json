@@ -1,0 +1,85 @@
+{
+ "fetchedAt": "2026-08-05",
+ "photos": {
+  "hero": {
+   "file": "hero.jpg",
+   "title": "Solace Spa - 60 Calthorpe Road - Five Ways",
+   "licence": "BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+   "creator": "ell brown",
+   "creatorUrl": "https://www.flickr.com/photos/39415781@N06",
+   "source": "https://www.flickr.com/photos/39415781@N06/4229485638",
+   "bytes": 85997
+  },
+  "wash": {
+   "file": "wash.jpg",
+   "title": "Before After Bee Washing",
+   "licence": "PDM 1.0",
+   "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+   "creator": "Sam Droege",
+   "creatorUrl": "https://www.flickr.com/photos/54563451@N08",
+   "source": "https://www.flickr.com/photos/54563451@N08/36504352635",
+   "bytes": 208395
+  },
+  "herbs": {
+   "file": "herbs.jpg",
+   "title": "Fresh lemongrass tea",
+   "licence": "BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+   "creator": "Andrea_Nguyen",
+   "creatorUrl": "https://www.flickr.com/photos/41993463@N08",
+   "source": "https://www.flickr.com/photos/41993463@N08/14405940642",
+   "bytes": 44519
+  },
+  "scalp": {
+   "file": "scalp.jpg",
+   "title": "self-massage-techniquesjpg-84dc6a463523b3a4",
+   "licence": "BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+   "creator": "3loomi.4ulike",
+   "creatorUrl": "https://www.flickr.com/photos/54024095@N06",
+   "source": "https://www.flickr.com/photos/54024095@N06/5435550613",
+   "bytes": 82975
+  },
+  "steam": {
+   "file": "steam.jpg",
+   "title": "Tara Spa",
+   "licence": "BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+   "creator": "Tara Angkor Hotel",
+   "creatorUrl": "https://www.flickr.com/photos/47808661@N07",
+   "source": "https://www.flickr.com/photos/47808661@N07/5918124637",
+   "bytes": 727388
+  },
+  "stones": {
+   "file": "stones.jpg",
+   "title": "Hot stone massage, Indaba Hotel & Spa, Johannesburg, Gauteng, South Africa",
+   "licence": "BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+   "creator": "South African Tourism",
+   "creatorUrl": "https://www.flickr.com/photos/25779097@N08",
+   "source": "https://www.flickr.com/photos/25779097@N08/8717580226",
+   "bytes": 157117
+  },
+  "salon": {
+   "file": "salon.jpg",
+   "title": "Private cottage - double spa",
+   "licence": "BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+   "creator": "Witches Falls Cottages",
+   "creatorUrl": "https://www.flickr.com/photos/40282795@N05",
+   "source": "https://www.flickr.com/photos/40282795@N05/9544804652",
+   "bytes": 234700
+  },
+  "danang": {
+   "file": "danang.jpg",
+   "title": "Public Domain: Marine in Da Nang, Vietnam by Unknown Photographer, August 1965 (NARA)",
+   "licence": "PDM 1.0",
+   "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+   "creator": "pingnews.com",
+   "creatorUrl": "https://www.flickr.com/photos/39735679@N00",
+   "source": "https://www.flickr.com/photos/39735679@N00/272804585",
+   "bytes": 178551
+  }
+ }
+}
