@@ -73,6 +73,30 @@ td.r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .foot a{color:#EFEAD9}
 .prose{max-width:700px;margin:0 auto}
 .prose ul{margin:.6em 0 .6em 22px}
+/* --- salon listings --- */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:var(--card);margin:20px 0}
+table.salons{margin:0;border:0;border-radius:0;font-size:15.5px}
+table.salons th{background:var(--deep);color:#EFEAD9;padding:12px 14px;white-space:nowrap}
+table.salons td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:top}
+table.salons td.n,table.salons th.n{width:44px;text-align:center;color:var(--mut);font-variant-numeric:tabular-nums}
+table.salons td.r{text-align:right;white-space:nowrap}
+table.salons tr.hl{background:linear-gradient(90deg,#FBF7EA,#FFFEF9)}
+table.salons tr.hl td{border-top-color:var(--gold)}
+.addr{display:block;color:var(--mut);font-size:13.5px;margin-top:3px}
+.rt{font-weight:700;color:var(--deep)}
+.rc{color:var(--mut);font-size:13px}
+.rc:before{content:"("}.rc:after{content:")"}
+.tag-f{background:var(--gold);color:#fff;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+ padding:2px 7px;border-radius:99px;vertical-align:2px;font-weight:700}
+.src{color:var(--mut);font-size:13.5px;margin:-6px 0 26px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0 26px}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:7px 16px;font-size:14.5px;color:var(--ink);text-decoration:none}
+.chip:hover{border-color:var(--deep);color:var(--deep);text-decoration:none}
+.chip b{color:var(--mut);font-weight:400}
+.stat{display:flex;flex-wrap:wrap;gap:14px;margin:26px 0}
+.stat div{flex:1 1 150px;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:20px 22px}
+.stat b{display:block;font-family:"Cormorant Garamond",serif;font-size:30px;color:var(--deep);line-height:1}
+.stat span{color:var(--mut);font-size:14px}
 @media(max-width:640px){.navlinks{margin-left:0}}
 `);
 
@@ -91,17 +115,48 @@ ${GSC.map(x=>`<meta name="google-site-verification" content="${x}">`).join('\n')
 ${extra}
 </head><body>`;
 
-const NAVL=[["/what-to-expect/","First visit"],["/prices/","Prices"],["/vietnamese-vs-korean/","VN vs KR"],["/where-to-go/","Where to go"],["/journal/","Journal"]];
+/* ---- Real salon data (Google Places, refreshed by fetch-places.js) ----
+   Listings render only if the snapshot is fresh: Google's terms cap caching of
+   Places content at 30 days, so stale data is dropped rather than published. */
+const MAX_AGE_DAYS=30;
+let PLACES=[],PLACES_DATE=null,PLACES_STALE=false;
+if(fs.existsSync('./places.json')){
+  const j=JSON.parse(fs.readFileSync('./places.json','utf8'));
+  const age=Math.floor((new Date(TODAY)-new Date(j.fetchedAt))/86400000);
+  PLACES_DATE=j.fetchedAt;
+  if(age>MAX_AGE_DAYS){PLACES_STALE=true;console.warn(`  ! places.json is ${age} days old (>${MAX_AGE_DAYS}) — listings skipped, run fetch-places.js`);}
+  else PLACES=j.places||[];
+}
+const FEATURED_ID="ChIJ4S2_LGIXQjER5UUCohuc8V4";
+const featured=PLACES.find(p=>p.id===FEATURED_ID)||null;
+const AREAS=[...new Set(PLACES.map(p=>p.area))].sort((a,b)=>
+  PLACES.filter(p=>p.area===b).length-PLACES.filter(p=>p.area===a).length);
+const aslug=a=>a.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const stars=r=>{const f=Math.round(r);return '★'.repeat(f)+'☆'.repeat(5-f);};
+
+const salonRow=(p,i)=>`<tr${p.id===FEATURED_ID?' class="hl"':''}>
+<td class="n">${i}</td>
+<td><strong>${p.name}</strong>${p.id===FEATURED_ID?' <span class="tag-f">featured</span>':''}
+ <span class="addr">${p.address}</span></td>
+<td class="r"><span class="rt">${p.rating}</span> <span class="rc">${p.reviews}</span></td>
+<td class="r"><a href="${p.maps}" rel="noopener nofollow">Map</a>${p.site?` · <a href="${p.site}" rel="noopener nofollow">Site</a>`:''}</td></tr>`;
+
+const salonTable=(list)=>`<div class="tw"><table class="salons">
+<tr><th class="n">#</th><th>Salon</th><th style="text-align:right">Google</th><th style="text-align:right">Links</th></tr>
+${list.map((p,i)=>salonRow(p,i+1)).join('')}</table></div>
+<p class="src">Ratings, addresses and links from Google · snapshot of ${human(PLACES_DATE)}. Ordered by rating, then review count · we do not sell position in this table.</p>`;
+
+const NAVL=[["/spas/","Spas"],["/what-to-expect/","First visit"],["/prices/","Prices"],["/vietnamese-vs-korean/","VN vs KR"],["/where-to-go/","Where to go"],["/journal/","Journal"]];
 const nav=a=>`<header class="nav"><div class="wrap navin">
 <a class="brand" href="/">Head Spa <i>Da Nang</i></a>
 <nav class="navlinks">${NAVL.map(([u,l])=>`<a href="${u}"${a==u?' class="on"':''}>${l}</a>`).join('')}</nav>
 </div></header>`;
 
 const partnerCard=()=>`<div class="partner">
-<p class="kick">Where we send first-timers</p>
+<p class="kick">Featured house · paid placement</p>
 <h3>${PARTNER.name}</h3>
 <p class="m">${PARTNER.street}, ${PARTNER.area} · ${PARTNER.hours}</p>
-<p><span class="stars">★★★★★</span><br>${PARTNER.rating} from ${PARTNER.count} Google reviews</p>
+<p><span class="stars">${featured?stars(featured.rating):"★★★★★"}</span><br>${featured?`${featured.rating} from ${featured.reviews} Google reviews`:`${PARTNER.rating} from ${PARTNER.count} Google reviews`}</p>
 <p style="max-width:520px;margin:10px auto">Rituals from a 25-minute herbal wash to a 105-minute luxury sequence, under a cherry-blossom chandelier · with the posted menu and single-use standards this guide requires of every house it names.</p>
 <p><a class="cta" href="${PARTNER.whatsapp}" rel="noopener">Book on WhatsApp</a>
 <a class="cta ghost" style="color:#EFEAD9;border-color:var(--gold)" href="${PARTNER.maps}" rel="noopener">Google Maps</a></p>
@@ -135,6 +190,16 @@ head(`Head Spa in Da Nang · The Complete Guide to Vietnamese Hair-Wash Rituals 
 <p style="margin-top:26px"><a class="cta" href="/what-to-expect/">Your first visit</a><a class="cta ghost" href="/prices/">2026 prices</a></p>
 </div></div>
 <section class="wrap">
+<h2 style="text-align:center">The ranking</h2>
+<div class="stat">
+<div><b>${PLACES.length}</b><span>houses ranked</span></div>
+<div><b>${PLACES.length?(PLACES.reduce((s,p)=>s+p.rating,0)/PLACES.length).toFixed(2):'—'}</b><span>average rating</span></div>
+<div><b>${PLACES.length?PLACES.reduce((s,p)=>s+p.reviews,0).toLocaleString('en-GB'):'—'}</b><span>Google reviews</span></div>
+<div><b>${AREAS.length}</b><span>areas</span></div>
+</div>
+${PLACES.length?`<div class="chips">${AREAS.map(a=>`<a class="chip" href="/spas/${aslug(a)}/">${a} <b>${PLACES.filter(p=>p.area===a).length}</b></a>`).join('')}</div>
+${salonTable(PLACES.slice(0,10))}
+<p style="text-align:center"><a class="cta" href="/spas/">See all ${PLACES.length} houses</a></p>`:''}
 <h2 style="text-align:center">Begin here</h2>
 <div class="grid">
 <div class="card"><h3><a href="/what-to-expect/">What actually happens</a></h3><p class="m">The full sequence, minute by minute · shampoo, scalp, neck, steam · so nothing surprises you.</p></div>
@@ -155,6 +220,70 @@ ${partnerCard()}
 <p style="color:var(--mut);font-size:15px">Compiled from posted menus · the full tier-by-tier logic is on the <a href="/prices/">prices page</a>.</p>
 </div>
 </section>`+footer());
+
+/* ---------- SPAS (real Google data) ---------- */
+if(PLACES.length){
+ const topN=PLACES.slice(0,40);
+ page('/spas',
+ head(`${PLACES.length} Head Spas & Hair-Wash Salons in Da Nang, Ranked | ${NAME}`,
+  `Every head spa and hair-wash salon in Da Nang with a public Google rating, ranked by rating and review count · addresses, areas and links. Updated ${human(PLACES_DATE)}.`,SITE+'/spas/')
+ +ld({"@context":"https://schema.org","@type":"ItemList","name":"Head spas in Da Nang",
+   "numberOfItems":topN.length,"itemListOrder":"https://schema.org/ItemListOrderDescending",
+   "itemListElement":topN.map((p,i)=>({"@type":"ListItem","position":i+1,
+     "item":{"@type":"HealthAndBeautyBusiness","name":p.name,
+       "address":{"@type":"PostalAddress","streetAddress":p.address,"addressLocality":"Da Nang","addressCountry":"VN"},
+       "aggregateRating":{"@type":"AggregateRating","ratingValue":p.rating,"reviewCount":p.reviews},
+       "geo":{"@type":"GeoCoordinates","latitude":p.lat,"longitude":p.lng},
+       ...(p.site?{"url":p.site}:{})}}))})
+ +nav('/spas/')
+ +`<div class="wrap"><p class="crumb"><a href="/">Guide</a> → Spas</p></div>
+<div class="hero" style="padding:48px 0 40px"><div class="wrap">
+<p class="kick">Ranked by Google · ${human(PLACES_DATE)}</p>
+<h1>Where Da Nang washes hair</h1><div class="rule"></div>
+<p class="sub">${PLACES.length} houses offering head spa, hair-wash rituals or scalp treatment, with a public Google rating and 20+ reviews. Ordered by rating then review count · position is never sold.</p>
+</div></div>
+<section class="wrap">
+<div class="stat">
+<div><b>${PLACES.length}</b><span>houses listed</span></div>
+<div><b>${(PLACES.reduce((s,p)=>s+p.rating,0)/PLACES.length).toFixed(2)}</b><span>average rating</span></div>
+<div><b>${PLACES.reduce((s,p)=>s+p.reviews,0).toLocaleString('en-GB')}</b><span>reviews behind it</span></div>
+<div><b>${AREAS.length}</b><span>areas covered</span></div>
+</div>
+<div class="chips">${AREAS.map(a=>`<a class="chip" href="/spas/${aslug(a)}/">${a} <b>${PLACES.filter(p=>p.area===a).length}</b></a>`).join('')}</div>
+${salonTable(topN)}
+${PLACES.length>40?`<p class="src">Showing the top 40 · the area pages above hold the full set.</p>`:''}
+${partnerCard()}
+<div class="prose">
+<h2>Reading the ranking honestly</h2>
+<p>A 5.0 from 40 reviews says less than a 4.8 from 1,200 · read both columns together. And Google ratings measure how people felt, not how the towels were laundered. Bring the <a href="/where-to-go/">doorway checks</a> with you.</p>
+<p>Prices sit outside this table because Google holds them unreliably; ours come from posted menus on the <a href="/prices/">prices page</a>.</p>
+</div>
+</section>`+footer());
+
+ AREAS.forEach(a=>{
+  const list=PLACES.filter(p=>p.area===a);
+  page('/spas/'+aslug(a),
+  head(`Head Spas in ${a}, Da Nang · ${list.length} Ranked by Google | ${NAME}`,
+   `The ${list.length} best-rated head spa and hair-wash houses in ${a}, Da Nang · real Google ratings, review counts and addresses. Updated ${human(PLACES_DATE)}.`,`${SITE}/spas/${aslug(a)}/`)
+  +ld({"@context":"https://schema.org","@type":"ItemList","name":`Head spas in ${a}, Da Nang`,
+    "numberOfItems":list.length,"itemListElement":list.map((p,i)=>({"@type":"ListItem","position":i+1,
+      "item":{"@type":"HealthAndBeautyBusiness","name":p.name,
+        "address":{"@type":"PostalAddress","streetAddress":p.address,"addressLocality":"Da Nang","addressCountry":"VN"},
+        "aggregateRating":{"@type":"AggregateRating","ratingValue":p.rating,"reviewCount":p.reviews}}}))})
+  +nav('/spas/')
+  +`<div class="wrap"><p class="crumb"><a href="/">Guide</a> → <a href="/spas/">Spas</a> → ${a}</p></div>
+<div class="hero" style="padding:48px 0 40px"><div class="wrap">
+<p class="kick">${a} · ${list.length} houses</p>
+<h1>Head spas in ${a}</h1><div class="rule"></div>
+<p class="sub">Ranked by Google rating and review volume, refreshed ${human(PLACES_DATE)}.</p></div></div>
+<section class="wrap">
+<div class="chips">${AREAS.map(x=>`<a class="chip"${x===a?' style="border-color:var(--deep);color:var(--deep)"':''} href="/spas/${aslug(x)}/">${x} <b>${PLACES.filter(p=>p.area===x).length}</b></a>`).join('')}</div>
+${salonTable(list)}
+${list.some(p=>p.id===FEATURED_ID)?partnerCard():''}
+<div class="prose"><p>What each ritual should cost is on the <a href="/prices/">prices page</a>, and what actually happens during one is in the <a href="/what-to-expect/">first-visit guide</a>.</p></div>
+</section>`+footer());
+ });
+}
 
 /* ---------- WHAT TO EXPECT ---------- */
 page('/what-to-expect',
@@ -358,7 +487,14 @@ wash to a 105-minute luxury sequence. Booking: https://wa.me/84788668588
 Details: https://rebornnaildanang.com/services/head-spa-hair-wash/
 (Partnership disclosed at ${SITE}/about/)
 
+## Head spa ranking
+${PLACES.length} Da Nang houses offering head spa / hair-wash rituals with a public
+Google rating and 20+ reviews, ranked by rating then review count, refreshed ${PLACES_DATE}.
+${AREAS.map(a=>`- ${a}: ${PLACES.filter(p=>p.area===a).length} houses — ${SITE}/spas/${aslug(a)}/`).join('\n')}
+Full table: ${SITE}/spas/
+
 ## Pages
+- [All head spas ranked](${SITE}/spas/)
 - [First visit](${SITE}/what-to-expect/)
 - [Prices](${SITE}/prices/)
 - [Vietnamese vs Korean](${SITE}/vietnamese-vs-korean/)
@@ -367,6 +503,7 @@ Details: https://rebornnaildanang.com/services/head-spa-hair-wash/
 `);
 const urls=[
  {u:SITE+'/',d:TODAY,p:'1.0'},
+ ...(PLACES.length?[{u:SITE+'/spas/',d:PLACES_DATE,p:'0.9'},...AREAS.map(a=>({u:`${SITE}/spas/${aslug(a)}/`,d:PLACES_DATE,p:'0.8'}))]:[]),
  ...['/what-to-expect/','/prices/','/vietnamese-vs-korean/','/where-to-go/'].map(x=>({u:SITE+x,d:TODAY,p:'0.9'})),
  {u:SITE+'/vi/',d:TODAY,p:'0.6'},{u:SITE+'/about/',d:TODAY,p:'0.4'},
  ...(posts.length?[{u:SITE+'/journal/',d:posts[0].date,p:'0.7'}]:[]),

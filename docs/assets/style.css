@@ -48,4 +48,28 @@ td.r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .foot a{color:#EFEAD9}
 .prose{max-width:700px;margin:0 auto}
 .prose ul{margin:.6em 0 .6em 22px}
+/* --- salon listings --- */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:var(--card);margin:20px 0}
+table.salons{margin:0;border:0;border-radius:0;font-size:15.5px}
+table.salons th{background:var(--deep);color:#EFEAD9;padding:12px 14px;white-space:nowrap}
+table.salons td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:top}
+table.salons td.n,table.salons th.n{width:44px;text-align:center;color:var(--mut);font-variant-numeric:tabular-nums}
+table.salons td.r{text-align:right;white-space:nowrap}
+table.salons tr.hl{background:linear-gradient(90deg,#FBF7EA,#FFFEF9)}
+table.salons tr.hl td{border-top-color:var(--gold)}
+.addr{display:block;color:var(--mut);font-size:13.5px;margin-top:3px}
+.rt{font-weight:700;color:var(--deep)}
+.rc{color:var(--mut);font-size:13px}
+.rc:before{content:"("}.rc:after{content:")"}
+.tag-f{background:var(--gold);color:#fff;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+ padding:2px 7px;border-radius:99px;vertical-align:2px;font-weight:700}
+.src{color:var(--mut);font-size:13.5px;margin:-6px 0 26px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0 26px}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:7px 16px;font-size:14.5px;color:var(--ink);text-decoration:none}
+.chip:hover{border-color:var(--deep);color:var(--deep);text-decoration:none}
+.chip b{color:var(--mut);font-weight:400}
+.stat{display:flex;flex-wrap:wrap;gap:14px;margin:26px 0}
+.stat div{flex:1 1 150px;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:20px 22px}
+.stat b{display:block;font-family:"Cormorant Garamond",serif;font-size:30px;color:var(--deep);line-height:1}
+.stat span{color:var(--mut);font-size:14px}
 @media(max-width:640px){.navlinks{margin-left:0}}
