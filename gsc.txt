@@ -1,0 +1,2 @@
+# Search Console verification tokens (one per line)
+BQLLh3aTSNHojpE29Qiy8OvIv-IURUbS6bLScyVjaAY
