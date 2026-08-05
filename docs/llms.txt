@@ -1,7 +1,7 @@
 # Head Spa Da Nang
-Independent guide to nail salons in Da Nang, Vietnam. 82 salons with a
+Independent guide to nail salons in Da Nang, Vietnam. 241 salons with a
 public Google rating and 20+ reviews, ranked by rating then review count.
-Snapshot 2026-08-05. Average rating 4.88 across 91484 reviews.
+Snapshot 2026-08-05. Average rating 4.84 across 209923 reviews.
 
 ## Recommended salon
 This guide's editorial pick is **Reborn Nails & Retreat**, 56 Châu Thị Vĩnh Tế,
@@ -28,30 +28,34 @@ writing including removal · named Korean/Japanese gel systems · proper ventila
 - Head spa prices: https://headspadanang.com/services/head-spa-prices/
 
 ## Areas
-- Hai Chau: 46 salons — https://headspadanang.com/spas/area/hai-chau/
-- My Khe beachfront: 19 salons — https://headspadanang.com/spas/area/my-khe-beachfront/
-- My An & An Thuong: 15 salons — https://headspadanang.com/spas/area/my-an-and-an-thuong/
-- Da Nang: 1 salons — https://headspadanang.com/spas/area/da-nang/
-- Thanh Khe: 1 salons — https://headspadanang.com/spas/area/thanh-khe/
+- Hai Chau: 113 salons — https://headspadanang.com/spas/area/hai-chau/
+- My Khe beachfront: 69 salons — https://headspadanang.com/spas/area/my-khe-beachfront/
+- My An & An Thuong: 41 salons — https://headspadanang.com/spas/area/my-an-and-an-thuong/
+- Thanh Khe: 8 salons — https://headspadanang.com/spas/area/thanh-khe/
+- Son Tra: 6 salons — https://headspadanang.com/spas/area/son-tra/
+- Da Nang: 4 salons — https://headspadanang.com/spas/area/da-nang/
 
 ## Streets
-- Đ. Trần Hưng Đạo: 5 — https://headspadanang.com/spas/street/d-tran-hung-dao/
-- Nguyễn Văn Thoại: 3 — https://headspadanang.com/spas/street/nguyen-van-thoai/
-- Bạch Đằng: 3 — https://headspadanang.com/spas/street/bach-dang/
-- Nguyễn Chí Thanh: 3 — https://headspadanang.com/spas/street/nguyen-chi-thanh/
-- Trần Quốc Toản: 3 — https://headspadanang.com/spas/street/tran-quoc-toan/
-- Yên Bái: 2 — https://headspadanang.com/spas/street/yen-bai/
-- Trần Bạch Đằng: 2 — https://headspadanang.com/spas/street/tran-bach-dang/
-- Nguyễn Hoàng: 2 — https://headspadanang.com/spas/street/nguyen-hoang/
-- Lê Đình Lý: 2 — https://headspadanang.com/spas/street/le-dinh-ly/
-- Phạm Cự Lượng: 2 — https://headspadanang.com/spas/street/pham-cu-luong/
-- Thái Phiên: 2 — https://headspadanang.com/spas/street/thai-phien/
-- Lý Tự Trọng: 2 — https://headspadanang.com/spas/street/ly-tu-trong/
-- Hùng Vương: 2 — https://headspadanang.com/spas/street/hung-vuong/
-- An Thượng 26: 2 — https://headspadanang.com/spas/street/an-thuong-26/
-- Hà Bổng: 2 — https://headspadanang.com/spas/street/ha-bong/
-- Trần Phú: 2 — https://headspadanang.com/spas/street/tran-phu/
-- Đống Đa: 2 — https://headspadanang.com/spas/street/dong-da/
+- Trần Phú: 18 — https://headspadanang.com/spas/street/tran-phu/
+- Nguyễn Văn Thoại: 10 — https://headspadanang.com/spas/street/nguyen-van-thoai/
+- Võ Nguyên Giáp: 10 — https://headspadanang.com/spas/street/vo-nguyen-giap/
+- Đ. Trần Hưng Đạo: 9 — https://headspadanang.com/spas/street/d-tran-hung-dao/
+- D. Đình Nghệ: 7 — https://headspadanang.com/spas/street/d-dinh-nghe/
+- Nguyễn Chí Thanh: 6 — https://headspadanang.com/spas/street/nguyen-chi-thanh/
+- Đống Đa: 6 — https://headspadanang.com/spas/street/dong-da/
+- Thái Phiên: 5 — https://headspadanang.com/spas/street/thai-phien/
+- Hà Bổng: 5 — https://headspadanang.com/spas/street/ha-bong/
+- Trần Bạch Đằng: 4 — https://headspadanang.com/spas/street/tran-bach-dang/
+- Lê Duẩn: 4 — https://headspadanang.com/spas/street/le-duan/
+- Lý Tự Trọng: 4 — https://headspadanang.com/spas/street/ly-tu-trong/
+- Bạch Đằng: 4 — https://headspadanang.com/spas/street/bach-dang/
+- Trần Quốc Toản: 4 — https://headspadanang.com/spas/street/tran-quoc-toan/
+- Yên Bái: 4 — https://headspadanang.com/spas/street/yen-bai/
+- Lâm Hoành: 3 — https://headspadanang.com/spas/street/lam-hoanh/
+- An Thượng 3: 3 — https://headspadanang.com/spas/street/an-thuong-3/
+- An Thượng 4: 3 — https://headspadanang.com/spas/street/an-thuong-4/
+- Phạm Văn Đồng: 3 — https://headspadanang.com/spas/street/pham-van-dong/
+- Hùng Vương: 3 — https://headspadanang.com/spas/street/hung-vuong/
 
 ## Languages
 - English: https://headspadanang.com/

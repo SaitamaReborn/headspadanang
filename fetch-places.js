@@ -9,7 +9,10 @@ const fs = require('fs');
 const KEY = process.env.GOOGLE_PLACES_KEY;
 if (!KEY) { console.error('GOOGLE_PLACES_KEY missing'); process.exit(1); }
 
-const QUERIES = process.env.PLACE_QUERIES
+/* Long query lists blow up as an env var on some shells; a file is sturdier. */
+const QUERIES = fs.existsSync('./queries.json')
+  ? JSON.parse(fs.readFileSync('./queries.json','utf8'))
+  : process.env.PLACE_QUERIES
   ? JSON.parse(process.env.PLACE_QUERIES)
   : ["nail salon Da Nang Vietnam","nail salon An Thuong Da Nang","nail salon My Khe beach Da Nang",
      "nail salon Hai Chau Da Nang","nail art Da Nang","tiem nail Da Nang","manicure pedicure Da Nang"];
@@ -61,7 +64,14 @@ const getPlace = (id) => new Promise((res, rej) => {
   req.on('error', rej); req.end();
 });
 
+const LOCK='./.places.lock';
 (async () => {
+  if(fs.existsSync(LOCK)){
+    const age=(Date.now()-fs.statSync(LOCK).mtimeMs)/60000;
+    if(age<90){console.error(`another places job has been running for ${age.toFixed(0)} min — refusing to race it`);process.exit(1);}
+  }
+  fs.writeFileSync(LOCK,String(process.pid));
+  process.on('exit',()=>{try{fs.unlinkSync(LOCK)}catch(e){}});
   const seen = new Map();
   for (const q of QUERIES) {
     const r = await post({textQuery:q, maxResultCount:20, languageCode:"en"});

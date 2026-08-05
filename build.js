@@ -105,7 +105,8 @@ const S=buildSite({
  ITEM_TYPE:"HealthAndBeautyBusiness",ITEM_NOUN:"Head spa",
  FEATURED_ID:"ChIJ4S2_LGIXQjER5UUCohuc8V4",
  PICK_EYEBROW:"Our pick",PICK_BADGE:"Our pick",
- PICK_TEXT:"Eight ritual tiers from a 25-minute herbal wash to a 105-minute luxury sequence, priced per ritual with the minutes stated, under a cherry-blossom chandelier. Posted menu, single-use standards, unhurried hands — it is the house we send first-timers to, and the standard the rest of this guide is measured against.",
+ PICK_ONELINE:"and its reviews are written in English by visitors who name the therapist who looked after them — which tells you more about a house than any rating does.",
+ PICK_TEXT:"Read its reviews and a pattern emerges that most houses here cannot match: they are written in English, by visitors from half a dozen countries, and they name people — Fiona the owner, Giang the therapist who kept checking the pressure was right. That only happens where staff and guests can genuinely talk to each other, which matters more in a ritual you spend an hour lying still for than it does anywhere else. Add eight tiers from a 25-minute herbal wash to a 105-minute sequence, each priced per ritual with the minutes stated, and it is the house we send first-timers to.",
  KW_SERVICES_LABEL:"By treatment",KW_AREA_PREFIX:"Head spas in",
  CHECK_PATH:"/choosing-a-spa/",CHECK_LABEL:"doorway checks",
  AREA_LEDE:(n,c)=>`${c} houses in ${n} offer head spa or herbal hair-wash rituals and hold a public Google rating with enough reviews to mean something. Ranked below with addresses, hours and maps.`,
@@ -113,7 +114,7 @@ const S=buildSite({
  PAGES:[{path:"/prices/",nav:"Prices"},{path:"/choosing-a-spa/",nav:"How to choose"}],
 });
 
-const {page,head,nav,footer,pick,list,itemList,ranked,PLACES,PLACES_DATE,AREAS,STREETS,PHOTOS,featured,TODAY,urls,OUT}=S;
+const {page,head,nav,footer,pick,list,itemList,byGoogle,ranked,PLACES,PLACES_DATE,AREAS,STREETS,PHOTOS,featured,TODAY,urls,OUT}=S;
 const totalReviews=PLACES.reduce((s,p)=>s+p.reviews,0);
 const avg=PLACES.length?(PLACES.reduce((s,p)=>s+p.rating,0)/PLACES.length).toFixed(2):'—';
 const SWATCH=['#1E7A5F','#6FD3AC','#C08A2E','#9FBDAF','#146049','#3E9C7C'];
@@ -186,6 +187,21 @@ ${list(ranked)}
 <h2>Street by street</h2>
 <div class="chips">${STREETS.map(s=>`<a class="chip" href="/spas/street/${s.slug}/">${esc(s.name)}<b>${s.list.length}</b></a>`).join('')}</div>
 </section>`+footer(),'0.9',PLACES_DATE);
+
+
+/* ---------------- RAW GOOGLE ORDER (published so the ranking can be checked) ---------------- */
+page('/spas/by-google-rating',
+head(`Da Nang Head Spas by Google Rating — the Raw Order | ${NAME}`,
+ `Every head spa in Da Nang sorted strictly by Google rating and review count, with no editorial weighting — the data behind our ranking, published so you can check it.`,
+ SITE+'/spas/by-google-rating/')
++nav('/spas/')
++`<div class="wrap"><nav class="crumb"><a href="/">Guide</a> → <a href="/spas/">All spas</a> → <span>By Google rating</span></nav></div>
+<section class="wrap">
+<header class="ph"><p class="eyebrow">Raw data · ${human(PLACES_DATE)}</p>
+<h1>Sorted by Google rating alone</h1>
+<p class="lede">No weighting, no editorial pick at the top — every house in the order Google's own numbers put them. Our ranking on the <a href="/spas/">main list</a> weighs review volume as well, and this page exists so you can see exactly what that changes.</p></header>
+${list(byGoogle,true)}
+</section>`+footer(),'0.5',PLACES_DATE);
 
 /* ---------------- PRICES ---------------- */
 page('/prices',
@@ -347,6 +363,23 @@ head(`About This Guide | ${NAME}`,
 <h2>What we never do</h2>
 <p>We do not publish invented reviews, invented ratings or invented salons. Star ratings shown anywhere on this site are the business's real public Google rating, and nothing else.</p>
 </div></section>`+footer(),'0.4');
+
+/* ---------------- CREDITS ---------------- */
+{
+ const ph=Object.values(PHOTOS);
+ page('/credits',
+ head(`Photography Credits | ${NAME}`,
+  `Where the photographs on this guide come from, and the licence each one carries.`,SITE+'/credits/')
+ +nav('')
+ +`<div class="wrap"><nav class="crumb"><a href="/">Guide</a> → <span>Credits</span></nav></div>
+<section class="wrap"><header class="ph"><h1>Photography credits</h1>
+<p class="lede">Salon photographs come from Google and carry their contributor's name beside each image. The editorial photographs below are used under Creative Commons or public-domain licences.</p></header>
+<div class="prose">
+${ph.length?`<table class="data"><tr><th>Photograph</th><th>By</th><th style="text-align:right">Licence</th></tr>
+${ph.map(x=>`<tr><td>${esc(x.title||x.file)}</td><td><a href="${x.creatorUrl||x.source}" rel="noopener nofollow">${esc(x.creator)}</a></td><td class="r"><a href="${x.licenceUrl}" rel="noopener nofollow">${esc(x.licence)}</a></td></tr>`).join('')}</table>`:'<p>No editorial photography in use.</p>'}
+<p class="m">Salon and spa photographs are served from the Google Places API and are attributed to their contributors beside each image, as Google requires. Ratings and review text likewise come from Google and are reproduced unedited.</p>
+</div></section>`+footer(),'0.2');
+}
 
 /* ---------------- JOURNAL ---------------- */
 const posts=JOURNAL.filter(a=>a.date<=TODAY).sort((a,b)=>b.date.localeCompare(a.date));
