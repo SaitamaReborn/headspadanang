@@ -162,6 +162,8 @@ const S=buildSite({
  AREA_LEDE:(n,c)=>`${c} houses in ${n} offer head spa or herbal hair-wash rituals and hold a public Google rating with enough reviews to mean something. Ranked below with addresses, hours and maps.`,
  FOOT_NOTE:"Prices are compiled from menus posted publicly by spas and shown in thousands of VND (“250K” = 250,000 ₫).",
  BESTOF, LOCALES,
+ /* Not featured in the guide's own selection; still in the full directory. */
+ EXCLUDE_FROM_PICKS:[],
  PAGES:[{path:"/best-head-spa-da-nang/",nav:"Best spas"},{path:"/prices/",nav:"Prices"},{path:"/choosing-a-spa/",nav:"How to choose"}],
 });
 
