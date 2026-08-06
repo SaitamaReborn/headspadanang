@@ -102,7 +102,7 @@ const PRICES_SPA=[["Basic herbal wash · ≈25 min","≈ 120K VND (~$5)"],["Rela
 
 const BESTOF=[
 {slug:"best-head-spa-da-nang",count:10,noun:"head spa",
- h1:"Top 10 best head spas in Da Nang",
+ h1:"Top 10 best head spas in Da Nang",listH2:"The 10 best head spas in Da Nang, ranked",
  question:"What is the best head spa in Da Nang?",
  desc:`The best head spas in Da Nang for ${new Date().getUTCFullYear()}: every house in the city with a public Google rating compared, with real ritual prices from 120K to 850K, addresses and what each is good at.`,
  answerTail:`Across the city we track 241 houses offering head spa or herbal hair-wash rituals with a public Google rating and at least twenty reviews. A basic 25-minute herbal wash costs about 120,000 VND, a 45-minute ritual 250K, a 60-minute one 380K, and the long 80 to 105 minute signature sequences 500K to 850K — four to eight times cheaper than the same ritual in Seoul or Tokyo.`,
@@ -119,7 +119,7 @@ const BESTOF=[
   ["Why are head spas so cheap in Vietnam?","Lower rents and wages, plus a deep local tradition of herbal hair washing that predates the current trend. The technique and skill are comparable to Korean or Japanese equivalents; only the cost base differs."]]},
 
 {slug:"best-massage-da-nang",count:10,noun:"massage",
- h1:"Top 10 best massage places in Da Nang",
+ h1:"Top 10 best massage places in Da Nang",listH2:"The 10 best massage places in Da Nang, ranked",
  question:"Where is the best massage in Da Nang?",
  desc:`The best massage in Da Nang: foot, scalp, neck and shoulder work compared across every rated venue in the city, with real prices from 90K to 590K and what each place is good at.`,
  answerTail:`Massage in Da Nang is rarely sold as a standalone hour on a table — it runs through the rituals. Neck and shoulder work is in every head spa sequence, foot and calf massage is inside every spa pedicure, and facial massage is a 15-minute add-on at around 90K. Standalone foot and calf massage costs about 100K for 15 minutes and 190K for 30.`,
@@ -155,6 +155,7 @@ const S=buildSite({
  PICK_EYEBROW:"Our pick",PICK_BADGE:"Our pick",
  PICK_ONELINE:"and its reviews are written in English by visitors who name the therapist who looked after them — which tells you more about a house than any rating does.",
  PICK_TEXT:"Read its reviews and a pattern emerges that most houses here cannot match: they are written in English, by visitors from half a dozen countries, and they name people — Fiona the owner, Giang the therapist who kept checking the pressure was right. That only happens where staff and guests can genuinely talk to each other, which matters more in a ritual you spend an hour lying still for than it does anywhere else. Add eight tiers from a 25-minute herbal wash to a 105-minute sequence, each priced per ritual with the minutes stated, and it is the house we send first-timers to.",
+ AREA_ANSWER:"Ritual prices in this area follow the city norm: a 25-minute herbal wash around 120K VND, 60 minutes 380K, and the 80-minute signature 500K.",
  KW_SERVICES_LABEL:"By treatment",KW_AREA_PREFIX:"Head spas in",
  CHECK_PATH:"/choosing-a-spa/",CHECK_LABEL:"doorway checks",
  AREA_LEDE:(n,c)=>`${c} houses in ${n} offer head spa or herbal hair-wash rituals and hold a public Google rating with enough reviews to mean something. Ranked below with addresses, hours and maps.`,
