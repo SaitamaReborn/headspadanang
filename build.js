@@ -8,6 +8,7 @@ const DOMAIN="headspadanang.com", NAME="Head Spa Da Nang", SITE="https://"+DOMAI
 const NOW=process.env.BUILD_DATE?new Date(process.env.BUILD_DATE):new Date();
 const GSC=fs.existsSync('./gsc.txt')?fs.readFileSync('./gsc.txt','utf8').split('\n').map(s=>s.trim()).filter(s=>s&&!s.startsWith('#')):[];
 const PARTNER={whatsapp:"https://wa.me/84788668588",hours:"open daily 9:00–20:00",
+ instagram:"https://www.instagram.com/reborn_nailsnretreat/",
  site:"https://rebornnaildanang.com/services/head-spa-hair-wash/"};
 
 /* Keyword pages, one per treatment on a real Da Nang menu. */
@@ -101,7 +102,7 @@ const PRICES_SPA=[["Basic herbal wash · ≈25 min","≈ 120K VND (~$5)"],["Rela
 
 const BESTOF=[
 {slug:"best-head-spa-da-nang",count:10,noun:"head spa",
- h1:"The best head spas in Da Nang",
+ h1:"Top 10 best head spas in Da Nang",
  question:"What is the best head spa in Da Nang?",
  desc:`The best head spas in Da Nang for ${new Date().getUTCFullYear()}: every house in the city with a public Google rating compared, with real ritual prices from 120K to 850K, addresses and what each is good at.`,
  answerTail:`Across the city we track 241 houses offering head spa or herbal hair-wash rituals with a public Google rating and at least twenty reviews. A basic 25-minute herbal wash costs about 120,000 VND, a 45-minute ritual 250K, a 60-minute one 380K, and the long 80 to 105 minute signature sequences 500K to 850K — four to eight times cheaper than the same ritual in Seoul or Tokyo.`,
@@ -118,7 +119,7 @@ const BESTOF=[
   ["Why are head spas so cheap in Vietnam?","Lower rents and wages, plus a deep local tradition of herbal hair washing that predates the current trend. The technique and skill are comparable to Korean or Japanese equivalents; only the cost base differs."]]},
 
 {slug:"best-massage-da-nang",count:10,noun:"massage",
- h1:"The best massage in Da Nang",
+ h1:"Top 10 best massage places in Da Nang",
  question:"Where is the best massage in Da Nang?",
  desc:`The best massage in Da Nang: foot, scalp, neck and shoulder work compared across every rated venue in the city, with real prices from 90K to 590K and what each place is good at.`,
  answerTail:`Massage in Da Nang is rarely sold as a standalone hour on a table — it runs through the rituals. Neck and shoulder work is in every head spa sequence, foot and calf massage is inside every spa pedicure, and facial massage is a 15-minute add-on at around 90K. Standalone foot and calf massage costs about 100K for 15 minutes and 190K for 30.`,
@@ -162,7 +163,7 @@ const S=buildSite({
  PAGES:[{path:"/best-head-spa-da-nang/",nav:"Best spas"},{path:"/prices/",nav:"Prices"},{path:"/choosing-a-spa/",nav:"How to choose"}],
 });
 
-const {page,head,nav,footer,pick,list,itemList,byGoogle,ranked,PLACES,PLACES_DATE,AREAS,STREETS,PHOTOS,featured,TODAY,urls,OUT}=S;
+const {page,head,nav,footer,pick,list,itemList,byGoogle,edPhoto,ranked,PLACES,PLACES_DATE,AREAS,STREETS,PHOTOS,featured,TODAY,urls,OUT}=S;
 const totalReviews=PLACES.reduce((s,p)=>s+p.reviews,0);
 const avg=PLACES.length?(PLACES.reduce((s,p)=>s+p.rating,0)/PLACES.length).toFixed(2):'—';
 const SWATCH=['#1E7A5F','#6FD3AC','#C08A2E','#9FBDAF','#146049','#3E9C7C'];
@@ -263,7 +264,7 @@ head(`Head Spa Prices in Da Nang 2026 — Every Ritual Tier, 120K to 850K | ${NA
 <header class="ph"><p class="eyebrow">From posted menus · ${NOW.getUTCFullYear()}</p>
 <h1>What a head spa costs in Da Nang</h1>
 <p class="lede">Every figure below comes from menus posted at the door — in thousands of VND, as Vietnam writes them, with the minutes that justify each number.</p></header>
-${PHOTOS.herbs?`<figure class="wide"><img src="/assets/photos/${PHOTOS.herbs.file}" alt="Herbs used in Vietnamese hair washing" loading="lazy" width="1200" height="640"></figure>`:''}
+${edPhoto('herbs')}
 <div class="cols"><div class="prose">
 <h2>Head spa rituals</h2>
 <table class="data"><tr><th>Ritual</th><th style="text-align:right">Typical price</th></tr>
@@ -305,7 +306,7 @@ head(`How to Choose a Head Spa in Da Nang — What to Check at the Door | ${NAME
 <header class="ph"><p class="eyebrow">Five signals, before you recline</p>
 <h1>How to read a head spa from the doorway</h1>
 <p class="lede">The tradition is everywhere in Da Nang. The standard is not. These five are visible before anyone touches your hair.</p></header>
-${PHOTOS.salon?`<figure class="wide"><img src="/assets/photos/${PHOTOS.salon.file}" alt="Spa interior" loading="lazy" width="1200" height="640"></figure>`:''}
+${edPhoto('salon')}
 <div class="prose">
 <h2>1 · The menu prices rituals, not steps</h2>
 <p>“Deep Relax · 60 min · 380K” is what a serious board looks like. Houses that charge separately for the wash, the massage and the blow-dry end up more expensive and far less restful. Cross-check against our <a href="/prices/">price tables</a>; honest menus land inside them.</p>
