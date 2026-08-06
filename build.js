@@ -2,6 +2,7 @@
 const fs=require('fs');
 const {buildSite,esc,slugify,human,ld,stars}=require('./lib/engine.js');
 const css=require('./lib/css-spa.js');
+const {LOCALES}=require('./lib/i18n.js');
 const {JOURNAL}=fs.existsSync('./journal.js')?require('./journal.js'):{JOURNAL:[]};
 
 const DOMAIN="headspadanang.com", NAME="Head Spa Da Nang", SITE="https://"+DOMAIN;
@@ -160,7 +161,7 @@ const S=buildSite({
  CHECK_PATH:"/choosing-a-spa/",CHECK_LABEL:"doorway checks",
  AREA_LEDE:(n,c)=>`${c} houses in ${n} offer head spa or herbal hair-wash rituals and hold a public Google rating with enough reviews to mean something. Ranked below with addresses, hours and maps.`,
  FOOT_NOTE:"Prices are compiled from menus posted publicly by spas and shown in thousands of VND (“250K” = 250,000 ₫).",
- BESTOF,
+ BESTOF, LOCALES,
  PAGES:[{path:"/best-head-spa-da-nang/",nav:"Best spas"},{path:"/prices/",nav:"Prices"},{path:"/choosing-a-spa/",nav:"How to choose"}],
 });
 
