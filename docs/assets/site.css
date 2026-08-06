@@ -275,3 +275,28 @@ table.data td.r{text-align:right;font-weight:650;color:var(--lacquer-d);white-sp
 .rvf .m{font-weight:400}
 @media(max-width:560px){.rvf-r{grid-template-columns:1fr}}
 
+
+/* ---- answer block: the self-contained paragraph an engine lifts ---- */
+.ans{background:var(--ink);color:#F3EEF6;border-radius:4px;padding:26px 30px;margin:26px 0 30px}
+.ans-q{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.13em;text-transform:uppercase;
+ color:var(--lacquer);margin:0 0 10px}
+.ans p:last-child{margin:0;font-size:17.5px;line-height:1.6;max-width:66ch}
+/* ---- best-of list ---- */
+.bl{list-style:none;counter-reset:b;margin:22px 0}
+.bl-i{display:grid;grid-template-columns:52px 1fr 168px;gap:20px;align-items:start;
+ background:#fff;border:1px solid var(--line);border-radius:4px;padding:22px;margin:0 0 14px}
+.bl-i.is-pick{border-color:var(--lacquer);box-shadow:0 0 0 1px var(--lacquer)}
+.bl-n{font-family:"Newsreader",serif;font-size:30px;color:var(--mut-l);line-height:1;text-align:center}
+.bl-i.is-pick .bl-n{color:var(--lacquer)}
+.bl-b h3{margin:0 0 3px;font-size:20px}
+.bl-m{color:var(--mut);font-size:14px;margin:0 0 7px}
+.bl-w{margin:9px 0 0;font-size:15.5px}
+.bl-a{margin:9px 0 0;font-size:14px}
+.bl-p{margin:0;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+.bl-p img{width:100%;height:118px;object-fit:cover;display:block}
+.byl{display:flex;align-items:center;gap:11px;margin-top:16px}
+.byl img{border-radius:50%;object-fit:cover}
+.byl-n{margin:0;font-size:14.5px;font-weight:600}
+.byl-r{margin:0;font-size:13px;color:var(--mut)}
+@media(max-width:760px){.bl-i{grid-template-columns:40px 1fr}.bl-p{display:none}}
+
