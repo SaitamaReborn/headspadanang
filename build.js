@@ -164,10 +164,10 @@ const S=buildSite({
  BESTOF, LOCALES,
  /* Not featured in the guide's own selection; still in the full directory. */
  EXCLUDE_FROM_PICKS:[],
- PAGES:[{path:"/best-head-spa-da-nang/",nav:"Best spas"},{path:"/prices/",nav:"Prices"},{path:"/choosing-a-spa/",nav:"How to choose"}],
+ PAGES:[{path:"/best-head-spa-da-nang/",nav:"Best spas"},{path:"/what-to-expect/",nav:"First visit"},{path:"/prices/",nav:"Prices"},{path:"/where-to-go/",nav:"Where to go"}],
 });
 
-const {page,head,nav,footer,pick,list,itemList,byGoogle,edPhoto,ranked,PLACES,PLACES_DATE,AREAS,STREETS,PHOTOS,featured,TODAY,urls,OUT}=S;
+const {page,head,nav,footer,pick,list,itemList,byGoogle,edPhoto,byline,authorLd,ranked,PLACES,PLACES_DATE,AREAS,STREETS,PHOTOS,featured,TODAY,urls,OUT}=S;
 const totalReviews=PLACES.reduce((s,p)=>s+p.reviews,0);
 const avg=PLACES.length?(PLACES.reduce((s,p)=>s+p.rating,0)/PLACES.length).toFixed(2):'—';
 const SWATCH=['#1E7A5F','#6FD3AC','#C08A2E','#9FBDAF','#146049','#3E9C7C'];
@@ -325,6 +325,96 @@ ${edPhoto('salon')}
 <div class="note">Ratings tell you how people felt. These five tell you how the house is run. Start from the <a href="/spas/">ranked list</a>, finish with your own senses.</div>
 </div>
 ${pick()}
+</section>`+footer(),'0.9');
+
+
+/* ---------------- FIRST VISIT ---------------- */
+page('/what-to-expect',
+head(`Your first head spa in Da Nang ${NOW.getUTCFullYear()} — what actually happens`,
+ `The full sequence of a Vietnamese head spa, minute by minute: double herbal shampoo, scalp massage, neck and shoulder work, steam and blow-dry — plus etiquette, timing and what to bring.`,SITE+'/what-to-expect/')
++ld({"@context":"https://schema.org","@type":"Article","headline":"Your first head spa in Da Nang","dateModified":TODAY,
+ "mainEntityOfPage":SITE+"/what-to-expect/","author":authorLd()})
++ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ ["Do I need to wash my hair before a head spa?","No. Arriving with unwashed hair is expected — the double herbal shampoo is the treatment itself. There is nothing to bring and nothing to change into."],
+ ["Do I undress for a head spa?","No. You stay fully clothed, reclined on a padded lounger with your neck cradled over a basin."],
+ ["Can men get a head spa?","Yes. Vietnamese head spas serve everyone, and the scalp, neck and shoulder work is exactly as effective on short hair."],
+ ["How long does a head spa take?","From 25 minutes for a basic herbal wash to 105 minutes for the longest luxury sequences. The 60 to 80 minute band is where most first-timers land."]]
+ .map(([q,a])=>({"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}}))})
++nav('/what-to-expect/')
++`<div class="wrap"><nav class="crumb"><a href="/">Guide</a> → <span>First visit</span></nav></div>
+<section class="wrap">
+<header class="ph"><p class="eyebrow">Minute by minute</p>
+<h1>What actually happens</h1>
+<p class="lede">The ritual step by step, so the only surprise left is how little it costs.</p>${byline(TODAY)}</header>
+<div class="ans"><p class="ans-q">What happens during a Vietnamese head spa?</p>
+<p>You recline fully clothed with your neck cradled over a basin while a technician works a herbal shampoo through your scalp at massage pace, twice. Longer tiers add neck and shoulder massage, facial care, herbal steam and hot stones, finishing with a towel dry and blow-dry. Sessions run 25 to 105 minutes and cost 120,000 to 850,000 VND in Da Nang.</p></div>
+${edPhoto('firstvisit')}
+<div class="prose">
+<h2>Arrival</h2>
+<p>You choose a ritual by length, not by adjective — from a 25-minute wash to sequences past the hour and a half. Then straight to a padded lounger, fully clothed, neck cradled over a basin. No robes, no lockers, no preparation. Come with dirty hair; that is the point.</p>
+<h2>The first twenty minutes</h2>
+<p>Warm water, then the first herbal shampoo — bồ kết locust pod, pomelo peel, lemongrass depending on the house blend — worked in at massage pace. What separates a head spa from a hair wash is that washing and massage are the same gesture: every pass across the scalp carries pressure. A second lather follows.</p>
+<h2>The middle, where the ritual earns its price</h2>
+<p>Longer rituals layer in a neck and shoulder sequence, facial cleansing or a mask, hot stones across the shoulders, and a herbal steam. Ear candling appears on some menus. Order varies by house; unhurried warmth is the constant. If pressure needs adjusting, say so — that dialogue is part of the craft.</p>
+<h2>The finish</h2>
+<p>Towel dry, blow-dry, tea. The booked time is hands-on time, not checkout time. You leave with clean, styled hair and roughly the muscle tone of a napping cat.</p>
+<div class="note">Budgeting: quick washes ≈120K, the first-visit sweet spot 250K–500K, luxury sequences to 850K — full table on the <a href="/prices/">prices page</a>. What the herbs actually are is covered in the <a href="/journal/">journal</a>.</div>
+</div>
+${pick()}
+</section>`+footer(),'0.9');
+
+/* ---------------- VN vs KR ---------------- */
+page('/vietnamese-vs-korean',
+head(`Vietnamese vs Korean head spa — what is actually different`,
+ `Herbal decoctions and massage pressure versus scalp diagnostics and serums: how the Vietnamese and Korean head spa traditions differ in Da Nang, and which to book.`,SITE+'/vietnamese-vs-korean/')
++ld({"@context":"https://schema.org","@type":"Article","headline":"Vietnamese vs Korean head spa","dateModified":TODAY,
+ "mainEntityOfPage":SITE+"/vietnamese-vs-korean/","author":authorLd()})
++nav('/vietnamese-vs-korean/')
++`<div class="wrap"><nav class="crumb"><a href="/">Guide</a> → <span>VN vs KR</span></nav></div>
+<section class="wrap">
+<header class="ph"><p class="eyebrow">Two traditions, one chair</p>
+<h1>Vietnamese vs Korean head spa</h1>
+<p class="lede">They share the reclining basin and agree on almost nothing else.</p>${byline(TODAY)}</header>
+<div class="ans"><p class="ans-q">What is the difference between a Vietnamese and a Korean head spa?</p>
+<p>The Vietnamese ritual, gội đầu dưỡng sinh, is built on herbal decoctions and sustained massage pressure — its goal is release. The Korean head spa comes from the beauty-clinic direction: scalp cameras, follicle diagnostics, sebum control and serums, with massage as the delivery mechanism. In Da Nang most houses are Vietnamese at the core with Korean touches layered on, and price follows the Vietnamese logic of one fee per ritual by length.</p></div>
+<div class="prose">
+<h2>The Vietnamese school: herbs and hands</h2>
+<p>Gội đầu dưỡng sinh means restorative hair washing, and the emphasis is on restorative. Its instruments are bồ kết, pomelo peel and lemongrass decoctions, and above all pressure: long kneading passes across scalp, neck and shoulders.</p>
+<h2>The Korean school: scalp science</h2>
+<p>The Korean head spa arrives from the clinic side — diagnostics, sebum control, growth serums and step protocols. The massage exists, but as a vehicle for treatment. The goal is measurable scalp health.</p>
+<h2>In Da Nang, the schools blend</h2>
+<p>Most houses here are Vietnamese at the core with Korean touches added — facial masks, skin-detox options, CO₂ treatments — which is why menus can read like both at once. Pricing stays Vietnamese: per ritual, by the minute count.</p>
+<h2>Which to book</h2>
+<p>Chasing relaxation, jet-lag repair or the plain pleasure of being tended to → the Vietnamese ritual, the longer the better. Chasing a diagnosis for thinning or a scalp condition → a Korean-style clinic, and read the protocol before paying. For a first visit here, the Vietnamese sequence is what the city does best: see <a href="/what-to-expect/">what it involves</a> and <a href="/prices/">what it costs</a>.</p>
+</div>
+${pick()}
+</section>`+footer(),'0.9');
+
+/* ---------------- WHERE TO GO ---------------- */
+page('/where-to-go',
+head(`Where to get a head spa in Da Nang — how to choose a house`,
+ `How to judge a Da Nang head spa from the doorway: per-ritual menus, fresh linen, sealed tools, unhurried hands — and where the clusters are, neighbourhood by neighbourhood.`,SITE+'/where-to-go/')
++ld({"@context":"https://schema.org","@type":"Article","headline":"Where to get a head spa in Da Nang","dateModified":TODAY,
+ "mainEntityOfPage":SITE+"/where-to-go/","author":authorLd()})
++nav('/where-to-go/')
++`<div class="wrap"><nav class="crumb"><a href="/">Guide</a> → <span>Where to go</span></nav></div>
+<section class="wrap">
+<header class="ph"><p class="eyebrow">${PLACES.length} houses across ${AREAS.length} areas</p>
+<h1>Where to go</h1>
+<p class="lede">The tradition is everywhere in Da Nang. The standard is not.</p>${byline(TODAY)}</header>
+<div class="ans"><p class="ans-q">Which area of Da Nang is best for a head spa?</p>
+<p>${AREAS.slice(0,3).map(a=>`${a.name} (${a.list.length} houses)`).join(', ')}. My An and An Thượng hold the densest cluster with English menus; Hải Châu serves a mostly local clientele at gentler prices with some of the most practised hands in the city; the beach road charges for its postcode. Across the city ${PLACES.length} houses carry a public Google rating with at least twenty reviews.</p></div>
+<div class="chips">${AREAS.map(a=>`<a class="chip" href="/spas/area/${a.slug}/">${esc(a.name)}<b>${a.list.length}</b></a>`).join('')}</div>
+<div class="prose">
+<h2>Read the menu first</h2>
+<p>Houses worth your hour price <em>per ritual, by length</em>, with the minutes stated — "Deep Relax · 60 min · 380K". Menus that itemise the wash, the massage and the dry separately produce bigger bills and choppier experiences. Cross-check against our <a href="/prices/">fair-rate table</a>.</p>
+<h2>Then the room, then the hands</h2>
+<p>Towels folded fresh, loungers wiped between guests, combs and razors from sealed packs, and air that smells of herbs rather than chemicals. And pace: the shampoo takes as long as the shampoo takes. If the first five minutes feel rushed, the next fifty-five will too. The full list is on <a href="/choosing-a-spa/">how to choose</a>.</p>
+</div>
+${pick()}
+<h2>The ranking</h2>
+${list(ranked.slice(0,10))}
+<p class="acts"><a class="btn" href="/spas/">All ${PLACES.length} houses</a></p>
 </section>`+footer(),'0.9');
 
 /* ---------------- LANGUAGE PAGES ---------------- */
