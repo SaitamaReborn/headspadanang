@@ -5,6 +5,43 @@
 
 const JOURNAL = [
 {
+  slug: "vietnamese-head-spa-herbs",
+  title: "Locust pod, pomelo peel, lemongrass: what is actually in the bowl",
+  desc: "The five herbs behind gội đầu dưỡng sinh in Da Nang · what bồ kết, vỏ bưởi, sả, hương nhu and green tea each do, and how to tell a real decoction from a bottle.",
+  date: "2026-08-11",
+  cat: "Herbs",
+  read: 6,
+  tldr: [
+    "Bồ kết · dried locust pods · is the base. Its saponins foam weakly on purpose; a thin first lather is the sign you came to the right place.",
+    "Vỏ bưởi is pomelo peel, not grapefruit. Every English menu in Da Nang gets this wrong.",
+    "Lemongrass, Vietnamese basil and green tea are the supporting notes · warmth, calm, and something for an oily scalp.",
+    "Herbs need dwell time. Below the 60-minute tier at around 380K you are buying a wash, not a decoction."
+  ],
+  body: [
+    { h: "The pods that make the foam",
+      p: ["Bồ kết is the dried seed pod of the Gleditsia tree, which Da Nang menus translate as locust pod or, more loosely, soapberry. Prepared the old way the pods are sun-dried until they go hard and glassy, roasted briefly over a flame until the room smells of caramel and smoke, then simmered for fifteen to thirty minutes until the water turns amber and raises a low foam on its own. That foam is saponin, the plant compound named after the Latin for soap, and it is the entire cleaning mechanism.",
+          "What this means once your neck is in the basin: the first lather is thinner than you expect. Slower to build, faster to rinse, and no squeak afterwards. Vietnamese households were boiling these pods long before anyone marketed the ritual to visitors, and the claim attached to them at home has always been shine and less shedding rather than deep cleaning. If your technician takes a full four or five minutes to work a lather that never quite becomes meringue, nothing is wrong."] },
+    { h: "Pomelo peel, and why your menu says grapefruit",
+      p: ["Vỏ bưởi is pomelo peel. Almost every English-language menu in the city prints it as grapefruit peel, and the fruit is not grapefruit · bưởi is the heavy, thick-skinned pomelo you see stacked at Hàn Market. The mistranslation is harmless and by now universal, but it does tell you something: the menu was written for tourists rather than by whoever sources the herbs.",
+          "The peel's oil is the sharp citrus note that arrives with the second shampoo and is still in your hair the next morning. Vietnamese hair-care tradition ties it specifically to hair fall, and the folk instruction is to press the fresh oil into the scalp rather than merely wash with it. That is why the better rituals stop and work it in for a few minutes before rinsing, and why a house that lathers and immediately reaches for the sprayer is giving you the smell without the point of it."] },
+    { h: "Lemongrass, basil and green tea",
+      p: ["Sả · lemongrass · is the one you will recognise before the door closes, and it does most of its work in the steam rather than the shampoo, which is why it shows up in the longer tiers where a herbal steam is layered in. Hương nhu, usually rendered as Vietnamese basil, is the quiet one: a soft, almost medicinal warmth that sits under the citrus and is the note people describe as the reason they fell asleep. Trà xanh, green tea, tends to appear in blends aimed at oily scalps and in the summer months, when Da Nang runs at 34°C with the humidity of a laundry room.",
+          "The exact proportions vary house to house and nobody will hand you a formula · these are family blends, and asking for the recipe reads roughly the way it would in a kitchen. Asking which herbs are in it, though, is completely normal, and the answer tells you whether the person washing your hair knows what is in the pot."] },
+    { h: "How to tell a decoction from a bottle",
+      p: ["Look at the water, not the label. A genuine bồ kết decoction is amber and slightly cloudy, often with fine sediment at the bottom of the jug, and it is poured from a jug or a thermos rather than pumped from a dispenser. The smell in the room should be woody and burnt-sweet under the citrus. Two words get you a straight answer at the counter: <em>gội bồ kết</em> · locust-pod wash · and <em>thảo dược</em>, herbal.",
+          "Here is the blunt version. A bottled herbal shampoo is not a fraud; plenty of good houses use a commercial bồ kết-and-pomelo formula and still give you a superb hour, because the hands matter more than the chemistry. But if a house is charging signature-tier money · 500K and up · and the room smells of nothing in particular, you are paying for the lounger and the minutes, not for the herbs on the menu. That is worth knowing before you book, and it is the sort of thing you can check from the doorway alongside the other <a href=\"/choosing-a-spa/\">five-second signals</a>."] },
+    { h: "Which tier actually gets you the herbs",
+      p: ["Reading the menus across the city, the pattern is consistent: the 25-minute entry wash at about 120K is a wash. One pass, warm water, out. It is excellent value and it is not what this article is about. Our reading is that the 60-minute tier around 380K is the practical floor for herbs, because it is the first one with enough minutes for a decoction to sit on the scalp instead of being rinsed the moment it is applied. The 70-minute warm-stone ritual at roughly 450K and the 80-minute signature at 500K add the herbal steam, which is where lemongrass finally earns its place.",
+          "Full tier-by-tier numbers are on the <a href=\"/prices/\">prices page</a>, and if you have not been through the sequence before, the <a href=\"/journal/vietnamese-head-spa-first-time/\">minute-by-minute walkthrough</a> covers what happens around the shampoos. Vietnam's state broadcaster VOV reported earlier this year that herbal therapeutic hair-wash packages run roughly 100K to 400K nationally for thirty to ninety minutes, and quoted visitors putting the country's grooming services three to four times below what they pay at home · Da Nang's spa-tier menus sit at the upper end of that national range, which is what the extra layers cost."] }
+  ],
+  faq: [
+    ["What herbs are used in a Vietnamese head spa?", "The base is bồ kết, dried locust pods from the Gleditsia tree, whose saponins do the cleaning. Around it: vỏ bưởi (pomelo peel), sả (lemongrass), hương nhu (Vietnamese basil) and trà xanh (green tea). Blends vary house to house and are usually family recipes."],
+    ["What is bồ kết and is it good for hair?", "Bồ kết is the dried seed pod of the Gleditsia tree, roasted and then simmered for fifteen to thirty minutes to draw out its saponins. It foams weakly compared to commercial shampoo. Vietnamese tradition credits it with shine and reduced shedding; it is a folk claim with centuries behind it rather than a clinical one."],
+    ["Are the herbs in a Da Nang head spa fresh or from a bottle?", "Both are common. A fresh decoction is amber, slightly cloudy, poured from a jug or thermos, and the room smells woody under the citrus. Many good houses use bottled bồ kết-and-pomelo formulas instead, which is fine at entry and mid tiers · less so at 500K and above."],
+    ["Can I buy Vietnamese herbal shampoo to take home?", "Yes. Bồ kết and pomelo-peel shampoos are sold in any Vietnamese supermarket, at Watsons and in pharmacies across Da Nang, for a small fraction of a ritual. It is the closest you will get to the smell once you are home, though not to the hands."]
+  ]
+},
+{
   slug: "vietnamese-head-spa-first-time",
   title: "Your first Vietnamese head spa: what actually happens, minute by minute",
   desc: "The full sequence of a Da Nang head spa visit · herbal shampoo, scalp massage, neck and shoulder work, steam · so nothing surprises you but the price.",
@@ -60,7 +97,7 @@ const JOURNAL = [
           "Be wary of menus that price the wash, the massage and the dry separately. The per-ritual houses are almost always better value and calmer experiences."] },
     { h: "How Da Nang compares",
       p: ["The same ritual structure marketed as a Japanese or Korean head spa in Seoul, Tokyo or Western capitals commonly costs four to eight times Da Nang rates. The technique travelled; the cost base did not. It is the single best-value wellness hour in the city.",
-          "For what the sequence itself contains, start with our <a href=\"/what-to-expect/\">first-visit guide</a>."] }
+          "For what the sequence itself contains, start with our <a href=\"/journal/vietnamese-head-spa-first-time/\">first-visit guide</a>."] }
   ],
   faq: [
     ["Why are head spas so cheap in Vietnam?", "Lower rents and wages, plus a deep local tradition of herbal hair washing, keep prices at a fraction of Korean or Japanese equivalents · the sequence and skill are comparable."],
