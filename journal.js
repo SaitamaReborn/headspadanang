@@ -5,6 +5,47 @@
 
 const JOURNAL = [
 {
+  slug: "book-head-spa-da-nang-walk-in",
+  title: "Walk in, or message ahead? How head spa booking really works in Da Nang",
+  desc: "Da Nang head spa hours, walk-in odds by day and time, how to message a house that does not speak English, and why you should bring cash.",
+  date: "2026-08-13",
+  cat: "Booking",
+  read: 6,
+  tldr: [
+    "The rooms run later than visitors assume. Of the 220 houses in our directory with published hours, 136 are still open at 22:00 or later and 96 unlock at 9:00 sharp.",
+    "Weekday afternoons take walk-ins comfortably. Friday and Saturday evenings are where a walk-in fails · especially for two people at the same hour.",
+    "One line is enough to book: date, time in 24-hour form, how many people, ritual length in minutes. Facebook or WhatsApp beats Zalo if you have no Vietnamese SIM.",
+    "Bring cash. Cards, where taken at all, usually carry a small surcharge, and tipping is not expected."
+  ],
+  body: [
+    { h: "The hours are later than you think",
+      p: ["The most common reason visitors talk themselves out of a head spa is a scheduling belief that turns out to be wrong: that it is a daytime errand and the evening is for dinner. We pulled the posted opening hours for every house in this guide's directory · 241 listings, 220 of them with a readable weekday schedule · and the shape is unambiguous. Ninety-six open at 9:00 exactly, and 181 are unlocked by 9:00 at the latest. At the other end, only 59 have shut by 20:30. A hundred and thirty-six are still taking people at 22:00 or later, and a stubborn handful run to 02:00.",
+          "So the honest answer to <em>can I go after dinner</em> is yes, on most nights, at most houses, in most of the city. Which reframes the real question. Availability in Da Nang is not scarce by hour. It is scarce by day and by headcount, and those are the two things worth checking before you walk anywhere."] },
+    { h: "Where a walk-in actually fails",
+      p: ["Tuesday at 14:00 you can put your head through almost any door in An Thượng and be reclined within five minutes. Saturday at 19:30 you cannot, and the failure is specific: not one seat, but two seats plus two pairs of hands at the same hour. A head spa is a one-technician-per-guest service. A house with six loungers and four technicians on shift has four slots, not six, and couples routinely discover this at the counter after a twenty-minute walk.",
+          "Weekend evening pressure is not imagination. ZNews reported in February 2026, in a piece carried by the tourism ministry's Vietnam.vn, that Vietnamese hair washing had become a fixed item on Chinese visitors' itineraries after taking hold on Xiaohongshu · a demand wave landing on exactly the tourist-facing houses a foreign visitor is most likely to pick. Add the domestic Friday-night habit and the good rooms in Mỹ An and around Hàn Market fill from roughly 18:00.",
+          "The other walk-in trap is arithmetic. An 80-minute signature ritual booked at a house that closes at 21:00 has to start by 19:40, and most counters stop selling the long tiers well before that · they will offer you the 25-minute wash at 120K instead, which is a good thing and not the thing you came for. If the ritual you want is 60 minutes or longer, treat the posted closing time minus 90 minutes as the last useful arrival."] },
+    { h: "One message, four facts",
+      p: ["Zalo is the domestic default and every house has it. It will accept a foreign number, but the SMS verification step is where visitors give up, usually in an airport queue with no local signal. If you do not already have a Vietnamese eSIM, go to the house's Facebook page or its WhatsApp number instead · tourist-facing spas in Da Nang answer both, and answer fast. The featured house on this guide takes bookings over WhatsApp for exactly this reason.",
+          "Send four facts and nothing else: the date, the time in 24-hour form, how many people, and the ritual length in minutes with the price you saw. <em>Saturday 16 Aug, 15:00, 2 people, the 60-minute herbal ritual, 380K</em> is a complete booking. Write the time as 15:00 rather than 3pm; the ambiguity of a twelve-hour clock across a translation app is a real source of missed slots.",
+          "If you would rather do it at the counter in Vietnamese, four lines cover everything. <em>Cho mình đặt lịch gội đầu dưỡng sinh</em> · I would like to book a gội đầu dưỡng sinh. <em>Hai người, 3 giờ chiều thứ Bảy</em> · two people, 3pm Saturday. <em>Còn chỗ không ạ?</em> · is there still space? <em>Bao nhiêu phút?</em> · how many minutes? The last one matters more than the price question, because minutes are what you are buying; the <a href=\"/prices/\">tier-by-tier table</a> only makes sense once you know the length attached to the number."] },
+    { h: "Cash, cards, and the quiet surcharge",
+      p: ["Bring notes. Vietnamese spa practice is cash-first, and where a card terminal exists the house typically passes on the processing fee · guides to spa etiquette in Vietnam put it around one to three percent, and some counters quote more. Nobody hides this, but it does get mentioned after the ritual rather than before, which is a poor moment to discover you are short. The domestic alternative is a VietQR bank transfer, which is instant and free and requires a Vietnamese bank account you almost certainly do not have.",
+          "Carry the ritual price in small notes if you can. A 500K note against a 120K entry wash at 9:15, before the till has taken anything, is an awkward start to a calm hour. And leave the tipping maths at home: the posted price is the price, tipping is not expected anywhere in Vietnam, and a rounded-up note after a long ritual is a courtesy rather than an obligation.",
+          "One thing worth saying plainly, because no house will say it for you: the 21:00 booking is available and it is the weakest hour on the menu. You are buying the last of a technician's twelve-hour day, and the pressure work in the neck and shoulders is where fatigue shows first. Our position is that 9:00 to 11:00 is the best-value window in Da Nang · the decoction has just been simmered, the room is quiet, and the hands are fresh. It is also, conveniently, the hour nobody books."] },
+    { h: "Settle three things before you recline",
+      p: ["Once you are through the door the booking is done, but three details decide whether the hour lands. First, confirm the number of minutes out loud and check it matches the price on the menu · this is the single most common gap between what a visitor expects and what they get, and it is settled in four seconds at the counter.",
+          "Second, ask whether ear work is in the package. Many Vietnamese rituals include a rinse through the ear and some houses offer ear cleaning outright, which is a beloved local pleasure and a genuine surprise for a first-timer. The February 2026 report advised visitors with sensitive ears or scalps to say so up front, and that is sound. <em>Không lấy ráy tai nhé</em> · no ear cleaning, please · declines it without any awkwardness.",
+          "Third, pressure. <em>Nhẹ hơn ạ</em> is lighter, <em>mạnh hơn ạ</em> is stronger, and using either is normal rather than rude. If you have not been through the sequence before, the <a href=\"/journal/vietnamese-head-spa-first-time/\">minute-by-minute walkthrough</a> covers what arrives when, and <a href=\"/where-to-go/\">the neighbourhood guide</a> is the faster way to decide whether you are walking east of the Dragon Bridge or staying in Hải Châu."] }
+  ],
+  faq: [
+    ["Do you need to book a head spa in Da Nang or can you walk in?", "Weekday afternoons you can walk in almost anywhere. Friday and Saturday evenings from about 18:00 you should message ahead, particularly for two people, because each guest needs their own technician and a house has fewer staff on shift than loungers in the room."],
+    ["What time do head spas close in Da Nang?", "Later than most visitors expect. Of the 220 houses in this guide's directory with published hours, 136 are still open at 22:00 or later and only 59 have closed by 20:30. Most open at 9:00. For a 60-minute ritual or longer, arrive at least 90 minutes before the posted closing time."],
+    ["Can you pay by card at a head spa in Vietnam?", "Sometimes, and usually with a surcharge of roughly one to three percent. Cash in Vietnamese dong is the reliable option and the one every house prefers. Bank QR transfer is common domestically but needs a Vietnamese bank account."],
+    ["How do you book a head spa in Vietnam without Zalo?", "Use the spa's Facebook page or WhatsApp number · tourist-facing houses in Da Nang monitor both. Send the date, the time in 24-hour format, the number of people, and the ritual length in minutes with its price. That is a complete booking and needs no follow-up."]
+  ]
+},
+{
   slug: "vietnamese-head-spa-herbs",
   title: "Locust pod, pomelo peel, lemongrass: what is actually in the bowl",
   desc: "The five herbs behind gội đầu dưỡng sinh in Da Nang · what bồ kết, vỏ bưởi, sả, hương nhu and green tea each do, and how to tell a real decoction from a bottle.",
