@@ -143,11 +143,15 @@ const LANGS=[
  {code:"zh",path:"/zh/",native:"中文"},
  {code:"ja",path:"/ja/",native:"日本語"},
  {code:"ru",path:"/ru/",native:"Русский"},
+ {code:"fr",path:"/fr/",native:"Français"},
+ {code:"de",path:"/de/",native:"Deutsch"},
+ {code:"es",path:"/es/",native:"Español"},
+ {code:"th",path:"/th/",native:"ไทย"},
 ];
 
 const S=buildSite({
  DOMAIN,NAME,SITE,NOW,GSC,PARTNER,LANGS,SERVICES,css,
- EMOJI:"🌿",BRAND:"Head Spa Da Nang",
+ EMOJI:"🌿",BRAND:"Head Spa Da Nang",THEME:"#0C231F",
  FONTS:"https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
  TAGLINE:"an independent guide to head spa and herbal hair-wash rituals in Da Nang, Vietnam",
  LISTING:{path:"/spas/",navLabel:"All spas"},
