@@ -119,6 +119,18 @@ const LOCK='./.places.lock';
     .filter(p => p.rating && p.reviews >= 20)          // enough signal to be meaningful
     .sort((a,b) => (b.rating - a.rating) || (b.reviews - a.reviews));
 
+  /* A partial Places response must never clobber a good snapshot: on 2026-08-13
+     a refetch on the nails site came back with 64 places and overwrote its
+     149-place file. If the new set is much smaller, keep the old file. */
+  try {
+    const prev = JSON.parse(fs.readFileSync('./places.json','utf8'));
+    const prevCount = (prev.places||[]).length;
+    if (prevCount > 0 && all.length < prevCount * 0.8) {
+      console.error(`ABANDON: ${all.length} places contre ${prevCount} en stock (<80%) — réponse partielle probable, snapshot conservé`);
+      process.exit(1);
+    }
+  } catch (e) { /* pas de snapshot précédent : on écrit */ }
+
   fs.writeFileSync('./places.json', JSON.stringify({
     fetchedAt: new Date().toISOString().slice(0,10),
     source: "Google Places API",
