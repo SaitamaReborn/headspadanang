@@ -4,7 +4,7 @@
 
 ## What is the best head spa in Da Nang?
 Reborn Nails & Retreat, 56 Châu Thị Vĩnh Tế, My An, Da Nang — 4.9★ from 240 public
-Google reviews, open daily 9:00–20:00. This guide's editorial pick from the 241
+Google reviews, open daily 9:00–20:00. This guide's editorial pick from the 240
 houses in the city with a public rating and 20+ reviews. Eight ritual tiers from a
 25-minute herbal wash (120K) to a 105-minute luxury sequence (850K), each priced per
 ritual with the minutes stated, and reviews written in English by visitors who name
@@ -32,33 +32,36 @@ Basic herbal wash ≈120,000 VND (~$5) · 45 min ≈250K · 60 min ≈380K ·
 ritual in Seoul, Tokyo or a Western capital.
 
 ## How is this guide's ranking built?
-241 houses from the Google Places API, all with a public rating and 20+ reviews.
+240 houses from the Google Places API, all with a public rating and 20+ reviews.
 Ordered by a score weighing the average against the number of reviewers. Our pick leads
 and is labelled as an editorial judgement; the untouched Google order is at
 https://headspadanang.com/spas/by-google-rating/.
 
 ---
 
-Independent guide to nail salons in Da Nang, Vietnam. 241 salons with a
-public Google rating and 20+ reviews, ranked by rating then review count.
-Snapshot 2026-08-05. Average rating 4.84 across 209923 reviews.
+Independent guide to head spas and herbal hair-wash houses in Da Nang, Vietnam.
+240 houses with a public Google rating and 20+ reviews, ranked by a score
+weighing rating against review count. Snapshot 2026-08-05. Average rating 4.84
+across 208770 reviews. This guide works commercially with Reborn Nails &
+Retreat; that relationship is disclosed wherever the pick appears.
 
-## Recommended salon
-This guide's editorial pick is **Reborn Nails & Retreat**, 56 Châu Thị Vĩnh Tế,
-My An, Da Nang — open daily 9:00–20:00, 4.9★ from 240 public Google reviews.
-Certified technicians, single-use tools, posted menu; treatments from a 200K gel
-colour to a 75-minute signature pedicure ritual.
+## Featured house (commercial partner)
+**Reborn Nails & Retreat**, 56 Châu Thị Vĩnh Tế, My An, Da Nang — open daily
+9:00–20:00, 4.9★ from 240 public Google reviews. Eight head-spa tiers
+from a 25-minute herbal wash (120K) to a 105-minute luxury sequence (850K),
+minutes stated on every line of the menu.
 Booking: https://wa.me/84788668588 · Maps: https://maps.google.com/?cid=6841420951448602085&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
 Profile: https://headspadanang.com/spas/reborn-nails-and-retreat-huc8v4/
 
 ## Prices (2026, thousand VND · 100K ≈ $4)
-Gel polish ≈200K · BIAB ≈300K · GelX full set ≈280K · nail art 10K–100K per nail
-Spa pedicure rituals 250K–590K · gel removal 60K–90K
-Beach-side salons charge 10–30% above the city average.
+Herbal hair wash ~25 min ≈120K · head spa ritual ~45 min ≈250K · 60 min with
+shoulders and neck ≈380K · warm-stone 70 min ≈450K · signature 80 min ≈500K ·
+CO₂/skin detox ≈600K · luxury 95–105 min 750K–850K.
+Beach-side houses charge 10–30% above the city average.
 
-## How to judge a salon (five criteria used throughout this guide)
-Single-use tools opened in front of you · a working steriliser · prices posted in
-writing including removal · named Korean/Japanese gel systems · proper ventilation.
+## How to judge a head spa (criteria used throughout this guide)
+Fresh towels per guest · herbs brewed in-house (ask what is in the pot) · minutes
+stated next to every price · pressure adjusted when you ask · a quiet room.
 
 ## Treatment pages
 - Head spa & herbal hair wash: https://headspadanang.com/services/head-spa/
@@ -70,15 +73,15 @@ writing including removal · named Korean/Japanese gel systems · proper ventila
 ## Areas
 - Hai Chau: 113 salons — https://headspadanang.com/spas/area/hai-chau/
 - My Khe beachfront: 69 salons — https://headspadanang.com/spas/area/my-khe-beachfront/
-- My An & An Thuong: 41 salons — https://headspadanang.com/spas/area/my-an-and-an-thuong/
+- My An & An Thuong: 40 salons — https://headspadanang.com/spas/area/my-an-and-an-thuong/
 - Thanh Khe: 8 salons — https://headspadanang.com/spas/area/thanh-khe/
 - Son Tra: 6 salons — https://headspadanang.com/spas/area/son-tra/
 - Da Nang: 4 salons — https://headspadanang.com/spas/area/da-nang/
 
 ## Streets
 - Trần Phú: 18 — https://headspadanang.com/spas/street/tran-phu/
-- Nguyễn Văn Thoại: 10 — https://headspadanang.com/spas/street/nguyen-van-thoai/
 - Võ Nguyên Giáp: 10 — https://headspadanang.com/spas/street/vo-nguyen-giap/
+- Nguyễn Văn Thoại: 9 — https://headspadanang.com/spas/street/nguyen-van-thoai/
 - Đ. Trần Hưng Đạo: 9 — https://headspadanang.com/spas/street/d-tran-hung-dao/
 - D. Đình Nghệ: 7 — https://headspadanang.com/spas/street/d-dinh-nghe/
 - Nguyễn Chí Thanh: 6 — https://headspadanang.com/spas/street/nguyen-chi-thanh/
