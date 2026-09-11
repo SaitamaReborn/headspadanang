@@ -197,6 +197,11 @@ table.data td.r{text-align:right;font-weight:650;color:var(--lacquer-d);white-sp
 .kwf li{margin:.36em 0}
 .foot-b{padding-top:26px}
 .foot .fine{color:#7C9188;font-size:13px;max-width:82ch}
+/* Reaching the guide's pick: a row of real actions inside the editor's note,
+   and one line of the same in the footer for the pages that carry no note. */
+.reach{margin-top:15px;gap:9px}
+.foot-reach{font-size:14px;max-width:82ch;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #1B3C33}
+.foot-reach a{color:#9FD8C2;text-decoration:underline;text-underline-offset:2px}
 .credit{color:#6A7D74;font-size:12.5px;margin-top:12px;max-width:82ch}
 .credit a{color:#7C9188}
 

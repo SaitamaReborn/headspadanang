@@ -8,9 +8,12 @@ const {JOURNAL}=fs.existsSync('./journal.js')?require('./journal.js'):{JOURNAL:[
 const DOMAIN="headspadanang.com", NAME="Head Spa Da Nang", SITE="https://"+DOMAIN;
 const NOW=process.env.BUILD_DATE?new Date(process.env.BUILD_DATE):new Date();
 const GSC=fs.existsSync('./gsc.txt')?fs.readFileSync('./gsc.txt','utf8').split('\n').map(s=>s.trim()).filter(s=>s&&!s.startsWith('#')):[];
+/* The number and the hours are the salon's own, not Google's copy of them: the
+   guide has to stay reachable even on a build where the Places snapshot moved. */
 const PARTNER={whatsapp:"https://wa.me/84788668588",hours:"open daily 9:00–20:00",
+ phone:"+84 788 668 588",phoneRaw:"+84788668588",
  instagram:"https://www.instagram.com/reborn_nailsnretreat/",
- site:"https://rebornnaildanang.com/services/head-spa-hair-wash/"};
+ site:"https://rebornnaildanang.com/services/head-spa-hair-wash/",siteLabel:"Head spa menu & prices"};
 
 /* Keyword pages, one per treatment on a real Da Nang menu. */
 const SERVICES=[
