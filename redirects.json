@@ -1,0 +1,3056 @@
+{
+ "/de/area/da-nang/": {
+  "name": "Da Nang",
+  "up": "/de/all/",
+  "to": null
+ },
+ "/de/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/de/all/",
+  "to": null
+ },
+ "/de/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/de/all/",
+  "to": null
+ },
+ "/de/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/de/all/",
+  "to": null
+ },
+ "/de/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/de/all/",
+  "to": null
+ },
+ "/de/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/de/all/",
+  "to": null
+ },
+ "/es/area/da-nang/": {
+  "name": "Da Nang",
+  "up": "/es/all/",
+  "to": null
+ },
+ "/es/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/es/all/",
+  "to": null
+ },
+ "/es/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/es/all/",
+  "to": null
+ },
+ "/es/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/es/all/",
+  "to": null
+ },
+ "/es/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/es/all/",
+  "to": null
+ },
+ "/es/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/es/all/",
+  "to": null
+ },
+ "/fr/area/da-nang/": {
+  "name": "Da Nang",
+  "up": "/fr/all/",
+  "to": null
+ },
+ "/fr/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/fr/all/",
+  "to": null
+ },
+ "/fr/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/fr/all/",
+  "to": null
+ },
+ "/fr/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/fr/all/",
+  "to": null
+ },
+ "/fr/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/fr/all/",
+  "to": null
+ },
+ "/fr/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/fr/all/",
+  "to": null
+ },
+ "/ja/area/da-nang/": {
+  "name": "Da Nang",
+  "up": "/ja/all/",
+  "to": null
+ },
+ "/ja/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/ja/all/",
+  "to": null
+ },
+ "/ja/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/ja/all/",
+  "to": null
+ },
+ "/ja/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/ja/all/",
+  "to": null
+ },
+ "/ja/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/ja/all/",
+  "to": null
+ },
+ "/ja/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/ja/all/",
+  "to": null
+ },
+ "/ko/area/da-nang/": {
+  "name": "Da Nang",
+  "up": "/ko/all/",
+  "to": null
+ },
+ "/ko/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/ko/all/",
+  "to": null
+ },
+ "/ko/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/ko/all/",
+  "to": null
+ },
+ "/ko/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/ko/all/",
+  "to": null
+ },
+ "/ko/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/ko/all/",
+  "to": null
+ },
+ "/ko/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/ko/all/",
+  "to": null
+ },
+ "/ru/area/da-nang/": {
+  "name": "Da Nang",
+  "up": "/ru/all/",
+  "to": null
+ },
+ "/ru/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/ru/all/",
+  "to": null
+ },
+ "/ru/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/ru/all/",
+  "to": null
+ },
+ "/ru/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/ru/all/",
+  "to": null
+ },
+ "/ru/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/ru/all/",
+  "to": null
+ },
+ "/ru/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/ru/all/",
+  "to": null
+ },
+ "/spas/-slhg9y/": {
+  "id": "ChIJCbqbx4UZQjERNz1WPsLHG9Y",
+  "name": "하루스파이발관앤네일",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/185-foot-massage-zqnxs4/": {
+  "id": "ChIJCfTEVSQYQjER3r9AuzQNxs4",
+  "name": "185 Foot Massage",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/95-spa-massage-bcvhbk/": {
+  "id": "ChIJF_onOpsZQjERnL6P5BCVhbk",
+  "name": "95 spa 마사지 massage 你好很高兴认识你",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/a-doan-hair-salon-1uemgg/": {
+  "id": "ChIJt-DapzYYQjER1FQ-B1uemGg",
+  "name": "A Doan Hair Salon",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/aanda-spa-massage-and-wellness-da-nang-yufuqa/": {
+  "id": "ChIJDdUJIQAXQjER57zUcYUFUqA",
+  "name": "A&A Spa – Massage & Wellness Da Nang",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/ame-spa-and-wellness-9hoyqg/": {
+  "id": "ChIJS4ezWHwXQjERhGPt_9Hoyqg",
+  "name": "AME Spa & Wellness",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/amor-spa-and-massage-da-nang-j5cerk/": {
+  "id": "ChIJHw3vtHwRQjERBncXKJ5CeRk",
+  "name": "Amor Spa & Massage Da Nang",
+  "area": "Da Nang",
+  "up": "/spas/area/da-nang/",
+  "to": null
+ },
+ "/spas/an-nhi-spa-massage-and-hair-wash-fbcczg/": {
+  "id": "ChIJf7WMxDIXQjERtHsz9FbcCZg",
+  "name": "AN NHI SPA MASSAGE & HAIR WASH",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/an-spa-and-beauty-hhaox8/": {
+  "id": "ChIJlxnBcR4XQjERQgaWzHhaox8",
+  "name": "An Spa & Beauty",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/ana-spa-massage-da-nang-hair-wash-nail-r11gmq/": {
+  "id": "ChIJA7wmhooXQjERXqQRpR11GMQ",
+  "name": "Ana Spa Massage Da Nang - Hair Wash, Nail",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/andnail-kpm5ni/": {
+  "id": "ChIJh6bhO-4ZQjERv2ftoKpM5nI",
+  "name": "서울이발관&Nail",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-08-06"
+ },
+ "/spas/anh-duong-spa--ipaq0/": {
+  "id": "ChIJvzcN6CkZQjERzIAwK-IpaQ0",
+  "name": "Ánh Dương Spa",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/anh-spa-and-massage-da-nang-r0ze24/": {
+  "id": "ChIJwdZa4eQ7JQwRYcRRBR0ZE24",
+  "name": "Ánh Spa & Massage Đà Nẵng",
+  "area": "Son Tra",
+  "up": "/spas/area/son-tra/",
+  "to": null
+ },
+ "/spas/ann-retreat-spa-and-massage-da-nang-1scg7u/": {
+  "id": "ChIJwXGFIQAZQjERXYB5H1sCG7U",
+  "name": "Ann Retreat - Spa & Massage Đà Nẵng | 앤 리트리트 스파",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/anna-spa-da-nang-massage-and-goi-dau-duong-sinh-pgxox8/": {
+  "id": "ChIJpVGbUgAZQjERo4ZmNPgXox8",
+  "name": "Anna Spa Da Nang — Massage & Gội Đầu Dưỡng Sinh",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/anna-spa-da-nang-u3d1oc/": {
+  "id": "ChIJH0v0Z2UZQjEROUWK3U3D1Oc",
+  "name": "Anna Spa Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/apple-spa-cg9jnm/": {
+  "id": "ChIJXwLMLwAZQjERFQr7DCg9jnM",
+  "name": "애플 스파 (apple spa)",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/ara-spa-5zk1lm/": {
+  "id": "ChIJQc2Xk0cXQjERnOTCS5zK1LM",
+  "name": "Ara spa",
+  "area": "Son Tra",
+  "up": "/spas/area/son-tra/",
+  "to": null
+ },
+ "/spas/area/da-nang/": {
+  "name": "Da Nang",
+  "up": "/spas/",
+  "to": null
+ },
+ "/spas/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/spas/",
+  "to": null
+ },
+ "/spas/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/spas/",
+  "to": null
+ },
+ "/spas/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/spas/",
+  "to": null
+ },
+ "/spas/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/spas/",
+  "to": null
+ },
+ "/spas/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/spas/",
+  "to": null
+ },
+ "/spas/ari-spa-ih-kr0/": {
+  "id": "ChIJfzqOJAoXQjEROhmjtih-kR0",
+  "name": "ARI SPA",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/aura-spa-4tek9o/": {
+  "id": "ChIJlzZ-IQAXQjERd7AvW4tEK9o",
+  "name": "Aura Spa",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-09-12"
+ },
+ "/spas/aura-spa-duong-sinh-5mmdy4/": {
+  "id": "ChIJkbS_fwAXQjERTZaed5mmDy4",
+  "name": "AuRa spa dưỡng sinh",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/aura-spa-massage-nails-hair-wash-and-relaxation-in-da-nang-egkzuy/": {
+  "id": "ChIJzYULZMgRQjERYRTCyEgKZUY",
+  "name": "AURA SPA-Massage-Nails-Hair Wash & Relaxation In Da Nang",
+  "area": "Da Nang",
+  "up": "/spas/area/da-nang/",
+  "to": null
+ },
+ "/spas/b-spa-bamboo-viet-wr2nzu/": {
+  "id": "ChIJY_JG2gAXQjERjezm3wr2NZU",
+  "name": "B Spa Bamboo Viet",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/babylon-spa-massage-3hy_ay/": {
+  "id": "ChIJHzP474MXQjERHjpAS3HY_AY",
+  "name": "Babylon Spa Massage",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/bach-nam-spa-tri-lieu-dong-y-oriental-therapy-massage-zhs4ce/": {
+  "id": "ChIJRwxSfNMZQjERdGZR-zhS4cE",
+  "name": "Bách Nam - Spa Trị Liệu Đông Y | Oriental Therapy Massage",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/bali-spa-cafe-da-nang-massage-and-facial-4l1wag/": {
+  "id": "ChIJPf29WAAZQjER-BRtE4l1wAg",
+  "name": "Bali Spa•Cafe | Da Nang Massage & Facial • 다낭 마사지",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/bana-spa-luxury-massage-da-nang-gecreu/": {
+  "id": "ChIJM72ORAAXQjERRl9FwGECREU",
+  "name": "BANA SPA -Luxury Massage Da Nang",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/beauty-salon-loc-best-hair-salon-and-treatment-da-nang-p7kqvq/": {
+  "id": "ChIJgxPXbFIZQjER49XnxP7kQvQ",
+  "name": "Beauty Salon Lộc - Best Hair Salon & Treatment Da Nang",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/beauty-salon-loc-sojypm/": {
+  "id": "ChIJtXyePswZQjERNOreXsOjypM",
+  "name": "BEAUTY SALON LỘC",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/beauty-salon-loc-v1-hair-salon-da-nang-sojypm/",
+  "since": "2026-09-12"
+ },
+ "/spas/beauty-salon-loc-v1-hair-salon-da-nang-sojypm/": {
+  "id": "ChIJtXyePswZQjERNOreXsOjypM",
+  "name": "Beauty Salon LỘC V1 - Hair Salon Da Nang",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/bee-honey-spa-danang-dngeiw/": {
+  "id": "ChIJMR8DQWYb22oRFq2P1dNGeiw",
+  "name": "Bee Honey Spa Danang",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/bliss-spa-and-shampoo-hair-wash-shampoo-danang-goi-dau-duong-sinh-zfgw9k/": {
+  "id": "ChIJ7yZRMBMZQjERyeFS2ZfGw9k",
+  "name": "Bliss Spa & Shampoo - Hair Wash, Shampoo Danang - Gội Đầu Dưỡng Sinh",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/bliss-spa-in-danang-is227c/": {
+  "id": "ChIJE8BJGUwXQjERFiExOiS227c",
+  "name": "Bliss spa in Danang",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/blu-ari-spa-and-massage-4ssmzs/": {
+  "id": "ChIJK_QCrc8XQjER1Fh204SSMzs",
+  "name": "Blu Ari Spa & Massage - 다낭 마사지 - 다낭 스파 - 岘港 按摩",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-09-12"
+ },
+ "/spas/blue-beauty-spa-and-massage-py_-5u/": {
+  "id": "ChIJE_6TEAAXQjERLh_3ipY_-5U",
+  "name": "Blue Beauty Spa & Massage",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/boss-bmtmb4/": {
+  "id": "ChIJRYBFYqAZQjERROQgMbmtMB4",
+  "name": "BOSS 보스 이발소",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/cam-on-spa-goi-dau-duong-sinh-footand-body-massage-xr2n1u/": {
+  "id": "ChIJuyx6uDYXQjERiDoYRxR2N1U",
+  "name": "CẢM ƠN SPA - Gội đầu dưỡng sinh- Foot& body massage",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/cara-beauty-spa-chuyen-tri-mun-acne-treatment-ttccue/": {
+  "id": "ChIJ5QzpAosZQjERg5wPjtTCCuE",
+  "name": "Cara Beauty Spa - Chuyên trị mụn (Acne Treatment)",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/cassia-spa-and-wellness-massage-shampoo-and-facial-jtcfd0/": {
+  "id": "ChIJofYgOxoXQjERXc1Qsjtcfd0",
+  "name": "CASSIA Spa & Wellness - Massage, Shampoo and Facial",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/chang-massage-and-nail-lerr9q/": {
+  "id": "ChIJ90kp94kXQjER7MybCLErR9Q",
+  "name": "Chang Massage & Nail - 마사지와 네일 - 按摩和美甲",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-09-12"
+ },
+ "/spas/charm-spa-grand-da-nang-l0u_9w/": {
+  "id": "ChIJkcIPthgZQjERwaBKQL0U_9w",
+  "name": "Charm Spa Grand Da Nang",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/charm-spa-hml13c/": {
+  "id": "ChIJXcc22ZcZQjERT47ZqHMl13c",
+  "name": "Charm Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/chau-nhi-spa-and-massage-qszx_y/": {
+  "id": "ChIJ37FbsJgZQjERQho2DqSzX_Y",
+  "name": "Châu Nhi Spa & Massage",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/chill-out-spa-hyzcnk/": {
+  "id": "ChIJsUp8r3EXQjERAB8LshyzCNk",
+  "name": "Chill Out Spa",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/choeu-spa-49-yen-bai-igsfjo/": {
+  "id": "ChIJueZrqZYZQjER0JVHRiGsFjo",
+  "name": "Choeu Spa - 49 Yên Bái - 추천 마사지 按摩 マッサージ",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/choeu-spa-57-do-ba-my-an-wmiur8/": {
+  "id": "ChIJsU0gO8kXQjERIywLYWMIuR8",
+  "name": "Choeu Spa - 57 Đỗ Bá Mỹ An - 추천 마사지 按摩 マッサージ",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/chua-spa-massage-yt2azm/": {
+  "id": "ChIJX-QKJKAZQjEROJETWyt2AzM",
+  "name": "Chua Spa - Massage -岘港按摩 - 다낭 마사지",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/chua-spa-yt2azm/",
+  "since": "2026-08-06"
+ },
+ "/spas/chua-spa-yt2azm/": {
+  "id": "ChIJX-QKJKAZQjEROJETWyt2AzM",
+  "name": "Chua Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/cloud-spa-ltddse/": {
+  "id": "ChIJj1nFcwAXQjERJlPtQLTddsE",
+  "name": "Cloud Spa",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-09-12"
+ },
+ "/spas/clover-spa-best-spa-massage-da-nang-g6xak0/": {
+  "id": "ChIJs3Rt4-QZQjERPTSZ7G6XAK0",
+  "name": "Clover Spa - Best Spa Massage Da Nang 다낭 마사지",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/co-wellness-spa-dwxygy/": {
+  "id": "ChIJMy11is4ZQjERhEITwdwXYGY",
+  "name": "Cỏ Wellness Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/coleni-beauty-facial-and-head-spa-pi6d60/": {
+  "id": "ChIJR4Vn1e4ZQjER1pPRvpi6D60",
+  "name": "Coleni Beauty - Facial & Head Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/cong-spa-da-nang-ztlqzo/": {
+  "id": "ChIJGSKRQmcZQjERQcFoRzTLQZo",
+  "name": "Cộng Spa Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/cuu-ly-nail-goi-dau-thu-gian-4e5lg0/": {
+  "id": "ChIJK9_68G0ZQjERR19nb4E5lG0",
+  "name": "Cửu Lý Nail - Gội Đầu Thư Giãn",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/da-nang-foot-and-body-massage-spa-kydjgo/": {
+  "id": "ChIJW6_erzsZQjERmaTZPKYDjGo",
+  "name": "Da Nang Foot & Body Massage Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/da-nang-forest-massage-and-nail-vvgb08/": {
+  "id": "ChIJ5XT5N2YXQjERSfRSfvvgB08",
+  "name": "Đà Nẵng Forest Massage & Nail",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/da-nang/": {
+  "name": "Da Nang",
+  "up": "/spas/area/da-nang/",
+  "to": "/spas/area/da-nang/",
+  "since": "2026-08-05"
+ },
+ "/spas/da-spa-n35jsk/": {
+  "id": "ChIJXZKuaBAZQjERvf_WXn35jSk",
+  "name": "Dạ Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/dahan-spa-yd-hjc/": {
+  "id": "ChIJXfZ2gwcXQjERfDap8yD-HJc",
+  "name": "DAHAN Spa",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/danang-outcall-massage-healthy-jetzfg/": {
+  "id": "ChIJTcY6RaoXQjERqfc5QjEtzFg",
+  "name": "Danang Outcall Massage Healthy",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/den-spa-goi-dau-duong-sinh-2-otaoby/": {
+  "id": "ChIJrZpPYAAZQjERqA8E5OtaoBY",
+  "name": "DEN SPA—Gội Đầu Dưỡng Sinh 2",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/destiny-spa-and-massage-99hnm0/": {
+  "id": "ChIJwxfDg7sZQjERbqeLT99HnM0",
+  "name": "Destiny spa & massage 다낭 마사지 뎃디니 스파",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/do-spa-wxo5y0/": {
+  "id": "ChIJy2xEfdgZQjER-EpNiwxo5Y0",
+  "name": "Đỗ Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/dr-q-spa-297-dien-bien-phu-gykrwm/": {
+  "id": "ChIJlyuBjuUZQjERtVp41gYKrWM",
+  "name": "Dr.Q Spa 297 Điện Biên Phủ",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/dum-spa-and-goi-dau-duong-sinh-hair-wash-xh18a0/": {
+  "id": "ChIJv-78bqIZQjERNX7vKXH18A0",
+  "name": "DUM Spa & Gội Đầu Dưỡng Sinh [Hair Wash]",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/elina-spa-da-nang-6wjq4i/": {
+  "id": "ChIJBY4uxhkZQjER3UmNc6WjQ4I",
+  "name": "Elina Spa - Đà Nẵng",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/ellie-beauty-spa-_p-_mi/": {
+  "id": "ChIJg85mY5EZQjERXv4xH_p-_MI",
+  "name": "Ellie Beauty Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/elmer-spa-foot-and-body-massage-da-nang-lmdg_o/": {
+  "id": "ChIJN6V9cQAZQjERIJL4XLMdG_o",
+  "name": "Elmer Spa - Foot & Body Massage Da Nang",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/elsa-spa-massage-da-nang-hd65xi/": {
+  "id": "ChIJ8e-HnOoZQjER1tLf4hD65xI",
+  "name": "Elsa Spa massage Da Nang ( 엘사 스파 )",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/em-beauty-daily-care-spa-decpw0/": {
+  "id": "ChIJq1B8RwAZQjERipSlRDEcpw0",
+  "name": "EM Beauty Daily Care Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/em-xinh-ther-spa-goi-dau-duong-sinh-massage-and-shampoo-nails-and-6pcilk/": {
+  "id": "ChIJM7nLEgAZQjERsTpmZ6PCIlk",
+  "name": "Em Xinh - THER spa - Gội Đầu Dưỡng Sinh - Massage & Shampoo - Nails - 마사지 & 샴푸",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/emi-spa-and-beauty-danang-ebnczi/": {
+  "id": "ChIJtXLclt0ZQjERRd-sRebnCzI",
+  "name": "EMI SPA & BEAUTY DANANG",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/enjoy-spa-hoai-thuong-qr79ec/": {
+  "id": "ChIJW23YopEXQjERE-qENQr79ec",
+  "name": "Enjoy Spa Hoài Thương",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/eq-hair-salon-an-thuong-cnzlri/": {
+  "id": "ChIJ94FeJQAXQjER4ilTdCNzlRI",
+  "name": "EQ HAIR SALON An Thuong",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/eq-hair-salon-fqmmbc/": {
+  "id": "ChIJmeWYbAAZQjERO-9AUFqMmbc",
+  "name": "EQ HAIR SALON",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/florin-k-spa-and-beauty-care-k-and-01umoe/": {
+  "id": "ChIJazOE4akZQjERO0mqm01uMoE",
+  "name": "Florin K Spa & Beauty Care - 플로린 K 스파 & 마사지",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/gao-spa-danang-k388-to-hieu-s4ewry/": {
+  "id": "ChIJmT9HtSUZQjER_WcLCS4EwRY",
+  "name": "Gao Spa Danang - K388 To Hieu",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/gao-spa-goi-dau-duong-sinh-dn-tnht_w/": {
+  "id": "ChIJM1JjJKgZQjERlROnotNhT_w",
+  "name": "Gạo Spa- Gội Đầu Dưỡng Sinh Đn",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/glow-hair-studio-dhoqq8/": {
+  "id": "ChIJA5COYGEZQjERWv40VdhOQq8",
+  "name": "Glow Hair Studio",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/goc-nha-spa-goi-dau-duong-sinh-pqpwui/": {
+  "id": "ChIJy474IQAZQjERtR-sfpQpWuI",
+  "name": "Góc Nhà Spa - Gội đầu dưỡng sinh",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/goi-dau-d-ong-sinh-da-nang-lalien-spa-massage-body-8dv23m/": {
+  "id": "ChIJERRoreQXQjERbTWmI8dv23M",
+  "name": "Gội đầu d ỡng sinh Đà Nẵng - LaLien Spa Massage body",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/goi-dau-duong-sinh-52hz-healing-and-relax-c_lyru/": {
+  "id": "ChIJBZKqn08ZQjER1H_SFc_LYrU",
+  "name": "Gội Đầu Dưỡng Sinh 52Hz - HEALING & RELAX",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/goi-dau-duong-sinh-da-nang-lalien-spa-massage-body-8dv23m/": {
+  "id": "ChIJERRoreQXQjERbTWmI8dv23M",
+  "name": "Gội đầu dưỡng sinh Đà Nẵng - LaLien Spa Massage body",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/goi-dau-d-ong-sinh-da-nang-lalien-spa-massage-body-8dv23m/",
+  "since": "2026-09-12"
+ },
+ "/spas/goi-dau-duong-sinh-da-nang-m3ttzk/": {
+  "id": "ChIJ2b4osC8ZQjERji4MiM3Ttzk",
+  "name": "Gội Đầu Dưỡng Sinh Đà Nẵng",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/goi-dau-duong-sinh-da-nang-massage-body-gold-beauty-and-spa-nail-oegjio/": {
+  "id": "ChIJK9qaawcZQjERKMV79oeGJio",
+  "name": "Gội đầu dưỡng sinh Đà Nẵng - Massage Body Gold Beauty & Spa Nail",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/goi-dau-duong-sinh-lanivy-lanivy-spa-head-spa-massage-nails-bmdsh4/": {
+  "id": "ChIJo_4pIAAXQjER4xM8sBMdsH4",
+  "name": "Gội đầu dưỡng sinh LanIvy - LanIvy Spa - Head Spa, Massage, Nails",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/goi-dau-duong-sinh-massge-co-vai-gay-linh-spa-u3it0g/": {
+  "id": "ChIJ1-6pc1UZQjERxF49GU3iT0g",
+  "name": "Gội đầu dưỡng sinh ,massge cổ vai gáy Linh Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/goi-dau-duong-sinh-me-ken-da-nang-zm3qq4/": {
+  "id": "ChIJ2VJ-xiUZQjERoGGhRzM3qQ4",
+  "name": "Gội đầu dưỡng sinh Mẹ Ken Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/goi-dau-duong-sinh-mudra-house-da-nang-dgdzy4/": {
+  "id": "ChIJv8Nz8F8ZQjERfUagVdgdzy4",
+  "name": "Gội đầu dưỡng sinh Mudra House Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/goi-dau-duong-sinh-nana-spa-fesrom/": {
+  "id": "ChIJ258HUPAXQjER2Q_29fesRoM",
+  "name": "Gội Đầu Dưỡng Sinh - NaNa Spa",
+  "area": "Son Tra",
+  "up": "/spas/area/son-tra/",
+  "to": "/spas/area/son-tra/",
+  "since": "2026-09-12"
+ },
+ "/spas/goi-dau-duong-sinh-thien-kim-wfmsg8/": {
+  "id": "ChIJ7xS8y0AZQjERdAAYoWFmSG8",
+  "name": "Gội đầu dưỡng sinh Thiên Kim",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/goi-dau-massage-vai-gay-pham-ho-0qpy-i/": {
+  "id": "ChIJ8dT-unIXQjERSBIxa0QPy-I",
+  "name": "Gội đầu massage vai gáy - Phạm Hồ",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/goi-dau-noi-mi-cham-soc-da-phuong-beauty-dguxlo/": {
+  "id": "ChIJmW94dwUZQjERnZqIedGUxLo",
+  "name": "Gội đầu/Nối mi/Chăm sóc da - Phượng Beauty",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/gold-spa-hrgax0/": {
+  "id": "ChIJmd-b0UMXQjEREutsThRgAx0",
+  "name": "Gold Spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/golden-lotus-oriental-organic-spa-1-m5ilou/": {
+  "id": "ChIJgxWgIPAZQjERFfGkym5IlOU",
+  "name": "Golden Lotus Oriental Organic Spa 1",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/green-haven-spa-cp6asw/": {
+  "id": "ChIJQTe2HAAZQjERkD1J_cP6aSw",
+  "name": "Green Haven Spa",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/h-premium-beauty-spa-rzexvm/": {
+  "id": "ChIJpQgR46YXQjER6zTCArZeXvM",
+  "name": "H Premium Beauty Spa",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/ha-anh-massage-nxakqm/": {
+  "id": "ChIJZRBJTn0XQjERS0bTLnXAKQM",
+  "name": "Ha Anh Massage 스파 마사지",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/ha-spa-massage-and-hair-wash-2svax4/": {
+  "id": "ChIJ3_HIMx4XQjERpqTEy2SvAx4",
+  "name": "Ha Spa Massage & Hair Wash - 전신 케어 - 洗头",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-08-05"
+ },
+ "/spas/hai-stylist-da-nang-43b-nguyen-the-loc-salon-toc-da-nang-4j18u0/": {
+  "id": "ChIJzbNgY3sZQjERPlWs74j18U0",
+  "name": "Hai Stylist Đà Nẵng - 43b Nguyễn Thế Lộc - Salon Tóc Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/hai-stylist-hair-salon-b3wruk/": {
+  "id": "ChIJUyEekRMXQjERrb_PdB3WrUk",
+  "name": "HAI STYLIST Hair Salon",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/hair-salon-and-spa-toan-nguyen-6p_a8q/": {
+  "id": "ChIJrTlRufQXQjER_sbuT6p_a8Q",
+  "name": "Hair Salon & Spa Toàn Nguyễn",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/hair-salon-anh-khoa-qtmpeo/": {
+  "id": "ChIJo1VpuRoZQjERWnU7oQtmpeo",
+  "name": "Hair Salon Anh Khoa",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/hair-salon-beo-vh-224-le-duan-r0gxdy/": {
+  "id": "ChIJQU8YJEoYQjER249NgR0GxDY",
+  "name": "hair salon Beo.vh 224 Le Duan",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/hair-salon-ha-beo-chuyen-cat-uon-duoi-nhuom-noi-toc-top-1-da-nang-bsbohk/": {
+  "id": "ChIJAzG_lksYQjERSsRpWbSBOHk",
+  "name": "Hair Salon Hà Beo - Chuyên, cắt, uốn ,duỗi, nhuộm, nối tóc top 1 ĐÀ NẴNG",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/hair-salon-ngoc-dung-hangugyi-gc30ne/": {
+  "id": "ChIJEeIuQDIYQjERE9rEcGC30nE",
+  "name": "Hair Salon Ngọc Dung 한국의 헤어 스타일리스트 HANGUGYI",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/hair-salon-rin-balayage-highlight-and-treatment-olrfvu/": {
+  "id": "ChIJ-yvbdrgZQjER75yJgoLrFvU",
+  "name": "Hair Salon Rin Balayage highlight & treatment",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/hair-salon-tri-hoang-vu-jtecbo/": {
+  "id": "ChIJvwONRJMZQjERgXgbKjtEcbo",
+  "name": "Hair Salon Trí Hoàng Vũ",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/hair-salon-tuan-thanh-cat-toc-goi-dau-vzhfza/": {
+  "id": "ChIJa3lcTnwXQjER1fj5QvZHfZA",
+  "name": "Hair Salon Tuấn Thanh ( Cắt Tóc - Gội Đầu )",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-09-12"
+ },
+ "/spas/hair-salon-tuan-thiet-ke-toc-nu-nam-nu-nam-6e3xfw/": {
+  "id": "ChIJ6X9BK7kZQjERQJxrF6e3xfw",
+  "name": "Hair Salon Tuân Thiết Kế Tóc NỮ- NAM-NỮ-NAM",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/hair-salon-v2-n97n8w/": {
+  "id": "ChIJFW9whGsZQjER6V5oeN97N8w",
+  "name": "Hair Salon V2",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/hairsalon-tung-blue-lr3cmw/": {
+  "id": "ChIJTR0lUwAZQjERh6En2lr3CMw",
+  "name": "HairSalon Tung Blue",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/han-river-spa-song-han-spa-l9kjki/": {
+  "id": "ChIJsyY9JzoYQjERvaNXwl9KJkI",
+  "name": "Han River Spa (Song Han Spa) 송한스파 | ハンリバースパ | 韩江水疗中心 | منتجع صحي",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/han-spa-massage-and-nail-8dnh0y/": {
+  "id": "ChIJc_yfNIsZQjERw9mgb8dNH0Y",
+  "name": "Han Spa Massage & Nail 다낭 한시장 마사지 네일 한스파 본점",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-08-06"
+ },
+ "/spas/hana-hair-salon-144-a3-ong-ich-khiem-jc5xq4/": {
+  "id": "ChIJaXzKAQAZQjER7ThQLjC5xQ4",
+  "name": "Hana Hair Salon 144 A3 Ông Ích Khiêm",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/hana-healthy-spa-a5oeku/": {
+  "id": "ChIJVa5HXYSOt2AR8y8flA5oEkU",
+  "name": "HANA HEALTHY SPA",
+  "area": "Da Nang",
+  "up": "/spas/area/da-nang/",
+  "to": null
+ },
+ "/spas/hana-spa-massage-txy6qk/": {
+  "id": "ChIJ2Z8CAgAXQjERun-J8TXy6qk",
+  "name": "HANA SPA - Massage -岘港按摩 - 다낭 마사지",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/hanatural-therapy-and-spa-hbnfo0/": {
+  "id": "ChIJaXYsNLgXQjERwyqoyhbNFo0",
+  "name": "Hanatural Therapy & Spa",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/hanigo-dac-san-da-nang-ngon-63-nguyen-van-thoai-qua-dac-san-ngon-ild3bw/": {
+  "id": "ChIJTfF1dwkXQjERRkcohild3bw",
+  "name": "HANIGO Đặc Sản Đà Nẵng NGON - 63 Nguyễn Văn Thoại - Quà đặc sản Ngon",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-08-15"
+ },
+ "/spas/harmony-azure-spa-danang-premium-foot-and-body-massage-mdwof4/": {
+  "id": "ChIJ8zKybSoZQjERV49gJMdwOF4",
+  "name": "HARMONY AZURE SPA Danang Premium Foot & Body Massage",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/havi-beauty-and-spa-da-nang-ayma9i/": {
+  "id": "ChIJZYeMpUcYQjERy7N6MAyma9I",
+  "name": "Havi Beauty And Spa Da Nang",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-09-12"
+ },
+ "/spas/healing-hands-spa-qpfjh4/": {
+  "id": "ChIJm8nkB7MZQjERzYa6YqpFJH4",
+  "name": "Healing Hands Spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/heart-spa-body-and-foot-massage-57vcha/": {
+  "id": "ChIJIcV41zAXQjERlA-HP57vcHA",
+  "name": "Heart Spa - Body & Foot Massage ( 温泉 - 온천 - スパ - 身体按摩 - 바디 마사지- ボディマッサージ)",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/herbal-oasis-spa-massage-hair-wash-nails-waxing-eyelashes-me8o08/": {
+  "id": "ChIJzXRy4LsXQjERp9lKhmE8O08",
+  "name": "Herbal Oasis Spa ( Massage - Hair wash - Nails - Waxing - Eyelashes )",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/herbal-organic-spa-p_mvlm/": {
+  "id": "ChIJg_FB3bEZQjERTC4XuP_mVlM",
+  "name": "Herbal Organic Spa",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-08-06"
+ },
+ "/spas/hi-spa-local-relax-spa-eo92qm/": {
+  "id": "ChIJr3x17yAXQjER8gIQveo92QM",
+  "name": "Hi Spa - Local Relax Spa",
+  "area": "Son Tra",
+  "up": "/spas/area/son-tra/",
+  "to": null
+ },
+ "/spas/hi-spa-relaxing-time-lwf5rq/": {
+  "id": "ChIJD4PnnG4XQjER26c_uLwf5RQ",
+  "name": "Hi Spa - Relaxing time",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/hien-spa-and-wellness-gux1tq/": {
+  "id": "ChIJ3XeXPAAXQjER0IpPKGux1tQ",
+  "name": "Hiên Spa & Wellness",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/hieu-dep-da-nang-wlft5k/": {
+  "id": "ChIJZU0vgNQXQjERE5kAIWlft5k",
+  "name": "Hiệu Đẹp - Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/hoang-kim-wellness-spa--unawc/": {
+  "id": "ChIJA36TIgAXQjEREWjoM-unawc",
+  "name": "Hoàng Kim Wellness Spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/hoang-yen-beauty-spa-x0dtd4/": {
+  "id": "ChIJU0s-RAAZQjERfBg9Wx0DTd4",
+  "name": "Hoàng Yến Beauty Spa",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/hoi-vu-spa-5caf00/": {
+  "id": "ChIJBTwySgAZQjERS5kel5Caf00",
+  "name": "Hội Vũ Spa",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/home-wellness-e3v0zo/": {
+  "id": "ChIJa0YEURMZQjERRIqAjE3V0Zo",
+  "name": "HOME WELLNESS",
+  "area": "Da Nang",
+  "up": "/spas/area/da-nang/",
+  "to": null
+ },
+ "/spas/honey-massage-and-head-spa-kkdjbs/": {
+  "id": "ChIJWxe2Db0XQjER-wxsnkKdJBs",
+  "name": "Honey Massage and Head Spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/hq-nail-massage-goi-d-u-da-nang--cr-ig/": {
+  "id": "ChIJ9-4CckYZQjERFE3KG-Cr-Ig",
+  "name": "HQ Nail Massage Gội Đ��u Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/hq-nail-massage-goi-dau-da-nang--cr-ig/",
+  "since": "2026-09-12"
+ },
+ "/spas/hq-nail-massage-goi-dau-da-nang--cr-ig/": {
+  "id": "ChIJ9-4CckYZQjERFE3KG-Cr-Ig",
+  "name": "HQ Nail Massage Gội Đầu Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/hua-ha-luong-tu-spa-massage-and-foot-spa-da-nang-xfxj7w/": {
+  "id": "ChIJG9IOepAXQjER3x9UnxFxJ7w",
+  "name": "Húa Hạ Lương Tử Spa – Massage & Foot Spa Da Nang",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/huong-spa-uifl7u/": {
+  "id": "ChIJb3wVEUIZQjER5ifdnuifl7U",
+  "name": "Hương Spa",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/hya-spa-danang-j2j38o/": {
+  "id": "ChIJiXZranUZQjERyidIXJ2j38o",
+  "name": "HYA Spa Danang ( 다낭 마사지 )",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-08-06"
+ },
+ "/spas/inbalance-spa-by-novotel-danang-drrury/": {
+  "id": "ChIJV0P5TRcZQjERIt60ADrruRY",
+  "name": "InBalance Spa by Novotel Danang",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/jang-mi-spa-and-massage-esbt1q/": {
+  "id": "ChIJEwAAALAZQjERyXCN5eSBt1Q",
+  "name": "Jang Mi Spa & Massage",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/jang-mi-spa-massage-da-nang-riverside-ggnono/": {
+  "id": "ChIJJ4kDaLEZQjERBUiwpGGnoNo",
+  "name": "Jang Mi Spa Massage Da Nang - Riverside",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/jeju-spa-massage-and-nail-and-xvi9xu/": {
+  "id": "ChIJv1gepxMZQjER2xJtkXvi9xU",
+  "name": "Jeju Spa – Massage & Nail | 제주 스파 네일 & 마사지 | | 济州岛水疗美甲按摩 |",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/julius-spa-and-massage-qhwbwa/": {
+  "id": "ChIJ076jrJZFj0QRKwm40qhwBWA",
+  "name": "Julius Spa & Massage",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/jumy-spa-goi-dau-duong-sinh-and-massage-thu-gian-w7st50/": {
+  "id": "ChIJh4WGm2YZQjERPLj8jW7sT50",
+  "name": "JUMY SPA – Gội đầu dưỡng sinh & Massage thư giãn",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/juno-spa-and-massage-6bgfgy/": {
+  "id": "ChIJI-QFLt8XQjER_Js3m6bgfgY",
+  "name": "Juno Spa & Massage 마사지 按摩",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/kiasu-spa-da-nang-jcjo1w/": {
+  "id": "ChIJxTTFAQAZQjERCyhWXjCjo1w",
+  "name": "KiaSu Spa Da Nang",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/kim-beauty-salon-massage-1avtnw/": {
+  "id": "ChIJ1wDOdi4XQjERg15xZ1AVtNw",
+  "name": "Kim Beauty Salon Massage 바디 마사지 / 身體按摩 / массаж /ボディマッサージ",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/kim-moc-spa-goi-dau-duong-sinh-doc-quyen-co-vai-gay-0zvw9w/": {
+  "id": "ChIJ_Z45NFIZQjERCNMib0zVW9w",
+  "name": "Kim Mộc Spa_Gội đầu dưỡng sinh độc quyền Cổ-Vai-Gáy.(김목스파_목-어깨-목덜미 전용 건강샴푸).",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-08-06"
+ },
+ "/spas/kitty-kat-nail-salon-and-spa-an-thuong-da-nang-3ap1fg/": {
+  "id": "ChIJDVqIKWsXQjERI-oIP3AP1Fg",
+  "name": "Kitty Kat Nail Salon & Spa An Thuong Da Nang",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/kt-korea-luxury-med-spa-filler-botox-best-facial-acne-dark-spots-hifu-rf-laser-skin-care-clinic-collagen-thread-face-lift-amu5p4/": {
+  "id": "ChIJS4VmWEIXQjERqyEVvaMU5p4",
+  "name": "KT KOREA LUXURY Med Spa -Filler Botox -Best Facial -Acne/Dark spots/Hifu/RF/Laser/Skin Care Clinic- Collagen Thread Face Lift",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/kun-spa-massage-foot-body-kun-spa-gtissg/": {
+  "id": "ChIJLd6K0DoZQjERh768mgtIssg",
+  "name": "Kun Spa Massage Foot Body | 다낭 Kun Spa 로컬 마사지",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/l-cool-spa-massage-foot-and-body-nail-da-nang-fvs7qm/": {
+  "id": "ChIJJ5OVAAAXQjERCQeyMFVS7qM",
+  "name": "L Cool Spa Massage Foot And Body Nail Đà Nẵng",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/la-hair-spa-goi-dau-duong-sinh-da-nang-gdvspu/": {
+  "id": "ChIJJeTl5hkZQjERawDDagDVSpU",
+  "name": "Lá Hair Spa - Gội đầu dưỡng sinh Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/la-thu-goi-dau-duong-sinh-jjnl7y/": {
+  "id": "ChIJF5a-LgAZQjERYE3hkjjnl7Y",
+  "name": "Là Thư- Gội Đầu Dưỡng Sinh 🌿",
+  "area": "Da Nang",
+  "up": "/spas/area/da-nang/",
+  "to": null
+ },
+ "/spas/lala-spa-massage-tri-lieu-goi-dau-duong-sinh-g2if5w/": {
+  "id": "ChIJbw6M7iQZQjER5kaHzg2If5w",
+  "name": "Lala Spa Massage Trị Liệu - Gội Đầu Dưỡng Sinh",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/lam-spa-massage-and-goi-dau-duong-sinh-son-tra-hiyziy/": {
+  "id": "ChIJcSZIEJ8XQjERSHL4YhIyzIY",
+  "name": "Lam Spa - Massage & Gội đầu dưỡng sinh Sơn Trà",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/lang-tu-salon-v5ritm/": {
+  "id": "ChIJiRnSv7YZQjERcxvNqV5ritM",
+  "name": "Lang Tu Salon",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/lani-spa-eyebrow-eyelash-waxing-facials-massage-nails-lip-blushing-microblading-threading-skincare-phngdc/": {
+  "id": "ChIJBYjS7XsXQjERRiY3tPhnGDc",
+  "name": "Lani Spa: Eyebrow, Eyelash, Waxing, Facials, Massage, Nails, Lip Blushing, Microblading,Threading, Skincare",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/lavie-homespa-goi-dau-duong-sinh-massage-da-nang-1foaew/": {
+  "id": "ChIJ8SzbOAAXQjERXfRw-1FOAew",
+  "name": "Lavie HomeSpa - Gội đầu dưỡng sinh, massage Đà Nẵng",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/lavy-spa-j2hshm/": {
+  "id": "ChIJs64EV7QXQjERm-sg4j2hSHM",
+  "name": "lavy spa",
+  "area": "Son Tra",
+  "up": "/spas/area/son-tra/",
+  "to": null
+ },
+ "/spas/lee-spa-and-massage-da-nang-ruiv3q/": {
+  "id": "ChIJNxOlbnIXQjER9DXmYRuiv3Q",
+  "name": "Lee spa & Massage Đà Nẵng",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/len-spa-lotus-hair-wash-and-massage-nrqew4/": {
+  "id": "ChIJo9CSEAAZQjERYYqtHnrQEw4",
+  "name": "Len Spa Lotus (Hair Wash & Massage)",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/len-spa-relax-shampoo-and-massage-3-_vs6dq/": {
+  "id": "ChIJgzxuaBgZQjERmqtJ2_vS6dQ",
+  "name": "Len Spa - ReLax Shampoo & Massage 3",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/len-spa-shampoo-nails-massage-d1alve/": {
+  "id": "ChIJ8R6TJwAZQjERM_mSEd1AlVE",
+  "name": "Len Spa ( Shampoo - Nails - Massage )",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/levenin-spa-and-massage-danang-tcds1w/": {
+  "id": "ChIJX8a3GJEZQjERe6n-Xtcds1w",
+  "name": "Levenin Spa & Massage Danang - 다낭 마사지",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/linda-spa-goi-dau-duong-sinh-massage-body-s10e4s/": {
+  "id": "ChIJpSa5eQAZQjERklGsHS10E4s",
+  "name": "Linda spa Gội đầu dưỡng sinh- Massage body",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/lip-hair-studio-cs2-ezsxza/": {
+  "id": "ChIJ6dpdYAAZQjERne6WzeZSXZA",
+  "name": "LIP HAIR STUDIO cs2",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/lite-retreat-spa-and-nail-shampoo-waxing-take-ear-4il4gq/": {
+  "id": "ChIJQSpPjzwXQjERhq3wf4iL4GQ",
+  "name": "Lite Retreat Spa & Nail ( Shampoo - Waxing - Take Ear )",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/lix-ad-hair-salon-da-nang-zfrbbi/": {
+  "id": "ChIJWXnCBqIZQjER7JgiMZFrbbI",
+  "name": "LIX AD Hair Salon Da Nang",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/lounge-spa-da-nang-vnwozc/": {
+  "id": "ChIJsa7MtDwZQjER3DYtBvnwoZc",
+  "name": "Lounge Spa Da Nang",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/luma-spa-yhjalm/": {
+  "id": "ChIJRUSUUgAZQjERp2PsnYhjaLM",
+  "name": "Luma Spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/lumi-spa-ahpy84/": {
+  "id": "ChIJm1KtNwAXQjERtSDELAHPy84",
+  "name": "LUMI SPA",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/luxury-healthy-spa-and-massage-rshiyi/": {
+  "id": "ChIJp4sb2egXQjERFOFVxrsHiyI",
+  "name": "Luxury Healthy Spa & Massage",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/luxury-herbal-spa--ontzm/": {
+  "id": "ChIJ6dOY7ykYQjER0aPtP-ONTzM",
+  "name": "Luxury Herbal Spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/luxury-man-cafsq4/": {
+  "id": "ChIJbd_E2tEZQjER0mT7BCAFsQ4",
+  "name": "Luxury Man",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/ly-haus-hair-wash-body-massage-facial-lntups/": {
+  "id": "ChIJd__DezQZQjER1YqAPlNtUps",
+  "name": "Ly.Haus Hair Wash - Body Massage - Facial",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/lymphcare-aura-spa-and-lymphatic-drainage-3yd4vk/": {
+  "id": "ChIJyQ-bHQAXQjER06L1W3YD4Vk",
+  "name": "LymphCare Aura Spa & Lymphatic Drainage",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/lyn-head-spa-and-facial-da-nang-0fmopw/": {
+  "id": "ChIJsbAX9sYZQjERGm_9_0Fmopw",
+  "name": "Lyn Head Spa & Facial Da Nang",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/m-a-i-beauty-goi-dau-duong-sinh-noi-mi-dep-oyi7go/": {
+  "id": "ChIJK1oHS4cZQjERNESP-OYi7go",
+  "name": "M.A.I Beauty - Gội Đầu Dưỡng Sinh - Nối Mi Đẹp",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/maha-spa-massage-facial-shampoo-ltztqs/": {
+  "id": "ChIJ-bbsZ0wXQjERUdMb3LTztqs",
+  "name": "Maha Spa - Massage, Facial, Shampoo",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/maison-spa-r1-ose/": {
+  "id": "ChIJm8f8cfQXQjERzcEI5R1-osE",
+  "name": "Maison Spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/massage-for-men-at-home-da-nang-_j8ofe/": {
+  "id": "ChIJPTzd0REXQjERlaqyp_J8oFE",
+  "name": "Massage For Men At Home Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/massage-goi-au-thu-gian-thao-my-fyr5hg/": {
+  "id": "ChIJu9ck3_sXQjERxJnF9Fyr5hg",
+  "name": "Massage - Gội ��ầu thư giãn Thảo My",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/massage-goi-dau-thu-gian-thao-my-fyr5hg/",
+  "since": "2026-09-12"
+ },
+ "/spas/massage-goi-dau-thu-gian-thao-my-fyr5hg/": {
+  "id": "ChIJu9ck3_sXQjERxJnF9Fyr5hg",
+  "name": "Massage - Gội đầu thư giãn Thảo My",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/massage-moon-beauti-spa-eptdpy/": {
+  "id": "ChIJ8yYlmeIZQjERD8B25ePTdPY",
+  "name": "Massage Moon Beauti Spa 문 뷰티스파 마사지",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/massage-sakura-da-nang-5lfgcu/": {
+  "id": "ChIJI-vztxUXQjERQ3fht5LFgcU",
+  "name": "Massage Sakura Đà Nẵng",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/massage-sapphire-jacuzzi-0qatci/": {
+  "id": "ChIJIw9tGokXQjERD7CNi0QAtCI",
+  "name": "Massage SAPPHIRE - Jacuzzi",
+  "area": "Da Nang",
+  "up": "/spas/area/da-nang/",
+  "to": null
+ },
+ "/spas/massage-spa-kotto-vip-7oi_wk/": {
+  "id": "ChIJlyM2agAXQjERNbaAS7OI_Wk",
+  "name": "Massage Spa Kotto Vip",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/massage-tram-x7jdls/": {
+  "id": "ChIJ3yBQ_WcXQjER9E2sKX7JDLs",
+  "name": "Massage Trầm",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/may-healing-spa-nourishing-head-spa-and-body-massage-bhh0ta/": {
+  "id": "ChIJCd863IIXQjERVxOP_bhh0tA",
+  "name": "May Healing Spa - Nourishing Head Spa & Body Massage (두피 관리 샴푸, 풋앤 바디 마사지 - 頭皮護理洗髮、足部和身體按摩)",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-09-12"
+ },
+ "/spas/maylis-paris-spa-and-massage-da-nang-e5tdge/": {
+  "id": "ChIJy_mEWbYXQjERTHHYaE5tdgE",
+  "name": "Maylis Paris Spa & Massage Da Nang",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/me-spa-ly-thuong-kiet-massage-facial-shampoo-eliqx0/": {
+  "id": "ChIJQ_RGowUZQjERaCIhkeliQX0",
+  "name": "ME SPA Ly Thuong Kiet - Massage, Facial, Shampoo",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/me-spa-massage-facial-shampoo-fzq7la/": {
+  "id": "ChIJiWIxsi8ZQjERQXzQJfzQ7LA",
+  "name": "Me Spa - Massage, Facial, Shampoo",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/mew-spa-relax-shampoo-and-massage-a3ovhe/": {
+  "id": "ChIJ78ukNv0ZQjERBOhJ7A3OvHE",
+  "name": "MEW SPA ReLax ShamPoo & Massage",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/min-goi-dau-duong-sinh-spa-body-xaldfy/": {
+  "id": "ChIJ7270HJ4XQjERHiZtzxALdFY",
+  "name": "Min gội đầu dưỡng sinh spa body",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/mint-s-garden-wellness-and-spa-da-nang-fforcq/": {
+  "id": "ChIJx04oalgZQjERZ-JSKffoRcQ",
+  "name": "Mint’s Garden Wellness & Spa Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/misa-de-beaute-cham-soc-da-hoa-xuan-hjkwpu/": {
+  "id": "ChIJTWO_7h8ZQjERYDz-VHjKWPU",
+  "name": "MISA DE BEAUTÉ - CHĂM SÓC DA HOÀ XUÂN",
+  "area": "Da Nang",
+  "up": "/spas/area/da-nang/",
+  "to": null
+ },
+ "/spas/missha-spa-best-relaxation-services-in-da-nang-pbadrc/": {
+  "id": "ChIJteVurpoXQjERq3nYtpBadrc",
+  "name": "Missha Spa - Best relaxation services in Da Nang 추천 마사지 按摩 マッサージ",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/mo-ran-spa-massage-da-nang-__rlcu/": {
+  "id": "ChIJb8MdQWoXQjERRQj0l__rlCU",
+  "name": "Mo Ran Spa Massage Da Nang",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/moc-an-spa-natural-healing-in-da-nang-mycrsy/": {
+  "id": "ChIJufkFjDgZQjERhGKa7mYCrSY",
+  "name": "Mộc An Spa - Natural Healing in Da Nang",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/moc-spa-411-hoang-dieu-goi-dau-and-massage-pcdbfk/": {
+  "id": "ChIJEQFewYQZQjERSOyCFPCDbFk",
+  "name": "Mộc Spa 411 Hoàng Diệu - Gội Đầu & Massage",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/moc-thanh-spa-7dwucg/": {
+  "id": "ChIJ9wcVkY0ZQjERC4hzT7DwUcg",
+  "name": "Mộc Thanh Spa",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/moon-spa-massage-foot-body-c4wpfm/": {
+  "id": "ChIJoXR5BgcZQjERf7vcxC4WpfM",
+  "name": "Moon Spa Massage Foot Body",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/moya-wellness-spa-da-nang-stu8zk/": {
+  "id": "ChIJfzqqXwAZQjERWQ7zRsTU8Zk",
+  "name": "Moya Wellness Spa Da Nang",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/ms-kim-massage-nlim90/": {
+  "id": "ChIJgWWEKQAXQjERUugYmNLiM90",
+  "name": "Ms. Kim Massage",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-08-05"
+ },
+ "/spas/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-08-05"
+ },
+ "/spas/my-my-spa-mguw54/": {
+  "id": "ChIJdcD_lfIXQjERg-sF_MguW54",
+  "name": "Mỹ Mỹ SPA",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/na-spa-fyvxs8/": {
+  "id": "ChIJg6DdKwAXQjER9w9g1Fyvxs8",
+  "name": "Na spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/nam-spa1-s97ce4/": {
+  "id": "ChIJvc_UnBAXQjERPE39bS97cE4",
+  "name": "Nam spa1",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/nang-spa-goi-dau-duong-sinh-krybye/": {
+  "id": "ChIJixkyADQZQjERV5vinKRyByE",
+  "name": "NẮNG SPA-GỘI ĐẦU DƯỠNG SINH",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/ngoc-bich-ayurvedic-hair-spa-xsdd6u/": {
+  "id": "ChIJ1RcPz-UXQjERBY0B0XSdD6U",
+  "name": "Ngọc Bích Ayurvedic Hair Spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/nguon-spa-da-nang-nguon-hoang-ke-viem-axktko/": {
+  "id": "ChIJyUfZ9fAZQjERIMtiBaxkTko",
+  "name": "Nguon Spa Da Nang - Nguồn Hoàng Kế Viêm",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/nguon-spa-da-nang-nguon-tran-bach-dang-ihvuqk/": {
+  "id": "ChIJzwOJHrgZQjERIUFfgIhVUQk",
+  "name": "Nguon Spa Da Nang - Nguồn Trần Bạch Đằng",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/nguyen-anh-hair-salon-iobhfu/": {
+  "id": "ChIJMUF3Iz8ZQjER6iWQFIoBHFU",
+  "name": "Nguyen anh hair salon",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/nha-minh-spa-co-so-2-462-dien-bien-phu-5331mu/": {
+  "id": "ChIJFVqYCKsZQjERv29XM5331mU",
+  "name": "Nhà Mình Spa cơ sở 2 462 Điện Biên Phủ",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/nha-minh-spa-goi-dau-duong-sinh-massage-body-jybk-w/": {
+  "id": "ChIJUakvEwAZQjERHIz20JYbk-w",
+  "name": "Nhà mình spa Gội Đầu Dưỡng Sinh Massage Body",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/nha-spa-chuyen-goi-dau-duong-sinh-massage-thu-gian-da-nang-aagbsq/": {
+  "id": "ChIJR5VZLpgZQjERyJGS4AAGbsQ",
+  "name": "Nhà Spa - Chuyên gội đầu dưỡng sinh, massage thư giãn Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/nha-spa-goi-dau-duong-sinh-va-spa-cham-soc-da-kffbzc/": {
+  "id": "ChIJORFCfMoZQjERFSmLLkffbZc",
+  "name": "NHÃ SPA - Gội đầu dưỡng sinh và Spa chăm sóc da",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/nho-goi-dau-duong-sinh-inlpwu/": {
+  "id": "ChIJMQlXrw8ZQjERJTcg3InlpWU",
+  "name": "Nhỏ - Gội Đầu Dưỡng Sinh",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/nien-spa-1xjbdi/": {
+  "id": "ChIJV7PEhIEXQjERm5t9g1xjbDI",
+  "name": "Niên Spa",
+  "area": "Son Tra",
+  "up": "/spas/area/son-tra/",
+  "to": null
+ },
+ "/spas/noah-spa-da-nang-t5urf0/": {
+  "id": "ChIJ-5WOWf8ZQjERobTXAt5urf0",
+  "name": "Noah Spa Da Nang 노아스파",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/noi-toc-anh-son-cong-nghe-super-light-xcil3g/": {
+  "id": "ChIJpekichYZQjERCPti-xcIL3g",
+  "name": "Nối Tóc Anh Sơn - Công Nghệ Super Light",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/non-spa-massage-nail-hair-washing-facial-and-skin-care-69ycmm/": {
+  "id": "ChIJJRnwO4UXQjERO5XPs69YCmM",
+  "name": "Nón Spa - Massage, Nail, Hair Washing, Facial and Skin care",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/nup-hem-spa-goi-dau-duong-sinh-iufzh8/": {
+  "id": "ChIJNST8GgAZQjERmjGrmIUfZh8",
+  "name": "NÚP HẺM SPA- GỘI ĐẦU DƯỠNG SINH",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/oani-spa-da-nang-dvy3ko/": {
+  "id": "ChIJ98HsudQXQjERpViPqdVY3ko",
+  "name": "Oani Spa Da Nang",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/ohio-spa-and-massage-da-nang-and-6xypl8/": {
+  "id": "ChIJx4OcXQAZQjERSRFxJ6XYPl8",
+  "name": "Ohio Spa & Massage Đà Nẵng 다낭 오하이오 마사지 스파 ダナンオハイオスパ&マッサージ 俄亥俄州岘港水疗和按摩",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/olga-spa-idwsiq/": {
+  "id": "ChIJCxWwZAAZQjER9CFaxIdWSIQ",
+  "name": "Olga Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/olive-spa-qefs7m/": {
+  "id": "ChIJ_-jjEmIZQjERJAI-YQefS7M",
+  "name": "OLIVE SPA",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/onda-spa-stfuaa/": {
+  "id": "ChIJYUgmRgAZQjERkP0HRsTfUAA",
+  "name": "ONDA SPA",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/our-hair-salon-iptq9i/": {
+  "id": "ChIJkVqPLAAZQjERGxqfriPTQ9I",
+  "name": "Our Hair Salon",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/pam-spa-sora-and-massage-da-nang-hzm2su/": {
+  "id": "ChIJCQPAPXwZQjERV1A1Lhzm2SU",
+  "name": "Pam Spa Sora & Massage Da Nang",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/pam-spa-vf6tpi/": {
+  "id": "ChIJxxiJNtgZQjERNTdJ8vf6tpI",
+  "name": "PAM SPA",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/panda-relax-spa-qs7ikm/": {
+  "id": "ChIJs8RTfIMXQjERDvqeKqS7IkM",
+  "name": "Panda Relax Spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/panda-spa-body-and-foot-massage-danang-v-xvdg/": {
+  "id": "ChIJ7fA2ROsZQjERuQWylV-XvDg",
+  "name": "Panda Spa Body & Foot Massage Danang",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/phuong-vo-hair-salon-co-so-da-nang-b43ozi/": {
+  "id": "ChIJOSPdXwAZQjERk3cJnb43oZI",
+  "name": "Phương Võ Hair Salon - Cơ sở Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/pink-spa-yksege/": {
+  "id": "ChIJR0jo2K8ZQjERpX4VoYKSegE",
+  "name": "Pink Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/pium-spa-and-massage-therapy-xv-7nw/": {
+  "id": "ChIJ7XcrYiIZQjERiNwH2xv-7nw",
+  "name": "PIUM Spa & Massage Therapy",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/qandb-luxury-spa-massage-and-sauna-da-nang-deubxu/": {
+  "id": "ChIJ90TAWzMXQjERjZ9VhdeUbxU",
+  "name": "Q&B Luxury Spa – Massage & Sauna Đà Nẵng",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/queen-spa-danang-tc-qeu/": {
+  "id": "ChIJjwHqn9UZQjERfjpTNTc-qEU",
+  "name": "Queen Spa Danang",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/quoc-anh-hair-salon-3zbql8/": {
+  "id": "ChIJ8_gEa-cZQjERtl83P3ZbQl8",
+  "name": "QUOC ANH HAIR SALON",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/quoc-duoc-hair-salon-3_mmfg/": {
+  "id": "ChIJJ4GpRwAZQjERhRqH53_mMfg",
+  "name": "Quốc Được Hair Salon",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/reborn-nails-and-retreat-huc8v4/": {
+  "id": "ChIJ4S2_LGIXQjER5UUCohuc8V4",
+  "name": "Reborn Nails & Retreat",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/regal-healthy-spa-and-massage-mjjre8/": {
+  "id": "ChIJ701Bqt8XQjERf9oQmmJJRE8",
+  "name": "Regal Healthy Spa & Massage",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/renora-wellness-spa-and-onsen-sauna-ice-bath-best-massage-hair-wash-o_275a/": {
+  "id": "ChIJoaFXEgAXQjERrvaXwO_275A",
+  "name": "Renora Wellness Spa & Onsen Sauna -Ice bath -Best Massage Hair Wash",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/rin-spa-1-3wl4h8/": {
+  "id": "ChIJfw0kgxcZQjERh8K3z3wL4H8",
+  "name": "RIN SPA 1",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/rom-spa-goi-dau-duong-sinh-massage-body-uf2eb0/": {
+  "id": "ChIJ3ZrBLgAZQjERbse1DUf2Eb0",
+  "name": "RƠM SPA- Gội đầu dưỡng sinh-Massage body",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/rosa-spa-and-massage-da-nang-kfgetq/": {
+  "id": "ChIJ80QCWQAXQjER9Wfb-KFGetQ",
+  "name": "Rosa Spa & Massage Da Nang",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/rosie-wellness-spa-_fdufs/": {
+  "id": "ChIJcW9dDcsXQjERRsPyw_FDUfs",
+  "name": "Rosie Wellness Spa",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/rot-beauty-spa-sb_o_s/": {
+  "id": "ChIJU22DRpgZQjERQKpNEsB_o_s",
+  "name": "Rốt Beauty Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/rot-hair-salon-fjphik/": {
+  "id": "ChIJDSd5Y3kZQjERWft4GfjPhik",
+  "name": "Rốt Hair Salon",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/salon-quoc-phong-xredni/": {
+  "id": "ChIJiQzJkzgYQjER7ji7sXrEDNI",
+  "name": "Salon Quốc Phong",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/salon-toc-dong-uyen-phun-xam-tham-my-nails--odyyq/": {
+  "id": "ChIJc-ifIAAZQjERcnMCz-ODyYQ",
+  "name": "Salon Tóc Đông Uyên - Phun Xăm Thẩm Mỹ - Nails",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-09-12"
+ },
+ "/spas/salon-toc-trinh-saser-wpad04/": {
+  "id": "ChIJUS2oBTkYQjERjQyiNWpad04",
+  "name": "Salon Tóc Trịnh Saser",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/sam-beauty-spa-da-nang-goi-dau-duong-sinh-quan-hai-chau-cori2y/": {
+  "id": "ChIJp1dwcdEZQjERo464rcoRi2Y",
+  "name": "SAM BEAUTY SPA ĐÀ NẴNG | Gội Đầu Dưỡng Sinh Quận Hải Châu",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/sann-house-goi-dau-duong-sinh-massage-tri-lieu-co-vai-gay-massage-body-foot-xq1rna/": {
+  "id": "ChIJj5shSjQXQjER5qhiaXq1rnA",
+  "name": "SANN HOUSE - GỘI ĐẦU DƯỠNG SINH - MASSAGE TRỊ LIỆU CỔ VAI GÁY - MASSAGE BODY - FOOT",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/sany-spa-massage-da-nang-5ax21s/": {
+  "id": "ChIJDZhW1kAZQjERpO5Ud5aX21s",
+  "name": "Sany Spa Massage Da Nang",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/sen-tai-thu-da-nang-afhhlm/": {
+  "id": "ChIJlYfajNsXQjERUixmRaFhhLM",
+  "name": "Sen Tài Thu Đà Nẵng",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/serene-spa-da-nang-massage-and-relaxation-tv1qno/": {
+  "id": "ChIJy4FdPL4XQjERmZZWQTV1qNo",
+  "name": "Serene Spa Da Nang - Massage & relaxation -마사지-按摩",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/shin-hair-studio-9colu0/": {
+  "id": "ChIJ4bSmKgC7aTER8Gm7H9cOLu0",
+  "name": "SHIN hair studio",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/si-me-beauty-chuyen-spa-thu-gian-lam-nail-goi-dau-duong-sinh-sptd2g/": {
+  "id": "ChIJpc8_7Z4ZQjER56UM4SPTD2g",
+  "name": "Si Mê Beauty - Chuyên Spa thư giãn, làm nail, gội đầu dưỡng sinh",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/skin-bar-personalized-facial-in-da-nang-yblmyy/": {
+  "id": "ChIJPTKUS8QZQjER-GO6GyblMyY",
+  "name": "Skin Bar - Personalized Facial in Da Nang",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/sky-hair-salon-tdis68/": {
+  "id": "ChIJ743FPgAXQjERr7QWBTdis68",
+  "name": "Sky Hair Salon",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/smile-spa-ten-cu-spa-ba-thong-cn-son-tra--bwxwq/": {
+  "id": "ChIJz3rG-N0XQjERVs2Zo-BWxwQ",
+  "name": "Smile Spa (tên cũ Spa Bà Thông - CN Sơn Trà)",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/son-tra-resort-and-spa-3eyku0/": {
+  "id": "ChIJS07IM4Y9QjER5m2dd3eyku0",
+  "name": "Son Tra Resort & Spa",
+  "area": "Da Nang",
+  "up": "/spas/area/da-nang/",
+  "to": null
+ },
+ "/spas/son-tra-spa-massage-tri-lieu-da-nang-t81mvg/": {
+  "id": "ChIJKZK2FcoZQjER8f6Uft81Mvg",
+  "name": "Sơn Trà Spa Massage Trị Liệu Đà Nẵng",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/song-healing-spa-massage-j2uiyi/": {
+  "id": "ChIJywpTYwAZQjERmCXmjj2uIYI",
+  "name": "Sóng Healing Spa Massage / 마사지 / 按摩",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/soul-skin-spa-da-nang-vshky8/": {
+  "id": "ChIJy0S7NNcZQjERlYK8uvshky8",
+  "name": "SOUL Skin Spa Da Nang",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/spa-and-massage-da-nang-5oypc0/": {
+  "id": "ChIJM6IFvcIXQjER2Xxk45oYPC0",
+  "name": "Spa & Massage Đà Nẵng",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-09-12"
+ },
+ "/spas/spa-and-massage-hoi-an-local-86znyq/": {
+  "id": "ChIJM_9H_2MXQjER40vpU86zNYQ",
+  "name": "Spa & Massage Hội An • Local",
+  "area": "Son Tra",
+  "up": "/spas/area/son-tra/",
+  "to": null
+ },
+ "/spas/spa-and-massage-tri-lieu-tam-an-best-spa-and-massage-da-nang-nr3grq/": {
+  "id": "ChIJn_Q8CwAZQjERQwuIXNR3GRQ",
+  "name": "Spa & Massage Trị Liệu Tâm An - Best Spa & Massage Da Nang",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/spa-helune-private-wellness-21aigm/": {
+  "id": "ChIJ9QgjLQAZQjERhGrAS21aIGM",
+  "name": "SPA HELUNE - Private Wellness",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/spa-home-massage-_fx6fg/": {
+  "id": "ChIJy9gA5lkXQjERToYv4_Fx6Fg",
+  "name": "SPA Home Massage",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/spa-miss-kim-v0j8ru/": {
+  "id": "ChIJeyx8yEQXQjERKM_BMv0J8rU",
+  "name": "Spa Miss Kim",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/spa-ny-ny-foot-massage-head-shoulders-neck-massage-body-massage-thai-massage-four-hand-shampoo-jvlglc/": {
+  "id": "ChIJNW2fd9kZQjERykme7JVLGlc",
+  "name": "Spa Ny Ny | 뉴욕 스파 | 纽约温泉. ( Foot massage - Head, shoulders, neck massage - Body massage - Thai massage - Four Hand - Shampoo",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/spa-phuong-linh-da-nang-massage-va-goi-dau-duong-sinh-fm9gha/": {
+  "id": "ChIJZ6O80YMXQjER-jYB2FM9gHA",
+  "name": "Spa Phương Linh - Đà Nẵng ( Massage và gội đầu dưỡng sinh)",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/spa-thao-nguyen-goi-duong-sinh-prabue/": {
+  "id": "ChIJH0nrMYwZQjERTaNywPrabUE",
+  "name": "SPA THẢO NGUYÊN- Gội Dưỡng Sinh",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/stari-wellness-spa-z1buhy/": {
+  "id": "ChIJnU-HHtgZQjERyfocVZ1bUHY",
+  "name": "Stari Wellness Spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/street/387/": {
+  "name": ". 387",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/street/an-thuong-11/": {
+  "name": "An Thượng 11",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-09-12"
+ },
+ "/spas/street/an-thuong-26/": {
+  "name": "An Thượng 26",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/street/an-thuong-29/": {
+  "name": "An Thượng 29",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-09-12"
+ },
+ "/spas/street/an-thuong-3/": {
+  "name": "An Thượng 3",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/street/an-thuong-30/": {
+  "name": "An Thượng 30",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-09-12"
+ },
+ "/spas/street/an-thuong-4/": {
+  "name": "An Thượng 4",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/street/ang-2/": {
+  "name": "ầng 2",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/street/bach-dang/": {
+  "name": "Bạch Đằng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/chau-thi-vinh-te/": {
+  "name": "Châu Thị Vĩnh Tế",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/street/chinh-huu/": {
+  "name": "Chính Hữu",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/street/d-dinh-nghe/": {
+  "name": "D. Đình Nghệ",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/street/d-tran-hung-dao/": {
+  "name": "Đ. Trần Hưng Đạo",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/street/dien-bien-phu/": {
+  "name": "Điện Biên Phủ",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/street/do-ba/": {
+  "name": "Đỗ Bá",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/street/dong-da/": {
+  "name": "Đống Đa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/dung-si-thanh-khe/": {
+  "name": "Dũng Sĩ Thanh Khê",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/street/ha-bong/": {
+  "name": "Hà Bổng",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/street/ha-huy-tap/": {
+  "name": "Hà Huy Tập",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/street/hai-phong/": {
+  "name": "Hải Phòng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/hoang-dieu/": {
+  "name": "Hoàng Diệu",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/hoang-ke-viem/": {
+  "name": "Hoàng Kế Viêm",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/street/hoang-van-thu/": {
+  "name": "Hoàng Văn Thụ",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/hung-vuong/": {
+  "name": "Hùng Vương",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/lam-hoanh/": {
+  "name": "Lâm Hoành",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/street/le-dinh-ly/": {
+  "name": "Lê Đình Lý",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/le-duan/": {
+  "name": "Lê Duẩn",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/le-van-thu/": {
+  "name": "Lê Văn Thứ",
+  "area": "Son Tra",
+  "up": "/spas/area/son-tra/",
+  "to": null
+ },
+ "/spas/street/ly-thuong-kiet/": {
+  "name": "Lý Thường Kiệt",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/ly-tu-trong/": {
+  "name": "Lý Tự Trọng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/mai-thuc-lan/": {
+  "name": "Mai Thúc Lân",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/street/nguyen-chi-thanh/": {
+  "name": "Nguyễn Chí Thanh",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/nguyen-cong-tru/": {
+  "name": "Nguyễn Công Trứ",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/street/nguyen-hoang/": {
+  "name": "Nguyễn Hoàng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/nguyen-thi-minh-khai/": {
+  "name": "Nguyễn Thị Minh Khai",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/nguyen-van-thoai/": {
+  "name": "Nguyễn Văn Thoại",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/street/nui-thanh/": {
+  "name": "Núi Thành",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/pham-cu-luong/": {
+  "name": "Phạm Cự Lượng",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/street/pham-van-dong/": {
+  "name": "Phạm Văn Đồng",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/street/phan-ba-phien/": {
+  "name": "Phan Bá Phiến",
+  "area": "Son Tra",
+  "up": "/spas/area/son-tra/",
+  "to": null
+ },
+ "/spas/street/phan-liem/": {
+  "name": "Phan Liêm",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/street/thai-phien/": {
+  "name": "Thái Phiên",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/tieu-la/": {
+  "name": "Tiểu La",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/to-hien-thanh/": {
+  "name": "Tô Hiến Thành",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/street/ton-dan/": {
+  "name": "Tôn Đản",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/street/tran-bach-dang/": {
+  "name": "Trần Bạch Đằng",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/street/tran-phu/": {
+  "name": "Trần Phú",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/tran-quoc-toan/": {
+  "name": "Trần Quốc Toản",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/trung-nu-vuong/": {
+  "name": "Trưng Nữ Vương",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/street/truong-quyen/": {
+  "name": "Trương Quyền",
+  "area": "Son Tra",
+  "up": "/spas/area/son-tra/",
+  "to": null
+ },
+ "/spas/street/vo-nguyen-giap/": {
+  "name": "Võ Nguyên Giáp",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/street/yen-bai/": {
+  "name": "Yên Bái",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/sum-spa-3xyv5g/": {
+  "id": "ChIJt_mG5FYXQjERHpq7a3xyv5g",
+  "name": "Sum Spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/sun-and-sea-spa-dpili0/": {
+  "id": "ChIJr8YwGI0XQjERk66q_dPiLi0",
+  "name": "SUN & SEA SPA",
+  "area": "Son Tra",
+  "up": "/spas/area/son-tra/",
+  "to": "/spas/area/son-tra/",
+  "since": "2026-09-12"
+ },
+ "/spas/sun-spa-7g3c4e/": {
+  "id": "ChIJDTODkAMZQjERZTM657G3C4E",
+  "name": "Sun Spa (썬스파,선스파) 한시장 점",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/t-spa-196-tran-phu-bxggzw/": {
+  "id": "ChIJzYwayl7lmw8R2lX6Qbxggzw",
+  "name": "T Spa 196 Trần Phú",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/te-spa-j19avq/": {
+  "id": "ChIJTY751uUZQjERi0ZH2j19avQ",
+  "name": "Tê Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": "/spas/area/thanh-khe/",
+  "since": "2026-08-05"
+ },
+ "/spas/thanh-spa-iho8a8/": {
+  "id": "ChIJqTDc25cZQjERd6ed4Iho8A8",
+  "name": "Thanh Spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/thanh-spa-relax-6nlqds/": {
+  "id": "ChIJPQ-OSwAZQjER0Zu4X6NlQds",
+  "name": "Thanh Spa Relax",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/thao-moc-goi-duong-sinh-massage-tri-lieu-da-nang-0g-e8c/": {
+  "id": "ChIJKbbzhk4ZQjERLyU6U0g-E8c",
+  "name": "Thảo Mộc - Gội Dưỡng Sinh - Massage Trị Liệu Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/the-bank-pub-view-diff-danang-s7xyr0/": {
+  "id": "ChIJCWvwWSEXQjERbGeeCS7XYR0",
+  "name": "THE BANK PUB VIEW DIFF DaNang",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/the-hair-house-da-nang-8tixac/": {
+  "id": "ChIJ45RAKe0ZQjERmyO1W8TIXAc",
+  "name": "The Hair House Đà Nẵng",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/the-spa-and-massage-and-21-lo4/": {
+  "id": "ChIJTWsDFecXQjERdca0421-lo4",
+  "name": "The Spa and Massage 더 스파 & 마사지",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/the-viet-spa-goi-dau-duong-sinh-massage-12ub2o/": {
+  "id": "ChIJdysxQ6gZQjER_aRax12ub2o",
+  "name": "THE VIET SPA｜Gội Đầu Dưỡng Sinh・Massage｜越式養生洗頭・按摩｜헤드스파 ・ 릴랙싱 마사지",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/theanh-hair-studio-oyjpsc/": {
+  "id": "ChIJC7vYIwAZQjER7N3_PoyJpsc",
+  "name": "THEANH Hair Studio",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/ther-healing-spa-da-nang-nd0iwi/": {
+  "id": "ChIJpfxyRAAZQjER9e4HhND0IWI",
+  "name": "Ther Healing Spa Da Nang",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-08-06"
+ },
+ "/spas/thera-healing-spa-llv0kk/": {
+  "id": "ChIJ7bQGkXYXQjERecx1XLlV0kk",
+  "name": "Thera Healing Spa",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/thi-la-spa-co-so-2-goi-dau-duong-sinh-massage-thu-gian-bkg6vo/": {
+  "id": "ChIJpeWgKQAZQjERms350BkG6Vo",
+  "name": "Thì Là Spa Cơ Sở 2 - Gội đầu dưỡng sinh, massage thư giãn",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/thi-la-spa-tjxvo4/": {
+  "id": "ChIJMS0mrYAZQjEROsE7OtJxvO4",
+  "name": "Thì Là Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/thien-huong-spa-and-massage-mpvv_q/": {
+  "id": "ChIJncjZ3CEYQjERm-McZmpVV_Q",
+  "name": "Thien Huong spa & massage | 다낭 최고의 스파 마사지",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/tho-tran-spa-vngkkq/": {
+  "id": "ChIJMT354f4XQjER7YBG8vngKkQ",
+  "name": "Thơ Trần Spa",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/thu-nguyen-spa-and-massage-fo-3eu/": {
+  "id": "ChIJ3bG0bwAXQjERZmnmbfo-3EU",
+  "name": "Thu nguyên spa & Massage",
+  "area": "Son Tra",
+  "up": "/spas/area/son-tra/",
+  "to": null
+ },
+ "/spas/thufy-aura-spa-nail-and-foot-dehkwa/": {
+  "id": "ChIJ6Udii3UZQjERYxCkiDEhkwA",
+  "name": "Thufy Aura Spa - Nail & Foot",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/thuong-ta-spa-7x--gs/": {
+  "id": "ChIJZcOQAwAZQjERVuUvu7x--Gs",
+  "name": "Thương Ta Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/tiem-filler-botox-nhan-cat-mi-da-nang-vu-oanh-de-beaute-clinic-yh-udg/": {
+  "id": "ChIJT2l1bIYZQjERg1xAlYH-Udg",
+  "name": "Tiêm Filler, Botox, nhấn cắt mí Đà Nẵng - Vũ Oanh de Beauté Clinic",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/tiem-goi-dau-dem-da-nang-yen-nhi-beauty-b5-rsa/": {
+  "id": "ChIJgQrbg1kXQjERfKFEfb5-rsA",
+  "name": "Tiệm Gội Đầu Đêm Đà Nẵng - Yến Nhi Beauty",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/tiem-goi-dau-em-da-nang-yen-nhi-beauty-b5-rsa/": {
+  "id": "ChIJgQrbg1kXQjERfKFEfb5-rsA",
+  "name": "Tiệm Gội Đầu ��êm Đà Nẵng - Yến Nhi Beauty",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/tiem-goi-dau-dem-da-nang-yen-nhi-beauty-b5-rsa/",
+  "since": "2026-09-12"
+ },
+ "/spas/tiem-goi-dau-mo-ba-co-so-2-massage-body-6anddy/": {
+  "id": "ChIJN8-ulmYZQjERO9ZTv6anDdY",
+  "name": "Tiệm gội đầu Mợ Ba Cơ sở 2 - Massage body",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/tiem-goi-dau-mo-ba-massage-thu-gian-ibi2cs/": {
+  "id": "ChIJkaJwMFYZQjERKUpyrIbi2cs",
+  "name": "Tiệm gội đầu Mợ Ba - Massage thư giãn",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/tiem-lam-da-hana-and-goi-dau-duong-sinh-pzncsq/": {
+  "id": "ChIJE8sU4vgZQjERuJJC4PzNcSQ",
+  "name": "Tiệm làm da Hana & Gội đầu dưỡng sinh",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/tiem-nha-linh-goi-dau-duong-sinh-masage-tri-lieu-hoa-xuan-dxntfw/": {
+  "id": "ChIJGXUsLQAbQjERlWt0MdXNTfw",
+  "name": "Tiệm Nhà Linh - gội đầu dưỡng sinh, masage trị liệu Hoà Xuân",
+  "area": "Da Nang",
+  "up": "/spas/area/da-nang/",
+  "to": null
+ },
+ "/spas/tiem-nha-minh-goi-dau-duong-sinh-nail-uruqxo/": {
+  "id": "ChIJJ88gUEoZQjERDUEcduRuQXo",
+  "name": "Tiệm Nhà Mình - Gội đầu dưỡng sinh, Nail",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/tin-spa-goi-dau-duong-sinh-thu-gian-qyi1ek/": {
+  "id": "ChIJvysTbgAZQjERi-PXkQyi1Ek",
+  "name": "TIN spa gội đầu dưỡng sinh thư giản",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/tira-spa-jk3lg0/": {
+  "id": "ChIJ_48QIwAZQjERjfAt-Jk3lg0",
+  "name": "Tira Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/tram-spa-nan-mun-f3vsiq/": {
+  "id": "ChIJ95sVZAAZQjERaWAzQF3vSiQ",
+  "name": "Trạm spa- nặn mụn",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/tran-thao-spa-shampoo-and-full-body-massage-da-nang-4essxy/": {
+  "id": "ChIJc21EUS0XQjERaKx2O4ESsxY",
+  "name": "Tran Thao Spa – Shampoo & Full Body Massage Da Nang",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/trees-spa-da-nang-v3_njm/": {
+  "id": "ChIJ556BPtMZQjERykVh_v3_njM",
+  "name": "Trees Spa Da Nang",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/trio-hair-studio-113-nguyen-hoang-p-hai-chau-tp-da-nang-tvp38e/": {
+  "id": "ChIJp3aFAAAZQjERDQWNItvP38E",
+  "name": "TRIO HAIR STUDIO-113 nguyễn hoàng,P.Hải Châu,Tp:Đà nẳng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/tun-beauty-salon-and-spa-g9hcpa/": {
+  "id": "ChIJ0YeVgM8ZQjERp02tHg9hcpA",
+  "name": "Tun Beauty Salon & Spa",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/uyen-vo-massage-goi-dau-duong-sinh-massage-shampoo-wcyy9m/": {
+  "id": "ChIJWbTzuusZQjERHJ73NWcyy9M",
+  "name": "Uyên võ massage - gội đầu dưỡng sinh (massage - shampoo)",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/v-senses-wellness-and-spa-furama-resort-da-nang-gdly_o/": {
+  "id": "ChIJu4Ot3w4XQjERWqSGvgDlY_o",
+  "name": "V-Senses Wellness & Spa - Furama Resort Đà Nẵng",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/van-ly-spa-and-massage-uvmuwm/": {
+  "id": "ChIJ66IiIgAXQjERK0P0RUVMuWM",
+  "name": "Van Ly Spa & Massage",
+  "area": "Son Tra",
+  "up": "/spas/area/son-tra/",
+  "to": null
+ },
+ "/spas/vibes-spa-vo0sec/": {
+  "id": "ChIJDSPqZAUZQjERTsC2-VO0Sec",
+  "name": "Vibes spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/viet-spa-massage-body-wtyul8/": {
+  "id": "ChIJ-0wB4rgXQjERkpF32wTyUl8",
+  "name": "Việt Spa Massage Body",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/viet-spa-wtyul8/",
+  "since": "2026-09-12"
+ },
+ "/spas/viet-spa-wtyul8/": {
+  "id": "ChIJ-0wB4rgXQjERkpF32wTyUl8",
+  "name": "Việt Spa",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/view-spa-qxlnzk/": {
+  "id": "ChIJcUpQaTIYQjERP9ZGNqxLNZk",
+  "name": "View Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/vip-massage-khgtjw/": {
+  "id": "ChIJA4CF9AYXQjERcNglUKhgtJw",
+  "name": "다낭안마 VIP massage",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": "/spas/area/my-an-and-an-thuong/",
+  "since": "2026-09-12"
+ },
+ "/spas/vip-vian-massage-vip-da-nang-vip-vian-vip-vian-danang-vip-massage-wvivk8/": {
+  "id": "ChIJddRJa8IZQjER84p4rWViVk8",
+  "name": "비안 마사지 VIP (VIAN Massage VIP Đà Nẵng) 다낭 VIP 마사지 - VIAN 峴港 VIP 按摩- VIAN danang vip massage",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": "/spas/area/my-khe-beachfront/",
+  "since": "2026-09-12"
+ },
+ "/spas/vvip-supreme-spa-j0zsue/": {
+  "id": "ChIJ8-ZbDAsXQjERHIyWhJ0zSuE",
+  "name": "VVIP Supreme Spa 최고의 스파 至尊越式按摩",
+  "area": "My Khe beachfront",
+  "up": "/spas/area/my-khe-beachfront/",
+  "to": null
+ },
+ "/spas/xom-spa-beauty-cham-soc-da-nan-mun-goi-dau-thu-gian-triet-long-lanh-cnc-pxiowu/": {
+  "id": "ChIJyXK6kagZQjER81_9XPxIOwU",
+  "name": "Xóm Spa Beauty - Chăm sóc Da- Nặn Mụn-Gội Đầu Thư Giãn- Triệt Lông Lạnh CNC",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/ya-nguyen-hair-salon-trendy-2vcxnk/": {
+  "id": "ChIJC3ahhP0YQjERAr02J2VCxnk",
+  "name": "Ya Nguyễn Hair Salon Trendy",
+  "area": "Thanh Khe",
+  "up": "/spas/area/thanh-khe/",
+  "to": null
+ },
+ "/spas/yuri-hair-spa-and-massage-mefu1g/": {
+  "id": "ChIJjxOOG00ZQjERRf8aUMEfu1g",
+  "name": "Yuri Hair Spa & Massage",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/yururi-japanese-head-spa-cpp0-a/": {
+  "id": "ChIJjZ69DwAXQjERjuxshCPP0-A",
+  "name": "YURURI JAPANESE HEAD SPA",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/spas/zen-spa-and-beauty-tihhhs/": {
+  "id": "ChIJD8jEMgAZQjERJXnH7TihHHs",
+  "name": "Zen Spa & Beauty",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": "/spas/area/hai-chau/",
+  "since": "2026-09-12"
+ },
+ "/spas/zenbiotech-spa-q4lw4w/": {
+  "id": "ChIJAy11ZQAZQjERbO8gZQ4lW4w",
+  "name": "Zenbiotech Spa",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/zenya-goi-dau-duong-sinh-da-nang-91x1lu/": {
+  "id": "ChIJHztsDwAZQjERzBTgy91x1lU",
+  "name": "Zenya - Gội đầu dưỡng sinh Đà Nẵng",
+  "area": "Hai Chau",
+  "up": "/spas/area/hai-chau/",
+  "to": null
+ },
+ "/spas/zero-hair-salon-da-nang-bkxrs8/": {
+  "id": "ChIJ_0ywY10XQjERmCIAibKXRs8",
+  "name": "Zero Hair Salon Da Nang",
+  "area": "My An & An Thuong",
+  "up": "/spas/area/my-an-and-an-thuong/",
+  "to": null
+ },
+ "/th/area/da-nang/": {
+  "name": "Da Nang",
+  "up": "/th/all/",
+  "to": null
+ },
+ "/th/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/th/all/",
+  "to": null
+ },
+ "/th/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/th/all/",
+  "to": null
+ },
+ "/th/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/th/all/",
+  "to": null
+ },
+ "/th/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/th/all/",
+  "to": null
+ },
+ "/th/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/th/all/",
+  "to": null
+ },
+ "/vi/area/da-nang/": {
+  "name": "Da Nang",
+  "up": "/vi/all/",
+  "to": null
+ },
+ "/vi/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/vi/all/",
+  "to": null
+ },
+ "/vi/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/vi/all/",
+  "to": null
+ },
+ "/vi/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/vi/all/",
+  "to": null
+ },
+ "/vi/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/vi/all/",
+  "to": null
+ },
+ "/vi/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/vi/all/",
+  "to": null
+ },
+ "/zh/area/da-nang/": {
+  "name": "Da Nang",
+  "up": "/zh/all/",
+  "to": null
+ },
+ "/zh/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/zh/all/",
+  "to": null
+ },
+ "/zh/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/zh/all/",
+  "to": null
+ },
+ "/zh/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/zh/all/",
+  "to": null
+ },
+ "/zh/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/zh/all/",
+  "to": null
+ },
+ "/zh/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/zh/all/",
+  "to": null
+ }
+}

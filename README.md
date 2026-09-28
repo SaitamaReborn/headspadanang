@@ -37,6 +37,20 @@ node build.js
 
 The LaunchAgent `com.digitalunicorn.danang-refresh` runs `refresh.sh` on the 1st of each month at 04:30. It was bi-monthly until 12/09/2026, which guaranteed the 30-day cap would bite every other month; that is what broke seven consecutive builds from 5 to 11 September 2026.
 
+## Moved pages (`redirects.json`)
+
+Every refresh drops or renames venues, and Google keeps their old URLs indexed. Without a safety net they answer 404: in September 2026 about ninety profiles across both guides did, four of them among headspadanang's top ten pages.
+
+`redirects.json` is the memory of every data page this site has published (profiles, streets, areas), with the place id behind each profile. `lib/engine.js` updates it on **every build** and turns each path that no longer exists into a redirect page:
+
+1. the venue's id is still listed under a new slug: redirect to its new profile;
+2. otherwise: redirect to the page one level up (the venue's area page);
+3. otherwise: redirect to `/spas/`.
+
+GitHub Pages cannot answer 301, so each redirect page carries an instant `<meta http-equiv="refresh">`, a `rel="canonical"` to the target and a visible link. Google treats an instant meta refresh as a permanent redirect. Redirect pages are never listed in the sitemap, and a venue that comes back in a later snapshot gets its real page again (`"to": null`).
+
+Commit `redirects.json` with the refresh that changed it (`refresh.sh` does, via `git add -A`, and the drip workflow adds it too). Never delete entries: an entry is what keeps an old URL from turning back into a 404.
+
 ## Why a build can fail
 
 `lib/engine.js` refuses to produce a site rather than produce a broken one:
@@ -63,6 +77,7 @@ lib/css-spa.js    stylesheet
 lib/i18n.js       the nine non-English locales
 journal.js        articles, date-gated: nothing publishes before its date
 places.json       Google Places snapshot. fetchedAt drives the 30-day clock
+redirects.json    every data page ever published, and where the vanished ones now redirect
 docs/             build output, committed, served by GitHub Pages
 ```
 

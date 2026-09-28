@@ -20,5 +20,5 @@ jobs:
         run: |
           git config user.name "drip-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add docs
+          git add docs redirects.json
           git diff --cached --quiet || (git commit -m "drip: $(date -u +%F)" && git push)
