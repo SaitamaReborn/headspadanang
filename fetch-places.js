@@ -104,6 +104,7 @@ const LOCK='./.places.lock';
     if (seen.has(id)) { console.log(`  pinned ${id} déjà présent`); continue; }
     const p = await getPlace(id);
     if (p.error || !p.location) { console.error('  ! pinned', id, '→', (p.error||{}).status || 'no data'); continue; }
+    if (p.businessStatus === 'CLOSED_PERMANENTLY' || !inDaNang(p)) { console.log(`  pinned ${(p.displayName||{}).text} fermé ou hors zone, ignoré`); continue; }
     seen.set(id, {
       id, name:(p.displayName||{}).text||'', address:p.shortFormattedAddress||p.formattedAddress||'',
       area: area(p), rating:p.rating??null, reviews:p.userRatingCount??0,

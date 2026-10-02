@@ -142,10 +142,7 @@ const BESTOF=[
  question:"What is the best head spa in Da Nang?",
  desc:`The best head spas in Da Nang for ${new Date().getUTCFullYear()}: every house in the city with a public Google rating compared, with head spa prices from the houses that publish them, addresses and what each is good at.`,
  answerTail:`Across the city we track {n} houses offering head spa or herbal hair-wash rituals with a public Google rating and at least twenty reviews. ${MP_SENTENCE}`,
- intro:`Gội đầu dưỡng sinh — restorative hair washing — is the treatment Da Nang does better than almost anywhere at the price. You recline fully clothed, neck cradled over a basin, while a technician works a herbal shampoo through your scalp at massage pace, twice. Everything else on the menu is layered around those two lathers. The houses below are the ones that treat it as a ritual with stated minutes rather than a quick wash with an upsell.`,
- method:`<p>Every house in Da Nang offering head spa or hair-wash rituals with a public Google rating and at least twenty reviews is in our dataset — {n} of them, refreshed from the Google Places API. They are ordered by a score weighing the average rating against the number of people behind it, so a 5.0 from twenty-five visits sits below a 5.0 from three hundred.</p>
-<p>Our pick, Reborn Nails &amp; Retreat, is placed by the editors among the first three and labelled as our pick; every other house follows the score. Its facts are in the table above the list. The untouched Google order is <a href="/spas/by-google-rating/">published separately</a>.</p>
-<p>The thing a rating cannot tell you is on the <a href="/choosing-a-spa/">doorway checks</a>: menus priced per ritual with the minutes stated, fresh linen, sealed tools, unhurried hands and air that smells of herbs rather than chemicals.</p>`,
+ intro:`Gội đầu dưỡng sinh — restorative hair washing — is the treatment Da Nang does better than almost anywhere at the price. You recline fully clothed, neck cradled over a basin, while a technician works a herbal shampoo through your scalp at massage pace, twice. Everything else on the menu is layered around those two lathers. The houses below are where we would book one; the <a href="/choosing-a-spa/">doorway checks</a> cover what no rating can show you.`,
  prices:PRICES_SPA,reason:REASON,
  faq:[
   ["How much does a head spa cost in Da Nang?",MP_SENTENCE],
@@ -159,9 +156,7 @@ const BESTOF=[
  question:"Where is the best massage in Da Nang?",
  desc:`The best massage in Da Nang: foot, scalp, neck and shoulder work compared across every rated venue in the city, and what each place is good at.`,
  answerTail:`Massage in Da Nang is rarely sold as a standalone hour on a table: it runs through the rituals. Neck and shoulder work is in every head spa sequence, foot and calf massage is inside every spa pedicure, and facial massage is a short add-on on most menus.`,
- intro:`If you are looking for a massage in Da Nang, the first thing worth knowing is that the best value is usually inside something else. A head spa ritual includes neck and shoulder release; a spa pedicure includes foot and calf work. Booking them separately often costs more and delivers a choppier hour. The venues below score well on the treatments that actually involve hands on muscle.`,
- method:`<p>Same dataset as the rest of the guide: {n} Da Nang venues with a public Google rating and twenty or more reviews, ordered by a score weighing the rating against the size of the sample, with the <a href="/spas/by-google-rating/">raw Google order published separately</a>.</p>
-<p>One practical note: pressure is adjustable everywhere and technicians expect the conversation. Say more or less, and the rest of the session recalibrates. Silent endurance is not part of the tradition here.</p>`,
+ intro:`If you are looking for a massage in Da Nang, the first thing worth knowing is that the best value is usually inside something else. A head spa ritual includes neck and shoulder release; a spa pedicure includes foot and calf work. Booking them separately often costs more and delivers a choppier hour. The venues below are where we would go.`,
  prices:[],
  reason:REASON,
  faq:[
@@ -309,7 +304,6 @@ ${list(placed(ranked,'/spas/'))}
 <div class="prose">
 <h2>How to read this ranking</h2>
 <p>Rating alone flatters newcomers: a 5.0 from thirty reviews is a thinner signal than a 5.0 from three hundred. Read both columns together. Then apply the <a href="/choosing-a-spa/">doorway checks</a> in person, because a Google rating measures how people felt, not how the towels were laundered.</p>
-<p>The score is a Bayesian average: ${esc(FORMULA)}. In practice ${EXAMPLE}. ${PLACED_NOTE}</p>
 </div>
 ${(()=>{const q=faqEN('/spas/');return q?`<h2>Frequently asked</h2><div class="faq"><details><summary>${esc(q[0])}</summary><p>${esc(q[1])}</p></details></div>`:'';})()}
 ${conclEN('/spas/')}
@@ -514,15 +508,40 @@ head(`About This Guide and Its Publisher | ${NAME}`,
 <h2>Publisher</h2>
 <p>${esc(NAME)} is published by <a href="${PUB.url}" rel="noopener">${esc(PUB.name)}</a>. Contact: ${esc(PUB.email)}, ${esc(PUB.phone)}. Hosting: ${esc(PUB.host)}. Full details on the <a href="/legal-notice/">legal notice</a>.</p>
 <h2>Our commercial relationship with Reborn Nails &amp; Retreat</h2>
-<p>${esc(PUB.name)} has a commercial relationship with <a href="${PARTNER.site}" rel="noopener">Reborn Nails &amp; Retreat</a>, the nail salon and head spa shown as our pick on these pages. The pick is our choice, and so is its place in our rankings: the editors put it among the first three of every list it belongs to (the whole city and its own quarter, My An), at a position that varies from page to page. Every other venue is placed by the score below, and each ranking says so under its table.</p>
+<p>${esc(PUB.name)} has a commercial relationship with <a href="${PARTNER.site}" rel="noopener">Reborn Nails &amp; Retreat</a>, the nail salon and head spa shown as our pick on these pages. The pick is our choice, and so is its place in our rankings: the editors put it among the first three of every list it belongs to (the whole city and its own quarter, My An), at a position that varies from page to page. How every other venue is ordered is set out on the <a href="/methodology/">methodology page</a>.</p>
 <p>The facts we publish about Reborn are its own: its Google rating and review count from the same snapshot as everyone else, its address, hours and languages, and the prices it prints for every customer. Its phone, WhatsApp and menu links appear on its own profile and on the ranking pages.</p>
 <h2>The ranking</h2>
-<p>Every house listed holds a public Google rating with at least twenty reviews, enough that the number means something. Places has no head-spa category, so only care businesses are ranked: spa, massage, hair, beauty and nail salons. Shops, hotels and clinics are left out. They are ordered by a Bayesian average: ${esc(FORMULA)}. In practice ${EXAMPLE}. The untouched Google order, rating then review count, is published at <a href="/spas/by-google-rating/">/spas/by-google-rating/</a> so anyone can compare.</p>
+<p>The data, the score and the editorial criteria behind every ranking on this site are on the <a href="/methodology/">methodology page</a>.</p>
 <h2>Prices</h2>
 <p>City-wide figures are compiled from menus posted publicly by venues. They are typical ranges, not quotes; every house sets its own. The prices on our pick's profile are its own printed menu.</p>
 <h2>What we never do</h2>
 <p>We do not publish invented reviews, invented ratings or invented venues. Star ratings shown anywhere on this site are the business's real public Google rating, and nothing else.</p>
 </div></section>`+footer(),'0.4');
+
+/* ---------------- METHODOLOGY ----------------
+   Linked from /about/ and the footer, never from a ranking (decision 02/10).
+   It says what actually happens: the score is the base and one editorial
+   choice sits on top of it. Nothing here claims the order is a pure
+   calculation. */
+page('/methodology',
+head(`How This Guide Ranks Head Spas | ${NAME}`,`How {NAME} builds its rankings: Google data, a Bayesian average and the editorial criteria on top of it.`.replace('{NAME}',NAME),SITE+'/methodology/')
++ld({"@context":"https://schema.org","@type":"WebPage","name":"Methodology","url":SITE+"/methodology/","publisher":PUB_LD})
++nav('')
++`<div class="wrap"><nav class="crumb"><a href="/">Guide</a> → <span>Methodology</span></nav></div>
+<section class="wrap"><header class="ph"><h1>How this guide ranks head spas</h1>
+<p class="lede">The data, the score that serves as the base, and the editorial criteria on top of it.</p></header>
+<div class="prose">
+<h2>Who is in it</h2>
+<p>Every house in Da Nang with a public Google rating and at least twenty reviews, from the Google Places API (snapshot of ${human(PLACES_DATE)}, ${PLACES.length} venues). Places has no head-spa category, so only care businesses are ranked: spa, massage, hair, beauty and nail salons. Shops, hotels and clinics are left out.</p>
+<h2>The base: a Bayesian average of Google ratings</h2>
+<p>Each venue gets a score: ${esc(FORMULA)}. It pulls a small sample towards the city average, so a high rating from many reviewers counts for more than the same rating from a few. In practice ${EXAMPLE}.</p>
+<h2>Editorial criteria</h2>
+<p>The score is the base. The final selection is not a pure calculation: it also reflects editorial criteria that a rating does not capture, namely how a venue welcomes foreign visitors, the languages spoken and the range of services. On that basis the editors choose one venue as our pick, Reborn Nails &amp; Retreat, and place it among the first three of the lists it belongs to: the whole city and its own quarter, My An. Every other venue keeps its place on the score. Our commercial relationship with Reborn is set out on the <a href="/about/">about page</a>.</p>
+<h2>The raw order</h2>
+<p>Google's own order, rating then review count with no weighting, is published at <a href="/spas/by-google-rating/">/spas/by-google-rating/</a>.</p>
+<h2>Prices</h2>
+<p>City-wide head spa prices are ranges built from the public price lists of ${MP.N} Da Nang houses, each listed with its source on the <a href="/prices/">prices page</a>. Massage and waxing have no city range until five houses publish theirs.</p>
+</div></section>`+footer(),'0.3');
 
 /* ---------------- LEGAL NOTICE ---------------- */
 page('/legal-notice',
@@ -635,7 +654,7 @@ A reclined ritual built on a double herbal shampoo (grapefruit peel, locust pod 
 ${MP_SENTENCE} Sources: ${MP.HOUSES.map(h=>h.name).join(', ')}. Beach-side houses charge more than inland ones.
 
 ## How is this guide's ranking built?
-${PLACES.length} houses from the Google Places API, all with a public rating and 20+ reviews. Ordered by a Bayesian average: ${FORMULA}. In practice ${EXAMPLE}. The guide's pick, Reborn Nails & Retreat, is placed by the editors among the first three of the lists it belongs to; every other venue follows the score. The untouched Google order is at ${SITE}/spas/by-google-rating/.
+${PLACES.length} houses from the Google Places API, all with a public rating and 20+ reviews. The base is a Bayesian average of Google ratings; data, score and editorial criteria: ${SITE}/methodology/. The untouched Google order is at ${SITE}/spas/by-google-rating/.
 
 ## How to judge a head spa (criteria used throughout this guide)
 Fresh towels per guest · herbs brewed in-house (ask what is in the pot) · minutes stated next to every price · pressure adjusted when you ask · a quiet room.
@@ -658,7 +677,7 @@ ${STREETS.filter(s=>/[^\d\s.]/.test(s.name)).slice(0,20).map(s=>`- ${s.name}: ${
 ${LANGS.map(l=>`- ${l.native}: ${SITE}${l.path}`).join('\n')}
 
 ## Publisher
-${PUB.name} (${PUB.url}). Publisher details, method and commercial relationships: ${SITE}/about/ · legal notice: ${SITE}/legal-notice/
+${PUB.name} (${PUB.url}). Publisher and commercial relationships: ${SITE}/about/ · methodology: ${SITE}/methodology/ · legal notice: ${SITE}/legal-notice/
 Snapshot ${PLACES_DATE} · average rating ${avg} across ${totalReviews} reviews.
 `);
 fs.writeFileSync(OUT+'/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${
