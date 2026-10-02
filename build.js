@@ -353,7 +353,7 @@ ${edPhoto('herbs')}
 ${MP.BANDS.map((b,i)=>`<tr><td>${MP_ROWS[i][0]}</td><td class="r">${b.lo}K – ${b.hi}K</td><td class="r">${b.n}</td></tr>`).join('')}</table>
 <p class="m">${esc(MP_NOTE)} Only plain hair-wash and head-spa services count; combinations with a full-body massage and four- or six-hands rituals are left out.</p>
 <h3>Sources</h3>
-<ul>${MP.HOUSES.map(h=>`<li><a href="${h.source}" rel="noopener nofollow">${esc(h.name)}</a>${h.sourceNote?` (${esc(h.sourceNote)})`:''}: ${h.items.map(([m,p])=>`${m} min ${p}K`).join(', ')}</li>`).join('')}</ul>
+<ul>${MP.HOUSES.map(h=>`<li><a href="${h.source}" rel="${/rebornnaildanang\.com/.test(h.source)?'noopener sponsored':'noopener nofollow'}">${esc(h.name)}</a>${h.sourceNote?` (${esc(h.sourceNote)})`:''}: ${h.items.map(([m,p])=>`${m} min ${p}K`).join(', ')}</li>`).join('')}</ul>
 <h2>Massage and waxing</h2>
 <p>Fewer than five Da Nang houses publish massage or waxing prices we could check, so there is no city range for them here yet. Neck and shoulder massage is part of every proper head spa ritual; for anything else, ask for the menu with the minutes stated before you sit down.</p>
 <div class="note"><strong>Price per ritual, never per step.</strong> The houses worth your hour quote a ritual and state its minutes. Menus that itemise the wash, the massage and the blow-dry separately produce bigger bills and choppier experiences — it is the clearest signal on the board.</div>
@@ -508,7 +508,7 @@ head(`About This Guide and Its Publisher | ${NAME}`,
 <h2>Publisher</h2>
 <p>${esc(NAME)} is published by <a href="${PUB.url}" rel="noopener">${esc(PUB.name)}</a>. Contact: ${esc(PUB.email)}, ${esc(PUB.phone)}. Hosting: ${esc(PUB.host)}. Full details on the <a href="/legal-notice/">legal notice</a>.</p>
 <h2>Our commercial relationship with Reborn Nails &amp; Retreat</h2>
-<p>${esc(PUB.name)} has a commercial relationship with <a href="${PARTNER.site}" rel="noopener">Reborn Nails &amp; Retreat</a>, the nail salon and head spa shown as our pick on these pages. The pick is our choice, and so is its place in our rankings: the editors put it among the first three of every list it belongs to (the whole city and its own quarter, My An), at a position that varies from page to page. How every other venue is ordered is set out on the <a href="/methodology/">methodology page</a>.</p>
+<p>${esc(PUB.name)} has a commercial relationship with <a href="${PARTNER.site}" rel="noopener sponsored">Reborn Nails &amp; Retreat</a>, the nail salon and head spa shown as our pick on these pages. The pick is our choice, and so is its place in our rankings: the editors put it among the first three of every list it belongs to (the whole city and its own quarter, My An), at a position that varies from page to page. How every other venue is ordered is set out on the <a href="/methodology/">methodology page</a>.</p>
 <p>The facts we publish about Reborn are its own: its Google rating and review count from the same snapshot as everyone else, its address, hours and languages, and the prices it prints for every customer. Its phone, WhatsApp and menu links appear on its own profile and on the ranking pages.</p>
 <h2>The ranking</h2>
 <p>The data, the score and the editorial criteria behind every ranking on this site are on the <a href="/methodology/">methodology page</a>.</p>
