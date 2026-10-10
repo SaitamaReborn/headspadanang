@@ -6,6 +6,89 @@
 
 const JOURNAL = [
 {
+    "slug": "head-spa-sunburnt-scalp-da-nang",
+    "title": "Sunburnt at the parting: booking a Da Nang head spa after a week on the sand",
+    "desc": "What a head spa does for a sun, salt and chlorine week in Da Nang · the forecaster's UV numbers for the city, why a fibre that cannot repair itself changes what you should pay for, the real reason hotel pools turn blonde hair green, and the one day of the trip to book it.",
+    "date": "2026-10-16",
+    "cat": "Sun and salt",
+    "read": 8,
+    "tldr": [
+      "Your scalp decides the booking, not your hair. Vietnam's National Center for Hydro-Meteorological Forecasting puts Da Nang and Hội An at 7 to 8 in its UV bulletins, inside the band its own scale calls very high (7.5 to 10.4), with the daily peak between 10:00 and 14:00. Run a fingertip down your parting and press. A sting means you want the short wash, not 80 minutes of pressure.",
+      "Nothing on any menu repairs sun damage, because a hair fibre has no repair mechanism. Skin rebuilds after a burn; dead keratin does not, and the cosmetic-science reviews say photodamage can only be handled cosmetically. Conditioning is still worth buying. It is worth buying under its own name.",
+      "The pool green is copper, not chlorine. A 1978 study found hair in chlorinated water with no copper stayed its own colour, while copper with no chlorine turned it green. That makes a clarifying shampoo the tool, and a <em>bồ kết</em> decoction the wrong one.",
+      "Book it for the day after your last beach day. Across the houses that list prices on <a href=\"/prices/\">the price table</a>, an hour costs 380K to 650K. If the parting stings, the 25 to 30 minute wash at 120K to 350K does the same for your hair while asking nothing of your skin."
+    ],
+    "body": [
+      {
+        "h": "The burn nobody packs for",
+        "p": [
+          "It arrives dressed as a hair question, but it is a skin question. Someone has spent five days on Mỹ Khê, the parting across the top of their head has turned pink and tight, and now they stand at a counter in An Thượng with a 60-minute ritual booked, unsure whether an hour of somebody's hands on it is the best idea of the week or the worst. The same menu holds both answers.",
+          "Da Nang lies at 16 degrees north, and its official numbers are not subtle. City by city, the National Center for Hydro-Meteorological Forecasting issues UV bulletins, and in them Da Nang and Hội An usually show up together in the 7 to 8 range. Vietnam's own banding counts 5.5 to 7.4 as high and 7.5 to 10.4 as very high, and domestic coverage of those bulletins has put the city at 10. Still, the index is not the figure that should change your afternoon. The clock is: the forecaster places the daily peak between 10:00 and 14:00, and press summaries of the very-high band quote unprotected skin burning in under 25 minutes, with one 2023 bulletin as low as 15. That same window is also when the sea is best, which is the whole difficulty.",
+          "Hair makes a poor sunscreen, and it is thinnest exactly where the dose lands. A parting is a bare strip of skin that a comb holds open. The crown is the one part of a head the midday sun hits square on. Those two burn while a face that got cream twice does not, and you find out hours later in a hotel shower, then again three days on when the skin peels off in sheets.",
+          "So before you book, press a fingertip along the parting. No sting and the week left your skin alone, in which case skip to the second half of this piece. A sting and five things come off your menu, in descending order of how much they will cost you: the herbal steam canopy, the tray of hot stones along the shoulders (the heat travels up into the hairline more than people expect), basin water run hot, the <em>tẩy da đầu</em> scalp exfoliation that appears in the hour-long rituals and longer, and sustained firm pressure across the crown. Take those five out and what remains is a warm herbal wash, light hands and a thorough dry, which is the entry tier at 120K to 350K.",
+          "My position is less cautious than that list makes it look. Go anyway. A tender scalp is no reason to give up the one appointment of the week that involves lying down, and a short wash contains nothing that offends a burn. The mistake is the other one, the thing people actually do: they keep the 80-minute signature booked on arrival and hope the steam will feel nice on it."
+        ]
+      },
+      {
+        "h": "The part that cannot be undone",
+        "p": [
+          "The hair itself is a separate question with a harder answer. Reviews of hair photodamage in the cosmetic-science literature, of which Signori's 2004 review in the Journal of Cosmetic Science is the one the field keeps citing, put UVB as the main driver of natural damage, because the protein chromophores that absorb sit in that stretch of the spectrum. The findings are consistent and unexciting: the disulfide bridges in cystine break and oxidise toward cysteic acid, tensile strength drops, the cuticle surface roughens, colour goes. Pande and Jachowicz identified tryptophan loss in 1993 as the earliest measurable marker, and its conversion product N-formylkynurenine is still used to read a sun-damaged fibre; later kinetics work found the tryptophan disappears before any disulfide oxidation products turn up at all.",
+          "One sentence from that body of work ought to govern your booking, though it usually sits in a methods discussion nobody reads: hair has no repair mechanism. Skin responds to a burn by rebuilding itself. A hair fibre, by contrast, is dead keratin pushed out of a follicle; once the bonds in the top two inches are oxidised, they stay that way until somebody cuts them off. In their own flat language, the reviews say that the effects of photodegradation have to be dealt with cosmetically.",
+          "Hence the opinion. Any line on a Da Nang menu that offers <em>phục hồi</em>, printed in English as repair, recovery or restoration, is selling conditioning. That product coats and smooths and fills gaps in a roughened cuticle, and after this particular week I would buy it without hesitation. It repairs nothing, though, and when it is priced as a repair you pay a premium for a word. At a counter the useful question is not whether a treatment restores your hair. What matters is how many minutes the mask sits and whether a warm towel goes on top."
+        ]
+      },
+      {
+        "h": "Two things this city adds that a dry coast does not",
+        "p": [
+          "For two reasons that only show up in the laboratory notes, Da Nang is a worse place to have this problem than a hot dry coastline. Water is the first. The same photodegradation work that tracked tryptophan found the loss ran far slower in a non-polar medium, mineral oil, than in water, so the state your hair is in while the sun is on it matters as well as the exposure itself. Wet hair degrades faster. A standard Mỹ Khê afternoon (into the sea, then flat on a lounger with your hair drying in direct sun, then back in) is the least favourable version of the day on offer, run four times in a row.",
+          "The second is the humidity the city sits in all year, roughly 75 to 85 percent, which <a href=\"/journal/head-spa-da-nang-rainy-season/\">this guide has written about as a scalp problem</a> but which is also a fibre problem: the hair literature names high ambient humidity as a factor that speeds up photochemical loss of hair colour. Combine that with 7 to 8 on the index, and the outer layer of your hair gets a rougher deal here than it would at the same index in Perth or Lisbon.",
+          "You need no product for any of this. The whole intervention is a hat between 10:00 and 14:00, and it costs nothing; its second half is towelling your hair before you lie back down. Hair-specific UV filters do exist, and cosmetic chemists publish on them, but in the sea they rinse out of your hair inside an hour. To spend 650K on a ritual while sunbathing with wet hair four days running is to pay for undoing something you have not stopped doing."
+        ]
+      },
+      {
+        "h": "Salt is osmosis. The pool is metal.",
+        "p": [
+          "Seawater runs around 3.5 percent salt, and what it does to a hair shaft is pull water out of it, which is why hair off the beach feels stiff and tangles into knots that were not there at breakfast. The dried crust is abrasive as well, so the comb dragged through it afterwards does mechanical damage that then gets blamed on the sea. The fix costs nothing and hardly anyone bothers: use the Mỹ Khê beach showers properly, over your head, before the walk back. From the sand to most doors in An Thượng or Mỹ An is four or five minutes, laid out on <a href=\"/where-to-go/\">the neighbourhood guide</a>, so salt still in your hair at the counter is salt you decided to carry there.",
+          "The hotel pool works by an entirely different mechanism, and it is the one visitors are most confidently wrong about. When blonde, bleached and light ash hair comes out of a resort pool green, chlorine has not tinted it. A 1978 study in the journal now called JAMA Dermatology immersed hair samples in water at varying copper and chlorine concentrations and pH levels: the samples in chlorinated water with no copper did not turn green, while those exposed to copper with no chlorine did. Copper is the cause, and it arrives from the copper sulfate that pools are dosed with against algae and from corrosion in the pipework. Chlorine's role is to oxidise the keratin so the fibre takes up more copper, which worsens the result without being the reason for it.",
+          "That changes what to ask for, and it sets this article against another one on the site. If you have actual green, the tool is a chelating or deep-cleaning shampoo, a bottle of it from a Long Châu or a Pharmacity for a fraction of any ritual, because metal has to be lifted and bound rather than rinsed. A <em>bồ kết</em> decoction is a mild plant saponin wash that binds nothing, and <a href=\"/journal/vietnamese-head-spa-herbs/\">the herb breakdown</a> is clear about what the pot is for. Meanwhile the <em>tẩy da đầu</em> clarifying step, which we tell <a href=\"/journal/head-spa-colored-hair-da-nang/\">anyone with week-old colour to decline</a>, is the closest thing on a head spa menu to the right treatment here. Both instructions are correct and they are aimed at different heads of hair. If yours is freshly coloured and green from the pool at the same time, the colour wins and the metal waits for home."
+        ]
+      },
+      {
+        "h": "The day to book it, and the tier to book",
+        "p": [
+          "Of everything in this piece, the scheduling advice is the firmest, and it runs opposite to what almost everyone does. The usual move is to fit the head spa in on day one or two, while the itinerary still has slack. Put it the day after your last beach day instead. Everything the hour hands you (the salt and chlorine load gone, ten minutes of mask under a warm towel, a scalp rinsed properly for the first time in a week, fifteen minutes of a round brush) gets re-salted by 11:00 the next morning if another beach day sits behind it. The result has a shelf life of about a day and a half. Spend it on the flight home.",
+          "Tier by tier, for this particular week: across the houses that publish prices, the hour is the default at 380K to 650K, since it is the first tier with the double shampoo and with enough minutes for a conditioning step to actually sit on the hair instead of being rinsed off behind itself. If you have been in a chlorinated pool every day, the mask and warm-towel segment lives in the 70 to 90 minute rituals at 450K to 900K, and that segment holds the only real claim on a week like this one. At the guide's pick, Reborn Nails &amp; Retreat, the 60-minute costs 380K and the 70-minute warm stone sequence 450K. If the parting stings, go down rather than up, to the 45-minute at 250K to 550K or the 25 to 30 minute wash at 120K to 350K, and be clear about the trade: your hair gets identical treatment, and far less is asked of your skin. <a href=\"/journal/head-spa-how-long-da-nang/\">The usual arithmetic on length</a> holds everywhere except here.",
+          "Mornings, as ever on this site, and this time with an extra reason: a 09:30 booking keeps you indoors through the first half of the forecaster's peak window, on the one day of the trip you were not going to the beach anyway. Treat the blow-dry as the product, too, rather than the courtesy at the end. Fifteen minutes of hot air and a brush is what separates a week of sea water that reads as styled hair from one that reads as a week of sea water. <a href=\"/what-to-expect/\">The walkthrough</a> covers where it falls in the sequence."
+        ]
+      },
+      {
+        "h": "What to say at the counter",
+        "p": [
+          "<em>Mình vừa đi biển về</em> · I have just come from the beach · earns the most for the fewest words, since a technician who hears it expects salt and washes twice without being asked. If your skin is tender, add <em>da đầu mình bị cháy nắng</em>, my scalp is sunburnt, followed by <em>nhẹ tay vùng đỉnh đầu nhé</em> for a light hand on the crown and <em>mình không xông hơi nhé</em> to drop the steam. <em>Cho mình nước mát hơn nhé</em> keeps the basin on the cool side of warm; on a burn, that decides whether the first minute is a pleasure or something you sit through politely. Ask for the mask by name, <em>có ủ tóc không ạ</em>, and finish with <em>sấy khô hẳn giúp mình nhé</em>.",
+          "All of it belongs at the counter, standing up, while the tier is still being chosen. Said from the lounger with your neck already in the cradle, the same sentences land as complaints about work in progress, and a technician who has to revise the plan halfway takes the minutes out of your scalp time to do it. There is one line that belongs to the week rather than to the hour, and it is the only thing named in this article that prevents anything: the peak window is four hours wide, the sun is indifferent to your holiday, and a hat costs less than the cheapest wash on the table."
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "Can you get a head spa with a sunburnt scalp?",
+        "Yes, but buy the short tier and take the heat out of it. First press a fingertip along your parting; if it stings, turn down the herbal steam, the hot stones, hot basin water, the tẩy da đầu scalp scrub and firm pressure across the crown. That leaves a 25 to 30 minute warm herbal wash at 120K to 350K, light hands and a thorough dry, which does as much good for your hair as the long ritual and asks nothing of the burn. At the counter, say da đầu mình bị cháy nắng, and nhẹ tay vùng đỉnh đầu nhé for the crown."
+      ],
+      [
+        "Will a head spa repair sun and salt damaged hair?",
+        "It cannot repair it, and no treatment anywhere can. Hair has no repair mechanism: once UVB has broken and oxidised the disulfide bonds in the outer inches, the cosmetic-science reviews are explicit that the damage can only be managed cosmetically until the hair is cut. What the hour genuinely does is lift the salt and chlorine load off, lay down conditioning under a warm towel, and dry the hair properly. That is worth 380K to 650K after a beach week. A menu line promising phục hồi, repair or recovery is selling the conditioning with a better word on it."
+      ],
+      [
+        "Why did my hair turn green in the hotel pool in Vietnam?",
+        "Copper, not chlorine. A 1978 study in the journal now called JAMA Dermatology immersed hair in water at different copper and chlorine levels: chlorinated water with no copper left the colour alone, whereas copper with no chlorine turned hair green. That copper comes from the copper sulfate pools are dosed with against algae and from corroding pipework; chlorine worsens it by oxidising the keratin, so the fibre absorbs more metal. The fix is a chelating or deep-cleaning shampoo from any Vietnamese pharmacy. A bồ kết herbal wash, a mild saponin cleanser, will not shift it."
+      ],
+      [
+        "Should I book a head spa at the start or end of a beach holiday in Da Nang?",
+        "At the end: the day after your last beach day. The next morning in the sea undoes everything the ritual gives you, so the clean scalp, the mask and the blow-dry are worth the most when nothing is scheduled after them. Book the 09:00 to 11:00 window, which also keeps you indoors through the first half of the forecaster's 10:00 to 14:00 UV peak, and on your last swim rinse at the Mỹ Khê beach showers so the wash has less salt to fight."
+      ]
+    ]
+  },
+{
     "slug": "head-spa-pregnancy-da-nang",
     "title": "Flat on your back for an hour: booking a Da Nang head spa while pregnant",
     "desc": "Whether a Vietnamese head spa is safe in pregnancy · why the 190 cm washing bed is the problem rather than the herbs, the trimester the trade itself turns away, the two lines to cut from the menu, and the postpartum wash Vietnam is still arguing about.",
