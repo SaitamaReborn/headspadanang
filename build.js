@@ -685,3 +685,6 @@ fs.writeFileSync(OUT+'/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<ur
 fs.writeFileSync(OUT+'/.nojekyll','');
 fs.writeFileSync(OUT+'/CNAME',DOMAIN+'\n');
 console.log(`Built ${urls.length} pages · ${PLACES.length} salons, ${AREAS.length} areas, ${STREETS.length} streets, ${SERVICES.length} treatments, ${LANGS.length} languages, ${posts.length} articles.`);
+
+// passe progressive anti-motifs IA (10/10/2026) : segments retouchés des pages listées dans sans-tirets.json
+require('./lib/sans-tirets.js')(typeof OUT === 'string' ? OUT : './docs');
