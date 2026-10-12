@@ -1,0 +1,131 @@
+{
+ "_about": "Facts about Reborn Nails & Retreat used by the guide's pages, each with its source. Google figures come from the Places API snapshots this guide keeps (5 August, 11 September, 2 October 2026) and a Places API reading of 12 October 2026.",
+ "checked": "2026-10-12",
+ "faits": {
+  "historique_avis": {
+   "valeur": [
+    [
+     "2026-08-05",
+     240
+    ],
+    [
+     "2026-09-11",
+     287
+    ],
+    [
+     "2026-10-02",
+     306
+    ],
+    [
+     "2026-10-12",
+     314
+    ]
+   ],
+   "source": "Google Places API: this guide's snapshots and a reading of 12 October 2026"
+  },
+  "anglais": {
+   "valeur": "The owner, Fiona, runs the floor and speaks English",
+   "source": "Google review by elizabeth martin: \"Fiona the owner is lovely & speaks excellent English\""
+  },
+  "menu_20_langues": {
+   "valeur": [
+    "English",
+    "Tiếng Việt",
+    "한국어",
+    "简体中文",
+    "繁體中文",
+    "日本語",
+    "Русский",
+    "Français",
+    "Deutsch",
+    "Español",
+    "Italiano",
+    "Português",
+    "Nederlands",
+    "Polski",
+    "Українська",
+    "Türkçe",
+    "العربية",
+    "हिन्दी",
+    "ไทย",
+    "Bahasa Indonesia"
+   ],
+   "source": "the salon's iPad menu, 20 languages"
+  },
+  "emplacement": {
+   "valeur": {
+    "an_thuong": {
+     "Liti Nail & Hair 2 (08 An Thượng 39)": 489,
+     "Posh Nail Lab (2 An Thượng 32)": 679,
+     "Lalla Nail Branch 1 (8 An Thượng 29)": 683
+    }
+   },
+   "source": "straight-line distances computed from Google Places coordinates"
+  }
+ },
+ "rivaux_cites_par_chatgpt": {
+  "Lalla Nail Branch 1": {
+   "id": "ChIJAQDnG3sXQjERCiTkaiQXxO0",
+   "historique": [
+    [
+     "2026-08-05",
+     1026
+    ],
+    [
+     "2026-09-11",
+     1101
+    ],
+    [
+     "2026-10-02",
+     1154
+    ],
+    [
+     "2026-10-12",
+     1126
+    ]
+   ]
+  },
+  "Posh Nail Lab": {
+   "id": "ChIJA044WwAXQjER_tXvmDWhpgY",
+   "historique": [
+    [
+     "2026-08-05",
+     676
+    ],
+    [
+     "2026-09-11",
+     897
+    ],
+    [
+     "2026-10-02",
+     992
+    ],
+    [
+     "2026-10-12",
+     992
+    ]
+   ]
+  },
+  "Liti Nail & Hair 2": {
+   "id": "ChIJe0JW1WkXQjERpLcOqYr4T0E",
+   "historique": [
+    [
+     "2026-08-05",
+     1191
+    ],
+    [
+     "2026-09-11",
+     1261
+    ],
+    [
+     "2026-10-02",
+     1307
+    ],
+    [
+     "2026-10-12",
+     1334
+    ]
+   ]
+  }
+ }
+}
