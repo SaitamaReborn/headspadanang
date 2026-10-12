@@ -268,6 +268,8 @@ ${conclEN('/')}
 <div class="grid">${SERVICES.slice(0,6).map(s=>`<a class="card" href="/services/${s.slug}/" style="display:block;color:inherit">
 <h3>${esc(s.h1)}</h3><p class="m">${esc(s.lede)}</p>
 ${(s.prices||[]).length?`<p class="m" style="color:var(--lacquer-d);font-weight:600">${esc(s.prices[0][1])} ${esc(s.prices[0][0].toLowerCase())}</p>`:''}</a>`).join('')}</div>
+<h2>Top 10 lists</h2>
+<div class="chips">${BESTOF.map(b=>`<a class="chip" href="/${b.slug}/">${esc(b.h1)}</a>`).join('')}</div>
 <h2>By area</h2>
 <div class="chips">${AREAS.map(a=>`<a class="chip" href="/spas/area/${a.slug}/">${esc(a.name)}<b>${a.list.length}</b></a>`).join('')}</div>
 <h2>Street by street</h2>
