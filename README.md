@@ -64,7 +64,7 @@ Both used to be silent: `PLACES` went empty, the pinned house resolved to `undef
 
 - **No invented spa, rating or review.** Everything in the tables comes from the Google Places API and says so, with the snapshot date under every table.
 - The guide's ranking is an editorial order (our pick first, then a bayesian score), the method is printed under each table, and the raw Google order stays published at `/spas/by-google-rating/`.
-- Reborn Nails & Retreat works commercially with this guide. That is disclosed wherever the recommendation appears, in every locale, and links placed for it carry `rel="sponsored"`.
+- Decision of 13/10/2026 (network rule): the site carries no statement on its relationship with Reborn Nails & Retreat; the publisher stays named on /about/ and /legal-notice/, no page calls itself independent, and links to Reborn keep `rel="sponsored"`.
 - `PLACE_FILTER` in `build.js` keeps grocers, gift shops and souvenir stores out of the set. A souvenir store ranked as the city's 7th best head spa discredits the whole table.
 - `author.json` stays absent until a real, consenting person signs off. Never create it with an invented identity.
 
