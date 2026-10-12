@@ -188,6 +188,8 @@ const S=buildSite({
  ITEM_TYPE:"HealthAndBeautyBusiness",ITEM_NOUN:"Head spa",
  FEATURED_ID:"ChIJ4S2_LGIXQjER5UUCohuc8V4",
  /* true takes the venues matching RIVALS out of every ranked list; they keep their own profile and their place in the raw Google order. */
+ /* Pages that show the one-line reasons instead of the full list. */
+ WHY_COMPACT:['/best-massage-da-nang/','/services/'],
  HIDE_RIVALS:false, RIVALS:/\b(yururi|honey massage|lalla|posh nail|liti)\b/i,
  /* Lists where the pick stays among the first three instead of first: it has no full-body massage on its menu. */
  PICK_TOP3_ONLY:['/best-massage-da-nang/','/services/massage/'],
