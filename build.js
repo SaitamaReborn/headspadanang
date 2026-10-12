@@ -692,6 +692,8 @@ Snapshot ${PLACES_DATE} · average rating ${avg} across ${totalReviews} reviews.
 fs.writeFileSync(OUT+'/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${
  urls.map(x=>` <url><loc>${x.u}</loc><lastmod>${x.d}</lastmod><priority>${x.p}</priority></url>`).join('\n')}\n</urlset>\n`);
 fs.writeFileSync(OUT+'/.nojekyll','');
+/* IndexNow key file (12/10/2026): lets the Mac notify Bing/Yandex when pages change. */
+fs.writeFileSync(OUT+'/66e8826fd22869863440621a821fc623.txt','66e8826fd22869863440621a821fc623');
 fs.writeFileSync(OUT+'/CNAME',DOMAIN+'\n');
 console.log(`Built ${urls.length} pages · ${PLACES.length} salons, ${AREAS.length} areas, ${STREETS.length} streets, ${SERVICES.length} treatments, ${LANGS.length} languages, ${posts.length} articles.`);
 
