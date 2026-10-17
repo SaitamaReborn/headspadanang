@@ -6,6 +6,92 @@
 
 const JOURNAL = [
 {
+    "slug": "head-spa-how-often-da-nang",
+    "title": "Again on Thursday: how often to book a head spa in Da Nang",
+    "desc": "How often to get a Da Nang head spa on one trip · what the only wash-frequency trial measured, why the city treats it as an errand rather than an occasion, the one step not to repeat two days running, and a three-visit shape for a ten-day stay.",
+    "date": "2026-10-22",
+    "cat": "How often",
+    "read": 8,
+    "tldr": [
+      "Nobody here rations it. Vietnamese health sites put the baseline for washing at every two to three days, and daily for an oily scalp; the Taiwanese travel firm Lanytrip credits motorbike commuting with turning salon washing into a two-or-three-times-a-week errand. The once-per-holiday framing is luggage you brought with you.",
+      "The over-washing fear has been measured properly, once. Punyani, Tosti, Hordinsky, Yeomans and Schwartz, in Skin Appendage Disorders in 2021, found satisfaction with hair and scalp peaking at five to six washes a week in Asian populations, with daily washing beating weekly on every endpoint and no objective damage at that level of cleansing. Three of those five authors worked for Procter &amp; Gamble, which sells shampoo. Read it with that in hand.",
+      "A second booking beats an upgrade. <a href=\"/prices/\">The price table</a> has the hour at 380K to 650K across six houses, with the 70-to-90-minute tiers at 450K to 900K. Two separate hours on the pick's own menu come to 760K, against 850K for one 105-minute ritual. Spread over two days, those two hours also buy more scalp time than any single ritual in the city.",
+      "One line to space out rather than repeat: the <em>tẩy da đầu</em> scalp exfoliation. Pressure, herbs, steam and the dry all survive two days running. Fresh colour and a sunburnt parting do not."
+    ],
+    "body": [
+      {
+        "h": "An errand, not an occasion",
+        "p": [
+          "The question comes up at the counter, usually mid-payment, from someone already a little embarrassed to ask it: could I come back on Thursday? It sounds like ordering a second dessert. That reflex is imported. It deserves unpacking before it costs you the better half of a trip, because the trade you are standing in was never built for annual visits.",
+          "Look at how these shops are priced and staffed and the intended cadence is obvious. A District 3 house in Saigon, as listed in a Vietnamese roundup of neighbourhood gội đầu places, publishes 45 minutes at 129K and an 80-minute full combo at 279K, and mentions a discount for buying a long course without printing the number. Those are not treat prices. They are bus-fare prices, set for a customer who comes most weeks, and the Vietnamese-language health coverage around the habit reads the same way: Vinmec puts a sensible washing interval at every two to three days for most hair and scalps, daily or alternate days for an oily one, and the pharmacy chain Long Châu's guide lands in the same place. Lanytrip, a Taiwanese travel company writing for its own customers, ties the out-of-home version to the motorbike: a city that commutes with a helmet on gets greasy at the roots fast, and washing becomes something you buy two or three times a week rather than something you perform in a bathroom.",
+          "The visitors who worked this out first were not Westerners. Vietnamese press has spent the past year covering the way hair-washing parlours turned into a must-do on Chinese social platforms, with one Xiaohongshu post running past 500 comments from travellers comparing their own salon visits. A Taiwanese broadcaster reported in November 2025 that searches for Vietnamese-style hair washing had climbed more than 40 percent over three years, with Taiwanese visitors spending more on it. By May 2026 a Taiwanese business paper was describing Saigon shops moving into premium, high-rent formats built for exactly that traffic. The thing those travellers do differently is not that they book better houses. It is that they go more than once.",
+          "In fairness, Da Nang skews the question, since its visible menus face tourists and are priced to match. A short wash runs 120K to 350K across the four houses selling that tier, and the hour 380K to 650K across six, three to five times the Saigon neighbourhood rate above. Even so, an hour here costs roughly 15 to 26 US dollars. The arithmetic that makes you hesitate is not the arithmetic actually in front of you."
+        ]
+      },
+      {
+        "h": "What the frequency evidence looks like",
+        "p": [
+          "Once the folklore is stripped out, one properly built study remains on how often a scalp wants washing, and it was run in Asian populations instead of being extrapolated to them. Punyani and colleagues published it in two parts, in Skin Appendage Disorders in 2021. Their epidemiological arm tracked satisfaction with hair and scalp condition against wash frequency. It peaked at five to six washes a week, consistently across objective measures and self-assessment. In the controlled arm daily washing went up against once weekly and won on every endpoint the team had set, with no objective detriment to the hair at that level of cleansing. The authors themselves conclude that concerns about overcleaning are not supported, subjectively or objectively.",
+          "Now the caveat, which matters enough to state in the same breath. Three of the five authors were Procter &amp; Gamble scientists, and P&amp;G's business is selling shampoo; the two academic dermatologists on the paper do not neutralise that. The trial also ran over a limited period, so nothing in it speaks to years of habit. What it does rule out is the specific fear people are carrying when they decline a second booking: that another wash four days into a trip will strip something they need. On the only occasion anyone measured that, it did not happen.",
+          "The fear is nonetheless close to universal. Mintel's consumer work in China found most people still washing every two or three days and nearly half believing that daily washing damages hair. So the instinct to ration is real and widely held, and it is simply not what the measurement says.",
+          "There is one more piece of evidence worth reading in this direction, and it is the dosing trial this guide has already used for a different purpose. Karen Sherman and colleagues, in the Annals of Family Medicine in 2014, randomised 228 adults with chronic neck pain across session lengths and weekly frequencies. Sixty minutes twice a week cleared both prespecified outcomes, with relative risks of 3.41 for function and 2.30 for pain; three times a week did better again, 4.98 and 2.73. <a href=\"/journal/head-spa-how-long-da-nang/\">The piece on session length</a> reads that trial along its duration axis. The frequency axis points the same way: within the range tested, more often was better, and the gain from going from twice to three times a week was real. None of this is a study of gội đầu dưỡng sinh, because nobody has run one at any cadence, and a holiday is not a four-week therapeutic protocol. Take from it only the direction of travel."
+        ]
+      },
+      {
+        "h": "Your scalp in Da Nang is not the scalp you packed",
+        "p": [
+          "Locally, the argument for repetition is more persuasive than either study. Humidity in this city sits between about 75 and 85 percent through the year. Sebum output rises in that heat, and sweat held against the scalp under hair favours Malassezia, the lipophilic yeast behind the greasy, yellowish flaking that catches visitors out in week two. <a href=\"/journal/head-spa-da-nang-rainy-season/\">The wet-season piece</a> works through that mechanism. In practice the consequence matches what dermatology advises for hot climates generally, which is to wash more often rather than less. What visitors actually do is wash less, because hair that will not dry is hair you stop touching.",
+          "Add what a Da Nang day puts on a head. Sea salt from Mỹ Khê, sunscreen migrating up from a forehead, the inside of a rented helmet that nobody has ever cleaned, and the dust of a motorbike afternoon. By the fifth day a scalp carries a week of that, and the hour you booked for the first Tuesday has nothing to do with the state of your head by the second Saturday. One head spa per trip is a souvenir. Two or three is maintenance of a situation your bathroom at home never produced, which is also why a second visit feels completely different from the first rather than repetitive."
+        ]
+      },
+      {
+        "h": "The second booking beats the upgrade",
+        "p": [
+          "Here is the decision most people get wrong, and it is a spending decision rather than a scalp one. Faced with wanting more, the instinct is to climb the menu: book the 90-minute signature instead of the hour, or the 105-minute ritual instead of the 90. The better move is to buy the same tier twice on different days.",
+          "The guide's pick makes the numbers legible, since Reborn Nails &amp; Retreat publishes every tier: 25 minutes at 120K, 45 at 250K, 60 at 380K, a 70-minute warm stone sequence at 450K, the 80-minute signature at 500K, 95 minutes at 750K and a 105-minute skin recovery ritual at 850K. There, two separate hours cost 760K, or 90K less than the single 105-minute ritual. Those hours contain two full double washes, two blow-dries, two rounds of neck and shoulder work and two herbal passes over the scalp. The same shape holds city-wide, with two hours at 380K to 650K each set against one long tier at 450K to 900K.",
+          "Composition is the stronger argument anyway. Long rituals earn their minutes by adding segments instead of extending the scalp work, so a 95-minute booking also has to get through a face and sometimes a pair of feet. Two hours is two hours of head. Then there is the part no menu can price: the second visit starts from a technician who already knows how much pressure your neck tolerates and where your scalp is tender, and that is worth more than any add-on sold at the counter. If you did not catch her name, ask for her by reference · <em>cho mình bạn hôm trước nhé</em>, the same person as last time, please.",
+          "On price, ask the one question Vietnamese customers ask and visitors never do: <em>có liệu trình nhiều buổi không ạ?</em>, is there a multi-session course? Courses are ordinary in this trade, and that Saigon menu advertises a discount for buying one, although a tourist-facing counter in An Thượng may well have none to sell. At worst somebody says no. The second hour then costs exactly what <a href=\"/prices/\">the table</a> says it does."
+        ]
+      },
+      {
+        "h": "What not to repeat two days running",
+        "p": [
+          "Repetition has one genuine limit, and it is a single line on the menu rather than the ritual as a whole. <em>Tẩy da đầu</em>, the scalp exfoliation that appears in the hour-long tiers and above, is a scrub worked over the skin with fingertips or a brush. Done weekly it is pleasant. Done on consecutive days it leaves the scalp tight and reactive, and it is the one step to put five to seven days between. <em>Không tẩy da đầu lần này nhé</em> removes it from a second booking in six words, and the minutes go back into the massage. <a href=\"/what-to-expect/\">The sequence walkthrough</a> sets out where that step sits so you know what you are subtracting.",
+          "Three other situations override the whole frequency argument. Fresh colour wants 48 to 72 hours before anyone brings a herbal decoction near it, as <a href=\"/journal/head-spa-colored-hair-da-nang/\">the colour piece</a> covers properly. If a parting stings under a fingertip, the beach has already done the exfoliating, and <a href=\"/journal/head-spa-sunburnt-scalp-da-nang/\">a sunburnt scalp</a> wants a warm wash with light hands or nothing at all. Ear cleaning, finally, is a once-a-trip service at most, for reasons that have nothing to do with how clean your ears are · <a href=\"/journal/head-spa-da-nang-ear-cleaning/\">the ear piece</a> explains the canal's own schedule.",
+          "Soreness is the other signal worth reading, and it usually comes from the neck and shoulder segment rather than the scalp. Firm <em>bấm huyệt</em> pressure point work can leave a stiff trapezius tender the next morning in the way a first gym session does. That is not a reason to cancel the second visit; it is a reason to buy a different one. <em>Chỉ gội và sấy thôi nhé</em> books a wash and a dry with no deep work, which at 120K to 350K is the cheapest line on any of these menus and the right purchase on a day when your shoulders have had enough.",
+          "Everything else tolerates repetition better than people assume. The decoctions are saponin-based · bồ kết, pomelo peel, lemongrass · rather than sulfate detergents, the steam is water, and the stones are warm rock. The one component with a real cumulative cost is heat from the dryer on fine or bleached hair, and that has a counter-side fix too: <em>sấy không nóng quá nhé</em>, not too hot, please."
+        ]
+      },
+      {
+        "h": "A shape for a ten-day trip",
+        "p": [
+          "Three visits, spaced to fit what the days actually do to you. The first goes on the afternoon you land, at the short tier: 25 to 30 minutes for 120K to 350K. It is the cheapest line in the city, it takes eleven hours of aircraft off your head, and <a href=\"/journal/head-spa-jet-lag-da-nang/\">the arrival-day piece</a> argues for an early-afternoon slot over an evening one. Nobody needs the 80-minute signature while fighting to stay awake through it.",
+          "The second belongs in the middle, after the beach-heavy stretch: a full hour at 380K to 650K, booked between 09:00 and 11:00. That window is this guide's standing position on value, with fresh decoction, a quiet room, and a technician who has not yet put in ten hours. It is also the most dependably dry part of a wet-season day, and from September into December that decides whether you walk back or stand under an awning on Nguyễn Văn Thoại.",
+          "Save the third for near the end, and make it the indulgent one. A long ritual, if one appeals, belongs here: by day eight you know the house, the house knows your head, and the face and foot segments are no longer competing with a scalp that desperately needed attention. It works especially well the night before a flight home. Washing your hair before a long-haul leg is a small mercy of its own. One usable detail: book the 70-to-90-minute tiers ahead instead of walking in, because a house closing at 20:00 cannot start a 105-minute ritual much after 18:15.",
+          "One last position, stated plainly because the opposite is what most guides suggest. Do not spread three visits across three houses. Sampling is how you write a review; it is not how you get a good hour. Pick one house, go back to it, and let the second and third visits start where the first one finished, with your pressure already known and nothing to re-explain. <a href=\"/where-to-go/\">The neighbourhood guide</a> covers how to choose the one, and it should be the one you can walk to in bad weather. Book the next slot while you are paying for this one, in cash, with the small notes you will need for the tip."
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "How often can you get a head spa?",
+        "More often than most visitors assume. The one properly designed study on wash frequency, published by Punyani and colleagues in Skin Appendage Disorders in 2021, found satisfaction with hair and scalp peaking at five to six washes a week in Asian populations, with daily washing beating weekly on every endpoint and no measurable damage to the hair. Vietnamese health sources put a normal interval at every two to three days, daily for an oily scalp. For a Da Nang trip, two or three visits across ten days is ordinary rather than excessive. Note that three of the five authors of that study worked for Procter & Gamble, which sells shampoo."
+      ],
+      [
+        "Can I get a head spa two days in a row in Da Nang?",
+        "Yes, minus one line. On the second day, skip the tẩy da đầu scalp exfoliation and keep five to seven days between those, because consecutive scrubs leave the scalp tight. Không tẩy da đầu lần này nhé takes it off the booking, and the minutes go back into the massage. Skip it entirely if your colour is less than 48 to 72 hours old or your parting stings from sun. If the neck and shoulder work left you sore, book only a wash and dry: chỉ gội và sấy thôi nhé, 120K to 350K at the four houses selling that tier."
+      ],
+      [
+        "Is it better to book one long head spa or two shorter ones in Da Nang?",
+        "Two, on different days. Across the six Da Nang houses publishing a full menu, the hour costs 380K to 650K and the 70-to-90-minute tiers 450K to 900K, so two hours sit in roughly the same money as one long ritual. At Reborn Nails & Retreat, two 60-minute sessions come to 760K against 850K for its 105-minute ritual. Two hours also buy more scalp time, because long tiers add facial, steam, stone and foot segments rather than extending the head work, and the second session starts with a technician who already knows your pressure."
+      ],
+      [
+        "How often do Vietnamese people get their hair washed at a salon?",
+        "Often enough that the shops are priced for weekly use rather than special occasions. Lanytrip, a Taiwanese travel firm, attributes a habit of two to three salon washes a week to motorbike commuting, which leaves hair and scalp greasy quickly. Vietnamese guidance from Vinmec and the pharmacy chain Long Châu sets a general washing interval of every two to three days, with daily or alternate days for oily scalps. Neighbourhood menus reflect it: one Saigon house lists 45 minutes at 129K, against 120K to 350K for a short wash in tourist-facing Da Nang."
+      ]
+    ]
+  },
+{
     "slug": "head-spa-etiquette-da-nang",
     "title": "Nobody will correct you: head spa etiquette in Da Nang, from the shoe rack to the tip",
     "desc": "How to behave inside a Da Nang head spa · the two words of Vietnamese that do the work of a phrasebook, why a quiet guest gets the worse hour, what the tip should be in đồng rather than percent, and how you pay at a counter with a QR code and no card reader.",
