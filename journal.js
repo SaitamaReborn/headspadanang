@@ -6,6 +6,93 @@
 
 const JOURNAL = [
 {
+    "slug": "head-spa-short-hair-da-nang",
+    "title": "Two centimetres of hair: what a Da Nang head spa actually does with a cropped head",
+    "desc": "Whether a Vietnamese head spa is worth booking with short hair, a buzz cut or no hair at all · what the pleasant-touch research says the hands are reaching, the minutes long hair loses to the dryer, the tier that stops being worth it, and the styling wax nobody warns you about.",
+    "date": "2026-10-25",
+    "cat": "Short hair",
+    "read": 8,
+    "tldr": [
+      "The ritual is aimed at skin, and you have as much of that as anybody. The nerve fibres behind slow-touch pleasure, the C-tactile afferents recorded in human hairy skin, sit in the skin itself rather than in the hair. Löken and colleagues, writing in Nature Neuroscience in 2009, found them firing hardest at stroking speeds of roughly 1 to 10 cm a second, and that firing tracked how pleasant people said the touch was.",
+      "For the same money, short hair gets a better hour. With hair down the back, detangling, towelling and the blow-dry eat ten to fifteen minutes of a 60-minute booking; a number-two crop is dry in two. Across the six houses that publish a menu the hour costs 380K to 650K, but the minutes inside it are not the same minutes.",
+      "Our position: under about three centimetres of hair, the long rituals are the weakest line on a Da Nang menu. The 70-to-90-minute tiers run 450K to 900K and earn those minutes with face, steam, stones and feet. Of the ten steps the guide's pick prints beside its 80-minute Signature, three happen on your scalp.",
+      "Arrive with clay or pomade in your hair and the herbal pot will not shift it. Bồ kết saponin foams weakly by design. Say so at the counter · <em>tóc mình có sáp, gội kỹ giúp mình nhé</em> · and let them do a detergent pass first."
+    ],
+    "body": [
+      {
+        "h": "Most short-haired visitors arrive through a barber",
+        "p": [
+          "The route into Vietnamese grooming, for anyone whose hair is shorter than their collar, almost always runs through a barbershop. VOV reported in February 2026 on a 31-year-old German visitor, Christian Weizenegger, who paid 13 US dollars at a men's shop on Điện Biên Phủ in Ho Chi Minh City for a cut, a shampoo, a shoulder massage and styling, and told his 120,000 TikTok followers that Vietnam ranks second in the world for this, behind Turkey only. That arithmetic is what sends people looking for more of the same once they reach Da Nang.",
+          "What they find on the menus here is a different purchase, and the confusion costs people a booking. A barber wash is five or six minutes at a sink, bundled into the price of the cut, done at speed by someone whose next appointment is already sitting down. Gội đầu dưỡng sinh is the reclined version: you lie on a padded bed with your neck in a basin cradle for 25 to 105 minutes, fully clothed, and the hair wash is the spine of a sequence rather than the point of it. <a href=\"/what-to-expect/\">The walkthrough</a> sets out what arrives when.",
+          "After that comes the hesitation, usually dressed up as a joke to cover the fact that it is a real question. What are they going to do for an hour with two centimetres of hair? It is fair to wonder, and the answer is more interesting than reassurance. Whatever short hair loses from this ritual was never the good bit."
+        ]
+      },
+      {
+        "h": "What the hands are reaching",
+        "p": [
+          "A body of research exists on why slow touch feels the way it does, and it points away from hair. Researchers have mapped a class of unmyelinated nerve endings called C-tactile afferents using microneurography, which means pushing a fine electrode into a nerve of an awake volunteer and listening to single fibres. These turn up in hairy skin all over the body and are essentially absent from glabrous skin, the hairless kind on your palms and soles. The scalp sits firmly in the first category.",
+          "The key result came from Line Löken, Johan Wessberg, India Morrison, Francis McGlone and Håkan Olausson, published in Nature Neuroscience in 2009. They recorded from single fibres and asked for pleasantness ratings while stroking volunteers at speeds from 0.1 up to 30 cm a second. CT afferents responded in an inverted U, firing most at around 1 to 10 cm a second, and the ratings traced the same curve. By contrast, the fast-conducting myelinated fibres that handle discrimination and texture simply fired more as the stroke got faster. Pleasantness tracked the slow system, not the quick one.",
+          "Temperature turns out to matter as much as speed. Rochelle Ackerley and colleagues, in the Journal of Neuroscience in 2014, ran the same sort of recording with the stroking surface held at 18, 32 and 42 degrees. The CT afferents answered best at 32 degrees, which is roughly the temperature of skin, and both the cool and the warm stimulus produced less firing and lower pleasantness ratings. Neutral beat warm.",
+          "Be clear about the gap in this. Those recordings were made on forearms and thighs, with a soft brush moving in a straight line, and nobody has ever put an electrode in a nerve while a Vietnamese technician worked a bồ kết lather through someone's scalp. What transfers is the mechanism rather than the protocol: the receptor lives in the skin, it has a preferred speed and a preferred temperature, and the length of the hair above it has nothing to do with either. A cropped head meets all of that with fingertips directly on skin, which is the condition the research describes and the condition long wet hair gets in the way of.",
+          "Two sentences come out of this, and they are the ones worth carrying to the counter. <em>Chậm hơn ạ</em>, slower please, is a request almost nobody makes, and it targets the exact variable the 2009 paper measured. <em>Nước ấm vừa thôi nhé</em>, just mildly warm, holds the rinse near skin temperature rather than the scalding default some houses reach for out of habit."
+        ]
+      },
+      {
+        "h": "The minutes long hair loses",
+        "p": [
+          "Next, the clock, which is where the practical case sits. In this city every booking is sold by the minute, and a fixed share of those minutes goes on handling hair instead of touching a head. On hair past the shoulders, combing out the wet length, wringing it, wrapping it and then the blow-dry take a comfortable ten to fifteen minutes of a 60-minute ritual. A number-two crop needs a towel and about two.",
+          "<a href=\"/journal/head-spa-how-long-da-nang/\">The piece on session length</a> made this point in passing, and it deserves the full version. At 380K to 650K the hour costs the same whatever is on your head, so the cropped guest buys a materially different product for an identical price. The value does not come from needing less. It comes from the fixed overhead of hair handling sitting near zero, with the remainder landing on your scalp.",
+          "The dry pass gains the most, and it is the segment with the best evidence behind it in any case. Here the technician's fingertips press and shift the skin over the skull instead of sliding through lather, framed in the Vietnamese tradition as <em>bấm huyệt</em>, pressure on named points. With long hair, that pass works through a mat of wet strands, and the hands often end up moving the hair rather than the scalp. A crop puts nothing in between. To get more of it, <em>massage khô lâu hơn nhé</em> asks for a longer dry massage, and a short head has the minutes available to give you.",
+          "A cropped head can also do one thing nobody else can: decline the dry. At 75 to 85 percent humidity long hair really does need that dryer, and walking out damp in this city is a slow, miserable business. Short hair is spared. <em>Không cần sấy nhé</em> ends your booking on the last minute of the hands rather than eight minutes of hot air, and it also makes you the guest a house can still take at 19:00 when it closes at 20:00."
+        ]
+      },
+      {
+        "h": "The tier where it stops paying",
+        "p": [
+          "Here is the opinion, and it runs against what the counter will recommend. If your hair is under about three centimetres, the 70-to-90-minute rituals are the weakest value on any menu in Da Nang, and the 45-minute tier is the strongest.",
+          "Count the steps rather than the minutes. Reborn Nails &amp; Retreat, the house this guide picks, prints its 80-minute Signature as a herbal foot soak and tea, facial cleansing and exfoliation, a quartz-stone massage, herbal steam and a mask, scalp exfoliation, the double herbal wash, a nourishing hair mask, neck, shoulder and hand massage, the blow-dry, then fruit and tea. Ten steps, 500K. Three of them happen on your scalp, one of them is a blow-dry you may not need, and the hair mask has a centimetre of fibre to condition. The long tiers are not padded out, which is the thing people get wrong about them. They are genuinely full. They are full of face.",
+          "If the face is what you came for, that is a fine purchase, and plenty of short-haired guests should buy exactly that and enjoy it. For scalp work it is a poor one, because the extra 120K between the 60-minute Deep Relax at 380K and the 70-minute Warm Stone at 450K does not buy ten more minutes of head. Across the city the same shape holds, with the hour at 380K to 650K over six houses and the 70-to-90-minute band at 450K to 900K over five. <a href=\"/prices/\">The price table</a> has the full set.",
+          "The herbs argument shifts too, and it is worth being honest about which half of it survives. A bồ kết and pomelo-peel decoction does two jobs: it cleans the scalp, and it coats and smooths the hair fibre. The second job is most of what dwell time is buying, and on a crop there is very little fibre for it to coat. <a href=\"/journal/vietnamese-head-spa-herbs/\">What is actually in the bowl</a> argues the hour as the floor for herbs, and for long hair we stand by that. For a shaved head, paying a premium for a long herbal steep is paying for a benefit that mostly lands on hair you do not have. The cleaning half, meanwhile, is the half a cropped scalp in this climate most needs."
+        ]
+      },
+      {
+        "h": "The wax problem, and other things a crop brings in",
+        "p": [
+          "In Vietnam, short hair usually has product in it, and that catches people out mid-wash. Barber styling here relies on clay, matte pomade and wax, sold as <em>sáp vuốt tóc</em> in every men's shop in the city. All of those are petrolatum and wax based, while a saponin decoction is a mild cleanser by design, as anyone who has watched a bồ kết lather fail to become meringue already knows. What follows is a first shampoo that slides over the top and a technician quietly working twice as hard. Mention it at the counter: <em>tóc mình có sáp, gội kỹ giúp mình nhé</em> gets you a detergent pass before the herbal one, which a Vietnamese customer would receive by default, since the staff can see the product going in and out of these shops every day.",
+          "The sun is the other thing. Vietnam's National Center for Hydro-Meteorological Forecasting puts Da Nang in the 7 to 8 band of its UV bulletins, which its own scale calls very high, with the daily peak from 10:00 to 14:00. A shaved crown has no canopy at all, and a scalp that got a morning on Mỹ Khê is not a scalp that wants fingertips and exfoliation the same evening. Press a fingertip down the top of your head before you book; if it stings, <a href=\"/journal/head-spa-sunburnt-scalp-da-nang/\">the sunburnt-scalp piece</a> has what to do instead.",
+          "Clipper and razor work leaves marks of its own. The small inflamed bumps at the nape or along the hairline after a close shave are follicular irritation, common in this heat, and a <em>tẩy da đầu</em> scrub over them is the wrong tool. <em>Không tẩy da đầu nhé</em> drops that step in four words, and the minutes move into the massage. Nothing else in the sequence needs changing.",
+          "One last note, on heads that are short because they are thinning rather than by choice. A head spa is pleasant, but it is not a treatment, and <a href=\"/journal/head-spa-hair-loss-da-nang/\">the hair-loss piece</a> runs the arithmetic most menus would rather you did not do. Book it for the hour you get. Do not book it for the follicles."
+        ]
+      },
+      {
+        "h": "Booking it with a crop",
+        "p": [
+          "The practical version is short. Buy the 45-minute tier, which runs 250K to 550K across the four houses that publish one and 250K at the pick, and treat the hour at 380K to 650K as the upgrade for when you want the neck and shoulder work done properly instead of quickly. Unless the facial is the actual draw, skip the long rituals. None of the menus behind our price table charge by hair length: they are priced in minutes, which is exactly why the arithmetic favours you.",
+          "Tell the counter four things and the hour sorts itself out: there is wax in your hair, you want it slower rather than only firmer, the water should stay mildly warm, and the blow-dry can be skipped. If you want the dry pass extended, add <em>massage khô lâu hơn nhé</em>; that is where the minutes you saved should go.",
+          "As for where, the usual advice holds, with one wrinkle. A house with a Korean scalp-camera setup will photograph a cropped scalp far more legibly than a dense head of hair, so if the diagnostic version appeals to you, this is the body type it works best on; <a href=\"/vietnamese-vs-korean/\">the comparison page</a> covers what that visit is. Otherwise, choose a neighbourhood house you can reach on foot and keep going back. <a href=\"/where-to-go/\">The neighbourhood guide</a> is the quicker way to decide which side of the river you are staying on."
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "Is a head spa worth it if you have short hair?",
+        "Yes, and arguably more so. The pleasant-touch research points at the skin rather than the hair: C-tactile afferents, the nerve fibres behind slow-stroke pleasure, sit in hairy skin and respond best at stroking speeds around 1 to 10 cm a second (Löken and colleagues, Nature Neuroscience, 2009) and at about 32°C, roughly skin temperature (Ackerley and colleagues, Journal of Neuroscience, 2014). Short hair also means the fixed ten to fifteen minutes long hair spends being detangled, towelled and blow-dried comes back to you as scalp time, at the same price: 380K to 650K for the hour across the six Da Nang houses that publish menus."
+      ],
+      [
+        "Can men get a head spa in Da Nang?",
+        "Yes. Gội đầu dưỡng sinh houses are ordinary mixed businesses, most open from around 09:00 to 20:00 or later, and male guests are routine rather than remarkable. The thing to understand is that it is a different purchase from a barbershop wash: a barber shampoo is five minutes at a sink inside the price of a cut, while a head spa is 25 to 105 minutes reclined, fully clothed, with the wash as the spine of a longer sequence. Short washes run 120K to 350K and the hour 380K to 650K."
+      ],
+      [
+        "Can you get a head spa with a shaved head?",
+        "Yes, and the massage half of the sequence is unaffected, since the pressure work happens on skin. You lose the blow-dry, plus the conditioning half of the herbal decoction, which coats and smooths the hair fibre and has almost nothing to work with on a shaved head. That makes the long herbal rituals at 450K to 900K the wrong tier, while the 45-minute and 60-minute tiers put nearly all of their minutes on your scalp. If you have razor bumps or a sunburnt crown, skip the tẩy da đầu scrub."
+      ],
+      [
+        "Do I need to wash hair wax out before a head spa in Vietnam?",
+        "Not beforehand, but do say it is there. Vietnamese barber styling depends on clay, matte pomade and wax (sáp vuốt tóc), every one of them wax and petrolatum based, whereas a bồ kết herbal decoction is a mild saponin cleanser that lathers weakly on purpose. Left unmentioned, the first shampoo slides over the product. Tóc mình có sáp, gội kỹ giúp mình nhé asks the counter to run a detergent wash first and save the herbal pass for the scalp, which is where it does its work anyway."
+      ]
+    ]
+  },
+{
     "slug": "head-spa-how-often-da-nang",
     "title": "Again on Thursday: how often to book a head spa in Da Nang",
     "desc": "How often to get a Da Nang head spa on one trip · what the only wash-frequency trial measured, why the city treats it as an errand rather than an occasion, the one step not to repeat two days running, and a three-visit shape for a ten-day stay.",
