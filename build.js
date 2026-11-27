@@ -177,6 +177,11 @@ const LANGS=[
  {code:"de",path:"/de/",native:"Deutsch"},
  {code:"es",path:"/es/",native:"Español"},
  {code:"th",path:"/th/",native:"ไทย"},
+ {code:"it",path:"/it/",native:"Italiano"},
+ {code:"nl",path:"/nl/",native:"Nederlands"},
+ {code:"zh-tw",path:"/zh-tw/",native:"繁體中文"},
+ {code:"hi",path:"/hi/",native:"हिन्दी"},
+ {code:"ms",path:"/ms/",native:"Bahasa Melayu"},
 ];
 
 const S=buildSite({

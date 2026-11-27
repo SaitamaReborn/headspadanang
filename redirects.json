@@ -89,6 +89,66 @@
   "up": "/fr/all/",
   "to": null
  },
+ "/hi/area/da-nang/": {
+  "name": "Other areas",
+  "up": "/hi/all/",
+  "to": null
+ },
+ "/hi/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/hi/all/",
+  "to": null
+ },
+ "/hi/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/hi/all/",
+  "to": null
+ },
+ "/hi/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/hi/all/",
+  "to": null
+ },
+ "/hi/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/hi/all/",
+  "to": null
+ },
+ "/hi/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/hi/all/",
+  "to": null
+ },
+ "/it/area/da-nang/": {
+  "name": "Other areas",
+  "up": "/it/all/",
+  "to": null
+ },
+ "/it/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/it/all/",
+  "to": null
+ },
+ "/it/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/it/all/",
+  "to": null
+ },
+ "/it/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/it/all/",
+  "to": null
+ },
+ "/it/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/it/all/",
+  "to": null
+ },
+ "/it/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/it/all/",
+  "to": null
+ },
  "/ja/area/da-nang/": {
   "name": "Other areas",
   "up": "/ja/all/",
@@ -147,6 +207,66 @@
  "/ko/area/thanh-khe/": {
   "name": "Thanh Khe",
   "up": "/ko/all/",
+  "to": null
+ },
+ "/ms/area/da-nang/": {
+  "name": "Other areas",
+  "up": "/ms/all/",
+  "to": null
+ },
+ "/ms/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/ms/all/",
+  "to": null
+ },
+ "/ms/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/ms/all/",
+  "to": null
+ },
+ "/ms/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/ms/all/",
+  "to": null
+ },
+ "/ms/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/ms/all/",
+  "to": null
+ },
+ "/ms/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/ms/all/",
+  "to": null
+ },
+ "/nl/area/da-nang/": {
+  "name": "Other areas",
+  "up": "/nl/all/",
+  "to": null
+ },
+ "/nl/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/nl/all/",
+  "to": null
+ },
+ "/nl/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/nl/all/",
+  "to": null
+ },
+ "/nl/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/nl/all/",
+  "to": null
+ },
+ "/nl/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/nl/all/",
+  "to": null
+ },
+ "/nl/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/nl/all/",
   "to": null
  },
  "/ru/area/da-nang/": {
@@ -4073,6 +4193,36 @@
  "/vi/area/thanh-khe/": {
   "name": "Thanh Khe",
   "up": "/vi/all/",
+  "to": null
+ },
+ "/zh-tw/area/da-nang/": {
+  "name": "Other areas",
+  "up": "/zh-tw/all/",
+  "to": null
+ },
+ "/zh-tw/area/hai-chau/": {
+  "name": "Hai Chau",
+  "up": "/zh-tw/all/",
+  "to": null
+ },
+ "/zh-tw/area/my-an-and-an-thuong/": {
+  "name": "My An & An Thuong",
+  "up": "/zh-tw/all/",
+  "to": null
+ },
+ "/zh-tw/area/my-khe-beachfront/": {
+  "name": "My Khe beachfront",
+  "up": "/zh-tw/all/",
+  "to": null
+ },
+ "/zh-tw/area/son-tra/": {
+  "name": "Son Tra",
+  "up": "/zh-tw/all/",
+  "to": null
+ },
+ "/zh-tw/area/thanh-khe/": {
+  "name": "Thanh Khe",
+  "up": "/zh-tw/all/",
   "to": null
  },
  "/zh/area/da-nang/": {
