@@ -4,3 +4,4 @@
 # refresh replaces the whole set — history would balloon for no benefit.
 assets/places/
 .places-keep/
+score100-report.json
