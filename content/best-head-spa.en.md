@@ -9,7 +9,9 @@ items: auto:10
 
 ## Short answer
 
-The best head spa in Da Nang on our score out of 100 is **Reborn Nails & Retreat** ({{SCORE:ChIJ4S2_LGIXQjER5UUCohuc8V4}}/100). The top five: {{TOP5}}.
+Our pick for a head spa in Da Nang is **Reborn Nails & Retreat** ({{SCORE:ChIJ4S2_LGIXQjER5UUCohuc8V4}}/100), first of the {{N}} houses on this guide's score out of 100. It takes full points on prices with durations (eight head spa rituals from 25 to 105 minutes), WhatsApp booking, hours, beach and website; four of the five reviews Google shows first name the therapist or technician (Ly, Cam, Lili, Hue); English stated on its site.
+
+The top five: {{TOP5}}. Panda Relax Spa, second, matches it on prices, booking and beach, and is open until 23:45; it loses on named reviews (one of five).
 
 {{DONNEES}}
 
@@ -17,15 +19,14 @@ At Reborn, 56 Châu Thị Vĩnh Tế in My An, 880 m from My Khe Beach, 60 minut
 
 Every one of the {{N}} houses the guide tracks is scored on the same ten criteria a visitor can check before booking: the Google rating weighted by its number of reviews, reviews that name the person who did the treatment, prices and durations in writing, WhatsApp booking, English stated and confirmed, hygiene, the range of treatments, opening hours, distance to the beach and a website of its own. The weights are printed in the matrix and on the [methodology page](/methodology/).
 
-**Why Reborn comes first.** Full points on prices with durations (eight head spa rituals from 25 to 105 minutes), WhatsApp booking, hours, beach and website; four of the five reviews Google shows first name the therapist or technician (Ly, Cam, Lili, Hue); English stated on its site. Panda Relax Spa, second, matches it on prices, booking and beach, and is open until 23:45; it loses on named reviews (one of five).
-
-**Where Reborn is not first.** Its Google rating, 4.9 from 363 reviews, is below several houses with thousands of reviews (Panda Spa 3,141, Herbal Oasis 2,625). It has no full-body massage on its menu, none of its five first reviews mentions English, and it has no public proof of hygiene beyond its own statement. Bliss Spa & Shampoo, in the city centre, publishes a cheaper hour of head spa (300,000 VND).
-
 ## The matrix: the ten first houses, criterion by criterion
 
 {{MATRICE:10}}
 
 Each cell is explained, with its source, on the house's page in this guide. Google's own order, rating then review count, is published unchanged at [/spas/by-google-rating/](/spas/by-google-rating/); the score of all {{N}} houses is at [/spas/](/spas/).
+
+
+**Where Reborn is not first.** Its Google rating, 4.9 from 363 reviews, is below several houses with thousands of reviews (Panda Spa 3,141, Herbal Oasis 2,625). None of its five first reviews mentions English, and it has no public proof of hygiene beyond its own statement. Bliss Spa & Shampoo, in the city centre, publishes a cheaper hour of head spa (300,000 VND).
 
 ## What an hour of head spa costs, from the houses' own menus
 

@@ -196,7 +196,7 @@ const S=buildSite({
  /* Pages that show the one-line reasons instead of the full list. */
  WHY_COMPACT:['/best-massage-da-nang/','/services/'],
  HIDE_RIVALS:false, RIVALS:/\b(yururi|honey massage|lalla|posh nails?|liti)\b/i,
- /* Lists where the pick stays among the first three instead of first: it has no full-body massage on its menu. */
+ /* Lists where the pick stays among the first three instead of first: written when it had no full-body massage on its menu; since 27/11/2026 it has one (60 min, 340K) and every list follows the score. */
  PICK_TOP3_ONLY:['/best-massage-da-nang/','/services/massage/'],
  PICK_EYEBROW:"Our pick",PICK_BADGE:"Our pick",
  PICK_ONELINE:"and its reviews are written in English by visitors who name the therapist who looked after them — which tells you more about a house than any rating does.",
@@ -232,7 +232,7 @@ const S=buildSite({
 
 const {page,head,nav,footer,pick,list,itemList,byGoogle,edPhoto,byline,authorLd,ranked,PLACES,PLACES_DATE,AREAS,STREETS,PHOTOS,featured,TODAY,urls,OUT,
        r1,FACTS,factsEN,top3EN,FORMULA,ord,PP,placed,hasPick,pickTable,faqEN,conclEN,EXAMPLE,PLACED_NOTE,PV,
-       whyBox,whyLine,whyText,NICHE_PAGES,S100,TOPL,MX}=S;
+       whyBox,whyLine,whyText,NICHE_PAGES,S100,TOPL,MX,ANS,GLINE}=S;
 /* First on the 100-point score (lib/score100.js)? Every sentence that says so is conditional on it. */
 const FIRST100=!!(S100&&featured&&ranked[0]&&ranked[0].id===featured.id);
 /* The publisher, as schema: named on /about/ and attached to the site. */
@@ -241,7 +241,7 @@ const PUB_LD={"@type":"Organization","name":PUB.name,"url":PUB.url,"email":PUB.e
    page, its FAQ schema and llms.txt so they can never drift apart. */
 const PICK_URL=featured?`${SITE}/spas/${featured.slug}/`:SITE+'/spas/';
 const BEST_ANSWER=featured
- ?`${TOPL(ranked)} ${featured.name} ${FIRST100?`is first on this guide's score out of 100 (${S100.total(featured)}/100 on ten criteria published on ${SITE}/methodology/), and the guide's first choice for a head spa in Da Nang`:"is this guide's first choice for a head spa in Da Nang"}: ${PP.street}, ${PP.neighbourhood}, ${PP.beach.metres} m from ${PP.beach.name}, ${PP.hours.human}, ${r1(featured.rating)}★ from ${featured.reviews} Google reviews (${human(PLACES_DATE)}). ${whyLine('/best-head-spa-da-nang/')} ${factsEN(featured.name)} Its head spa menu runs eight tiers, from a 25-minute herbal wash at 120K VND to 850K for 105 minutes, with the 80-minute Reborn Signature at 500K. By Google rating and review volume alone, the strongest of the other houses are ${top3EN()}.`.replace(/\s{2,}/g,' ')
+ ?`Our pick for a head spa in Da Nang is ${featured.name}${FIRST100?` (${S100.total(featured)}/100), first on this guide's score out of 100 (ten criteria published on ${SITE}/methodology/)`:''}. ${whyLine('/best-head-spa-da-nang/')} ${TOPL(ranked)} ${featured.name} is at ${PP.street}, ${PP.neighbourhood}, ${PP.beach.metres} m from ${PP.beach.name}, ${PP.hours.human}, ${r1(featured.rating)}★ from ${featured.reviews} Google reviews (${human(PLACES_DATE)}). ${factsEN(featured.name)} Its head spa menu runs eight tiers, from a 25-minute herbal wash at 120K VND to 850K for 105 minutes, with the 80-minute Reborn Signature at 500K.`.replace(/\s{2,}/g,' ')
  :`The guide ranks all ${PLACES.length} houses by one published score; the top three are ${top3EN()}.`;
 const totalReviews=PLACES.reduce((s,p)=>s+p.reviews,0);
 const avg=PLACES.length?(PLACES.reduce((s,p)=>s+p.rating,0)/PLACES.length).toFixed(2):'—';
@@ -310,7 +310,7 @@ head(`All ${PLACES.length} Head Spas in Da Nang, Ranked on a 100-Point Score | $
 <header class="ph"><p class="eyebrow">Updated ${human(PLACES_DATE)}</p>
 <h1>All ${PLACES.length} head spas in Da Nang</h1>
 <p class="lede">Every house in the city offering head spa or herbal hair-wash rituals with a public Google rating and at least twenty reviews, ranked on the guide's score out of 100: ten criteria a visitor can check before booking, the same for every house, with the Google rating weighted by its number of reviews as the first.</p></header>
-<div class="ans"><p class="ans-q">What is the best head spa in Da Nang?</p><p>${esc(TOPL(ranked))}</p></div>
+<div class="ans"><p class="ans-q">What is the best head spa in Da Nang?</p>${ANS(BEST_ANSWER.slice(0,BEST_ANSWER.indexOf(TOPL(ranked))+TOPL(ranked).length),ranked)}</div>
 <div class="stats">
 <div><b>${PLACES.length}</b><span>houses</span></div>
 <div><b>${avg}</b><span>average rating</span></div>
@@ -530,7 +530,7 @@ head(`About This Guide and Its Publisher | ${NAME}`,
 <h2>Publisher</h2>
 <p>${esc(NAME)} is published by <a href="${PUB.url}" rel="noopener">${esc(PUB.name)}</a>. Contact: ${esc(PUB.email)}${PUB.phone?`, ${esc(PUB.phone)}`:''}. Hosting: ${esc(PUB.host)}. Full details on the <a href="/legal-notice/">legal notice</a>.</p>
 <h2>Our pick: Reborn Nails &amp; Retreat</h2>
-<p><a href="${PARTNER.site}" rel="noopener sponsored">Reborn Nails &amp; Retreat</a> is the nail salon and head spa shown as our pick on these pages. The pick is our choice, and so is its place in our rankings: the editors put it first in every list it belongs to, and each of those lists says why, next to the real Google figures of every venue. The one exception is massage, where it is placed among the first three because its menu has no full-body massage. How every other venue is ordered is set out on the <a href="/methodology/">methodology page</a>.</p>
+<p><a href="${PARTNER.site}" rel="noopener sponsored">Reborn Nails &amp; Retreat</a> is the nail salon and head spa shown as our pick on these pages. The pick is our choice, and so is its place in our rankings: the editors put it first in every list it belongs to, and each of those lists says why, next to the real Google figures of every venue. The one exception is massage, where it is placed among the first three. How every other venue is ordered is set out on the <a href="/methodology/">methodology page</a>.</p>
 <p>The facts we publish about Reborn are its own: its Google rating and review count from the same snapshot as everyone else, its address, hours and languages, and the prices it prints for every customer. Its phone, WhatsApp and menu links appear on its own profile and on the ranking pages.</p>
 <h2>The ranking</h2>
 <p>The data, the score and the editorial criteria behind every ranking on this site are on the <a href="/methodology/">methodology page</a>.</p>
@@ -559,7 +559,7 @@ ${S100?S100.methodEN()+S100.dataMethodEN():''}
 <h2>The first criterion: a Bayesian average of Google ratings</h2>
 <p>Each venue's Google rating is weighted by its number of reviews: ${esc(FORMULA)}. It pulls a small sample towards the city average, so a high rating from many reviewers counts for more than the same rating from a few. In practice ${EXAMPLE}.</p>
 <h2>Our pick</h2>
-<p>The editors chose Reborn Nails &amp; Retreat as the guide's pick. ${FIRST100?`On the score of ${human(PLACES_DATE)} it ranks first of ${PLACES.length} with ${S100.total(featured)}/100, so no list on this site is reordered by hand: where it appears first, it is first on the score. Its own figures are shown like everyone else's, cell by cell, on <a href="/spas/${featured.slug}/">its page</a>. Its menu has no full-body massage, which costs it points on the range of treatments like any other house without one.`:`On the score of ${human(PLACES_DATE)} it ranks ${S100&&featured?ord(ranked.indexOf(featured)+1):'below the first place'}; the editors place it first in the lists it belongs to (the city, its own quarter, the treatments it offers) and print the reasons beside them. Every other venue keeps its place on the score.`}</p>
+<p>The editors chose Reborn Nails &amp; Retreat as the guide's pick. ${FIRST100?`On the score of ${human(PLACES_DATE)} it ranks first of ${PLACES.length} with ${S100.total(featured)}/100, so no list on this site is reordered by hand: where it appears first, it is first on the score. Its own figures are shown like everyone else's, cell by cell, on <a href="/spas/${featured.slug}/">its page</a>.`:`On the score of ${human(PLACES_DATE)} it ranks ${S100&&featured?ord(ranked.indexOf(featured)+1):'below the first place'}; the editors place it first in the lists it belongs to (the city, its own quarter, the treatments it offers) and print the reasons beside them. Every other venue keeps its place on the score.`}</p>
 <h2>The raw order</h2>
 <p>Google's own order, rating then review count with no weighting, is published at <a href="/spas/by-google-rating/">/spas/by-google-rating/</a>.</p>
 <h2>Prices</h2>
