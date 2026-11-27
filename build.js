@@ -708,3 +708,9 @@ console.log(`Built ${urls.length} pages · ${PLACES.length} salons, ${AREAS.leng
 
 // passe progressive anti-motifs IA (10/10/2026) : segments retouchés des pages listées dans sans-tirets.json
 require('./lib/sans-tirets.js')(typeof OUT === 'string' ? OUT : './docs');
+
+/* Contrôle de fin de build (27/11/2026) : aucune page ne se présente comme le classement de la ville sans l'être,
+   les listes suivent la note, les pages de quartier et de rue se nomment, pas de « X, X ». Un problème = build refusé. */
+{ const PROB=require('./lib/controle.js')({OUT,ranked,S100,LISTING:{path:'/spas/'},AREAS,STREETS});
+  if(PROB.length){ console.error(PROB.slice(0,60).join('\n')); throw new Error(`controle.js : ${PROB.length} problème(s), build refusé`); }
+  console.log('controle.js : 0 problème'); }

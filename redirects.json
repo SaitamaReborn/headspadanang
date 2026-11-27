@@ -1,6 +1,6 @@
 {
  "/de/area/da-nang/": {
-  "name": "Da Nang",
+  "name": "Other areas",
   "up": "/de/all/",
   "to": null
  },
@@ -30,7 +30,7 @@
   "to": null
  },
  "/es/area/da-nang/": {
-  "name": "Da Nang",
+  "name": "Other areas",
   "up": "/es/all/",
   "to": null
  },
@@ -60,7 +60,7 @@
   "to": null
  },
  "/fr/area/da-nang/": {
-  "name": "Da Nang",
+  "name": "Other areas",
   "up": "/fr/all/",
   "to": null
  },
@@ -90,7 +90,7 @@
   "to": null
  },
  "/ja/area/da-nang/": {
-  "name": "Da Nang",
+  "name": "Other areas",
   "up": "/ja/all/",
   "to": null
  },
@@ -120,7 +120,7 @@
   "to": null
  },
  "/ko/area/da-nang/": {
-  "name": "Da Nang",
+  "name": "Other areas",
   "up": "/ko/all/",
   "to": null
  },
@@ -150,7 +150,7 @@
   "to": null
  },
  "/ru/area/da-nang/": {
-  "name": "Da Nang",
+  "name": "Other areas",
   "up": "/ru/all/",
   "to": null
  },
@@ -363,7 +363,7 @@
   "to": null
  },
  "/spas/area/da-nang/": {
-  "name": "Da Nang",
+  "name": "Other areas",
   "up": "/spas/",
   "to": null
  },
@@ -416,7 +416,7 @@
  "/spas/aura-spa-massage-nails-hair-wash-and-relaxation-in-da-nang-egkzuy/": {
   "id": "ChIJzYULZMgRQjERYRTCyEgKZUY",
   "name": "AURA SPA-Massage-Nails-Hair Wash & Relaxation In Da Nang",
-  "area": "Da Nang",
+  "area": "Other areas",
   "up": "/spas/area/da-nang/",
   "to": null
  },
@@ -452,7 +452,7 @@
  "/spas/bach-nam-spa-tri-lieu-dong-y-oriental-therapy-massage-zhs4ce/": {
   "id": "ChIJRwxSfNMZQjERdGZR-zhS4cE",
   "name": "Bách Nam - Spa Trị Liệu Đông Y | Oriental Therapy Massage",
-  "area": "Da Nang",
+  "area": "Other areas",
   "up": "/spas/area/da-nang/",
   "to": null
  },
@@ -626,14 +626,14 @@
  "/spas/ch-salon-ajrsvu/": {
   "id": "ChIJ-wpcOgoZQjERUvWuuaJRsvU",
   "name": "CH SALON",
-  "area": "Da Nang",
+  "area": "Other areas",
   "up": "/spas/area/da-nang/",
   "to": null
  },
  "/spas/chang-chang-goi-dau-duong-sinh-da-nang-t0fhg4/": {
   "id": "ChIJy2wsWgAbQjERLWoEuT0FHG4",
   "name": "Chang Chang - Gội Đầu Dưỡng Sinh Đà Nẵng",
-  "area": "Da Nang",
+  "area": "Other areas",
   "up": "/spas/area/da-nang/",
   "to": null
  },
@@ -1524,7 +1524,7 @@
  "/spas/home-wellness-spa-massage-and-goi-duong-sinh-da-nang-e3v0zo/": {
   "id": "ChIJa0YEURMZQjERRIqAjE3V0Zo",
   "name": "HOME WELLNESS - SPA MASSAGE & GỘI DƯỠNG SINH ĐÀ NẴNG",
-  "area": "Da Nang",
+  "area": "Other areas",
   "up": "/spas/area/da-nang/",
   "to": null
  },
@@ -2020,7 +2020,7 @@
  "/spas/maia-spa-and-wellness-center-da-nang-b3tdpy/": {
   "id": "ChIJOfveFFMRQjERbEvcMb3TdPY",
   "name": "Maia Spa & Wellness Center Da Nang",
-  "area": "Da Nang",
+  "area": "Other areas",
   "up": "/spas/area/da-nang/",
   "to": null
  },
@@ -2073,7 +2073,7 @@
  "/spas/massage-sapphire-jacuzzi-0qatci/": {
   "id": "ChIJIw9tGokXQjERD7CNi0QAtCI",
   "name": "Massage SAPPHIRE - Jacuzzi",
-  "area": "Da Nang",
+  "area": "Other areas",
   "up": "/spas/area/da-nang/",
   "to": null
  },
@@ -2186,7 +2186,7 @@
  "/spas/misa-de-beaute-cham-soc-da-hoa-xuan-hjkwpu/": {
   "id": "ChIJTWO_7h8ZQjERYDz-VHjKWPU",
   "name": "MISA DE BEAUTÉ - CHĂM SÓC DA HOÀ XUÂN",
-  "area": "Da Nang",
+  "area": "Other areas",
   "up": "/spas/area/da-nang/",
   "to": null
  },
@@ -2289,7 +2289,7 @@
  "/spas/muoi-spa-goi-dau-duong-sinh-da-nang-cgwcew/": {
   "id": "ChIJwdAEbsoZQjERXzcI5Cgwcew",
   "name": "Muối Spa - Gội đầu dưỡng sinh Đà Nẵng",
-  "area": "Da Nang",
+  "area": "Other areas",
   "up": "/spas/area/da-nang/",
   "to": null
  },
@@ -2302,7 +2302,7 @@
  "/spas/my-beauty-and-spa-goi-dau-d-ong-sinh-nail-noi-mi-and-massage-body-massage-and-shampoo-treatment-eyelash-nails-idtiek/": {
   "id": "ChIJjTrzgRwRQjERgQ2RDIDtIek",
   "name": "MY Beauty & Spa : Gội đầu d ỡng sinh , Nail , nối mi & Massage body ( Massage & shampoo treatment, eyelash, nails)",
-  "area": "Da Nang",
+  "area": "Other areas",
   "up": "/spas/area/da-nang/",
   "to": null
  },
@@ -2810,7 +2810,7 @@
  "/spas/salon-toc-rin-tokyo-uhf3sq/": {
   "id": "ChIJr2-2miYaQjERb_FXiUhf3sQ",
   "name": "Salon Tóc Rin Tokyo",
-  "area": "Da Nang",
+  "area": "Other areas",
   "up": "/spas/area/da-nang/",
   "to": null
  },
@@ -2991,7 +2991,7 @@
  "/spas/spa-goi-dau-tiem-nha-ngan-emlpjo/": {
   "id": "ChIJ5xGrdQAXQjERUKN8BeMLPJo",
   "name": "Spa gội đầu - Tiệm nhà Ngân",
-  "area": "Da Nang",
+  "area": "Other areas",
   "up": "/spas/area/da-nang/",
   "to": null
  },
@@ -3594,7 +3594,7 @@
  "/spas/the-spa-house-of-wellness-3mntgs/": {
   "id": "ChIJPVmFGbINQjERx8Zol3mntGs",
   "name": "THE SPA - House of Wellness 마사지 스파",
-  "area": "Da Nang",
+  "area": "Other areas",
   "up": "/spas/area/da-nang/",
   "to": null
  },
@@ -4016,7 +4016,7 @@
   "to": null
  },
  "/th/area/da-nang/": {
-  "name": "Da Nang",
+  "name": "Other areas",
   "up": "/th/all/",
   "to": null
  },
@@ -4046,7 +4046,7 @@
   "to": null
  },
  "/vi/area/da-nang/": {
-  "name": "Da Nang",
+  "name": "Other areas",
   "up": "/vi/all/",
   "to": null
  },
@@ -4076,7 +4076,7 @@
   "to": null
  },
  "/zh/area/da-nang/": {
-  "name": "Da Nang",
+  "name": "Other areas",
   "up": "/zh/all/",
   "to": null
  },
