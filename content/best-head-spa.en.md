@@ -7,11 +7,13 @@ items: auto:10
 ---
 # Best head spa in Da Nang: 10 houses scored out of 100 (November 2026)
 
-Updated 27 November 2026. Google ratings and reviews: snapshot of 17 November 2026. House websites: read on 27 November 2026.
-
 ## Short answer
 
-The best head spa in Da Nang on our score out of 100 is **Reborn Nails & Retreat** ({{SCORE:ChIJ4S2_LGIXQjER5UUCohuc8V4}}/100), 56 Châu Thị Vĩnh Tế, My An, 880 m from My Khe Beach: 60 minutes of herbal head spa for 380,000 VND, the 80-minute Signature for 500,000. The top five: {{TOP5}}.
+The best head spa in Da Nang on our score out of 100 is **Reborn Nails & Retreat** ({{SCORE:ChIJ4S2_LGIXQjER5UUCohuc8V4}}/100). The top five: {{TOP5}}.
+
+{{DONNEES}}
+
+At Reborn, 56 Châu Thị Vĩnh Tế in My An, 880 m from My Khe Beach, 60 minutes of herbal head spa cost 380,000 VND and the 80-minute Signature 500,000.
 
 Every one of the {{N}} houses the guide tracks is scored on the same ten criteria a visitor can check before booking: the Google rating weighted by its number of reviews, reviews that name the person who did the treatment, prices and durations in writing, WhatsApp booking, English stated and confirmed, hygiene, the range of treatments, opening hours, distance to the beach and a website of its own. The weights are printed in the matrix and on the [methodology page](/methodology/).
 
