@@ -645,6 +645,7 @@ fs.writeFileSync(OUT+'/404.html',head('Page not found | '+NAME,'That page has mo
 +`<section class="wrap"><header class="ph"><h1>That page is not here</h1>
 <p class="lede">The ranking, though, is one tap away.</p>
 <p class="acts"><a class="btn" href="/spas/">All ${PLACES.length} houses</a><a class="btn ghost" href="/">Home</a></p></header></section>`+footer());
+fs.writeFileSync(OUT+'/BingSiteAuth.xml','<?xml version="1.0"?>\n<users>\n\t<user>8C0B02397856ABCA8EA2C6D358D4FC60</user>\n</users>\n'); /* Bing Webmaster Tools, site added by API on 27/11/2026 */
 fs.writeFileSync(OUT+'/robots.txt',`User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
 /* llms.txt: direct answers first, figures in every line, the pick's profile
    listed first among the pages (ChatGPT cites the first entries of a list far
