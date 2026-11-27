@@ -1,0 +1,42 @@
+{
+ "note": "Réglages des photos (27/11/2026). « documents » : photos de cartes des prix, menus, affiches de tarifs ou bannières de services, relevées à l'œil sur des planches de toutes les vignettes ; elles ne servent jamais de vignette (passées en fin de liste). « ordre » : préférence manuelle par lieu (place id → fichiers, dans l'ordre voulu).",
+ "releve": "2026-11-27",
+ "documents": [
+  "0RUVMuWM-0.jpg",
+  "7a3xyv5g-0.jpg",
+  "8sBMdsH4-0.jpg",
+  "8sBMdsH4-1.jpg",
+  "APlNtUps-0.jpg",
+  "Cohuc8V4-0.jpg",
+  "CyEgKZUY-0.jpg",
+  "Ey2SvAx4-0.jpg",
+  "F_MguW54-0.jpg",
+  "JNclcAtw-0.jpg",
+  "NgR0GxDY-0.jpg",
+  "UnW7kFDY-0.jpg",
+  "UnW7kFDY-1.jpg",
+  "UnW7kFDY-2.jpg",
+  "XkQyi1Ek-0.jpg",
+  "bq05IN_0-0.jpg",
+  "bq05IN_0-1.jpg",
+  "cZmpVV_Q-0.jpg",
+  "fjEBfjmA-0.jpg",
+  "fjEBfjmA-1.jpg",
+  "gy91x1lU-0.jpg",
+  "h0tx02jY-0.jpg",
+  "h0tx02jY-1.jpg",
+  "iGr5GPkM-0.jpg",
+  "ir42xTNk-0.jpg",
+  "koW4kiHU-0.jpg",
+  "lRDEcpw0-0.jpg",
+  "snkKdJBs-0.jpg",
+  "snkKdJBs-1.jpg"
+ ],
+ "ordre": {
+  "ChIJ4S2_LGIXQjER5UUCohuc8V4": [
+   "Cohuc8V4-2.jpg",
+   "Cohuc8V4-3.jpg",
+   "Cohuc8V4-1.jpg"
+  ]
+ }
+}
